@@ -585,6 +585,50 @@ footer .wrap {
   text-align: center;
 }
 
+/* Pagination System (11-rasim: 12 tadan sahifalash) */
+.pagination-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.page-btn {
+  min-width: 42px;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  color: var(--mute);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.page-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--line-strong);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.page-btn.active {
+  background: var(--brand);
+  border-color: rgba(41, 151, 255, 0.4);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 49, 83, 0.8);
+}
+.page-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 /* Empty search state */
 .empty-state {
   text-align: center;
@@ -678,7 +722,7 @@ footer .wrap {
   </section>
 
   <!-- KATALOG GRID -->
-  <section style="padding-top: 10px;">
+  <section id="katalog-grid-top" style="padding-top: 10px;">
     <div class="wrap">
       <div id="product-list" class="product-grid">
       <div class="product-card" data-cats="available promax" data-search="iphone 14 pro max 512 gb 76% purple 600$ 76%">
@@ -911,6 +955,9 @@ footer .wrap {
       </div>
       </div>
 
+      <!-- Pagination System (11-rasim: 12 tadan sahifalash) -->
+      <div id="katalog-pagination" class="pagination-wrap"></div>
+
       <!-- Empty State when nothing found -->
       <div id="search-empty-state" class="empty-state" style="display:none;">
         <div class="empty-icon">🔍</div>
@@ -944,15 +991,19 @@ footer .wrap {
 
 <script>
 var activeTab = 'all';
+var currentPage = 1;
+var ITEMS_PER_PAGE = 12;
 
 function filterKatalogTab(tab, btn) {
   activeTab = tab;
+  currentPage = 1;
   document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   applyFilters();
 }
 
 function handleCatalogSearch(val) {
+  currentPage = 1;
   var clearBtn = document.getElementById('search-clear-btn');
   if (val.trim().length > 0) {
     clearBtn.style.display = 'grid';
@@ -963,6 +1014,7 @@ function handleCatalogSearch(val) {
 }
 
 function clearCatalogSearch() {
+  currentPage = 1;
   var inp = document.getElementById('katalog-search-input');
   inp.value = '';
   document.getElementById('search-clear-btn').style.display = 'none';
@@ -970,11 +1022,20 @@ function clearCatalogSearch() {
   applyFilters();
 }
 
+function goToPage(page) {
+  currentPage = page;
+  applyFilters();
+  var anchor = document.getElementById('katalog-grid-top');
+  if (anchor) {
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
 function applyFilters() {
   var query = document.getElementById('katalog-search-input').value.toLowerCase().trim();
-  var cards = document.querySelectorAll('.product-grid .product-card');
-  var foundCount = 0;
-
+  var cards = Array.from(document.querySelectorAll('.product-grid .product-card'));
+  
+  var matchingCards = [];
   cards.forEach(function(card) {
     var cats = card.getAttribute('data-cats') || '';
     var searchData = card.getAttribute('data-search') || '';
@@ -983,24 +1044,78 @@ function applyFilters() {
     var matchesSearch = (query === '' || searchData.indexOf(query) !== -1);
 
     if (matchesTab && matchesSearch) {
-      card.style.display = 'flex';
-      foundCount++;
-    } else {
-      card.style.display = 'none';
+      matchingCards.push(card);
     }
+  });
+
+  var totalMatched = matchingCards.length;
+  var totalPages = Math.ceil(totalMatched / ITEMS_PER_PAGE) || 1;
+  if (currentPage > totalPages) {
+    currentPage = 1;
+  }
+
+  // 1. Hide all cards first
+  cards.forEach(function(card) {
+    card.style.display = 'none';
+  });
+
+  // 2. Slice and show only current page items
+  var startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  var endIndex = startIndex + ITEMS_PER_PAGE;
+  var pageCards = matchingCards.slice(startIndex, endIndex);
+
+  pageCards.forEach(function(card) {
+    card.style.display = 'flex';
   });
 
   var countLabel = document.getElementById('search-count-label');
   var emptyState = document.getElementById('search-empty-state');
-  
-  if (foundCount === 0) {
+  var paginationEl = document.getElementById('katalog-pagination');
+
+  if (totalMatched === 0) {
     emptyState.style.display = 'block';
     countLabel.innerHTML = 'Hech narsa topilmadi';
+    if (paginationEl) paginationEl.style.display = 'none';
+    return;
   } else {
     emptyState.style.display = 'none';
-    countLabel.innerHTML = 'Jami: <b>' + foundCount + ' ta</b> telefon ko\'rsatilmoqda';
+    var startItem = startIndex + 1;
+    var endItem = Math.min(endIndex, totalMatched);
+    if (totalMatched <= ITEMS_PER_PAGE) {
+      countLabel.innerHTML = 'Jami: <b>' + totalMatched + ' ta</b> telefon ko'rsatilmoqda';
+    } else {
+      countLabel.innerHTML = 'Ko'rsatilmoqda: <b>' + startItem + '–' + endItem + '</b> / jami <b>' + totalMatched + ' ta</b> telefon (Sahifa: <b>' + currentPage + '/' + totalPages + '</b>)';
+    }
+  }
+
+  // 3. Render pagination controls
+  if (!paginationEl) return;
+  if (totalPages <= 1) {
+    paginationEl.style.display = 'none';
+    paginationEl.innerHTML = '';
+  } else {
+    paginationEl.style.display = 'flex';
+    var html = '';
+
+    var prevDisabled = (currentPage === 1) ? ' disabled' : '';
+    html += '<button type="button" class="page-btn"' + prevDisabled + ' onclick="goToPage(' + (currentPage - 1) + ')" aria-label="Oldingi sahifa">‹ Oldingi</button>';
+
+    for (var p = 1; p <= totalPages; p++) {
+      var activeClass = (p === currentPage) ? ' active' : '';
+      html += '<button type="button" class="page-btn' + activeClass + '" onclick="goToPage(' + p + ')">' + p + '</button>';
+    }
+
+    var nextDisabled = (currentPage === totalPages) ? ' disabled' : '';
+    html += '<button type="button" class="page-btn"' + nextDisabled + ' onclick="goToPage(' + (currentPage + 1) + ')" aria-label="Keyingi sahifa">Keyingi ›</button>';
+
+    paginationEl.innerHTML = html;
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  applyFilters();
+});
+applyFilters();
 </script>
 
 </body>
