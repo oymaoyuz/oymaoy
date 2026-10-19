@@ -217,14 +217,14 @@ def update_katalog_html(available_products):
     all_cards = render_cards(available_products)
     
     start_tag = '<div id="product-list" class="product-grid">'
-    end_tag = '</div>\n\n      <!-- Empty State when nothing found -->'
+    end_tag = '</div>\n\n      <!-- Pagination System (11-rasim: 12 tadan sahifalash) -->'
     start_idx = html.find(start_tag)
     if start_idx != -1:
         end_idx = html.find(end_tag, start_idx)
         if end_idx != -1:
             html = html[:start_idx + len(start_tag)] + '\n' + all_cards + '\n      ' + html[end_idx:]
         else:
-            pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- Empty State)'
+            pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- (?:Pagination|Empty))'
             html = re.sub(pattern, rf'\g<1>\n{all_cards}\n      \g<3>', html, flags=re.DOTALL)
 
     with open(KATALOG_FILE, 'w', encoding='utf-8') as f:
