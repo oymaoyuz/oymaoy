@@ -210,8 +210,17 @@ def sync():
         print("Hech qanday post topilmadi.")
         return False
 
-    # Faqat sotuvda mavjud telefonlar
-    available = [p for p in products if not p.get('is_sold')]
+    # Faqat sotuvda mavjud haqiqiy telefonlar (Manzil videosi yoki narxsiz postlar chiqarilmaydi)
+    available = []
+    for p in products:
+        m = p.get('model', '').strip()
+        pr = p.get('price', '').strip()
+        raw = p.get('raw_text', '').strip().lower()
+        if p.get('is_sold'): continue
+        if not pr: continue
+        if 'manzil' in m.lower() or 'manzil' in raw or 'video' in m.lower(): continue
+        if not any(k in m.lower() for k in ['iphone', 'samsung', 'redmi', 'poco', 'pro', 'max', 'mini', 'plus']): continue
+        available.append(p)
     print(f"Jami topilgan e'lonlar: {len(products)} ta. Sotuvda mavjud: {len(available)} ta.")
 
     # Cache tekshiruvi
