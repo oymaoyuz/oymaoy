@@ -558,10 +558,11 @@ footer .wrap {
 }
 h1 {
   font-size: clamp(38px, 6vw, 68px);
-  line-height: 1.04;
-  letter-spacing: -0.04em;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
   font-weight: 800;
   margin-bottom: 18px;
+  padding-bottom: 0.12em;
   background: linear-gradient(180deg, #ffffff 40%, #9fc6e2 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -997,7 +998,11 @@ h1 {
   .pill {
     margin: 4px auto 18px auto !important;
   }
-  h1 { font-size: clamp(32px, 8vw, 44px) !important; }
+  h1 {
+    font-size: clamp(32px, 8vw, 44px) !important;
+    line-height: 1.18 !important;
+    padding-bottom: 0.15em !important;
+  }
   .lead {
     margin: 0 auto 20px auto !important;
     font-size: 15px !important;
@@ -1082,7 +1087,7 @@ h1 {
 
         <!-- Buttons placed directly beneath the iPhone image -->
         <div class="btns hero-btns-below">
-          <a class="btn" href="#vitrina">Modellarni ko'rish</a>
+          <a class="btn" href="katalog.html">Modellarni ko'rish</a>
           <a class="btn alt" href="https://t.me/oymaoyy" target="_blank" rel="noopener noreferrer">Telegram kanalimiz ↗</a>
         </div>
       </div>
@@ -1096,20 +1101,6 @@ h1 {
         <p class="sec-kicker">Jonli Katalog</p>
         <h2>iPhone modellari</h2>
         <p class="sec-sub">Hozir sotuvda bor bo'lgan yangi modellar.</p>
-      </div>
-
-      <!-- Telegram Banner -->
-      <div class="channel-bar">
-        <div class="channel-info">
-          <div class="tg-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
-          </div>
-          <div>
-            <strong>@oymaoyy Telegram kanali</strong>
-            <span>Yangi kelgan modellar birinchi bo'lib kanalga joylanadi</span>
-          </div>
-        </div>
-        <a class="channel-btn" href="https://t.me/oymaoyy" target="_blank" rel="noopener noreferrer">Kanalga a'zo bo'lish ↗</a>
       </div>
 
       <!-- Dastlabki 4 ta telefon vitrinasi -->
@@ -1248,6 +1239,20 @@ h1 {
           <h3>Barcha viloyatlarga</h3>
           <p>O'zbekistonning barcha hududlaridan kelgan xaridorlarga bir xil shaffof shartlarda xizmat ko'rsatamiz.</p>
         </div>
+      </div>
+
+      <!-- Telegram Banner (9-rasim & 10-rasim: Barcha viloyatlardan keyin, FAQ tepasiga ko'chirildi) -->
+      <div class="channel-bar" style="margin-top: 24px; margin-bottom: 0;">
+        <div class="channel-info">
+          <div class="tg-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+          </div>
+          <div>
+            <strong>@oymaoyy Telegram kanali</strong>
+            <span>Yangi kelgan modellar birinchi bo'lib kanalga joylanadi</span>
+          </div>
+        </div>
+        <a class="channel-btn" href="https://t.me/oymaoyy" target="_blank" rel="noopener noreferrer">Kanalga a'zo bo'lish ↗</a>
       </div>
     </div>
   </section>
