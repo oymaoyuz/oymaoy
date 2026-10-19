@@ -4,10 +4,12 @@ on:
   schedule:
     # Har 30 daqiqada avtomatik ishga tushadi (UTC)
     - cron: '*/30 * * * *'
-  workflow_dispatch: # GitHub web interfeysidan qo'lda ishga tushirish tugmasi
+  workflow_dispatch: # Qo'lda ishga tushirish tugmasi
   push:
-    branches:
-      - main
+    paths:
+      - 'sync_channel.py'
+      - 'requirements.txt'
+      - '.github/workflows/**'
 
 permissions:
   contents: write
@@ -41,6 +43,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Hech qanday o'zgarish yo'q. Push qilinmadi."
           else
-            git commit -m "Auto-sync: Telegram @oymaoyy kanalidan yangilandi [skip ci]"
+            git commit -m "Auto-sync: Telegram @oymaoyy kanalidan yangilandi"
             git push
           fi
