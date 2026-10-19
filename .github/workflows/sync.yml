@@ -1,0 +1,46 @@
+name: Auto Sync Telegram Channel
+
+on:
+  schedule:
+    # Har 30 daqiqada avtomatik ishga tushadi (UTC)
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # GitHub web interfeysidan qo'lda ishga tushirish tugmasi
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repozitoriyni yuklab olish
+        uses: actions/checkout@v4
+
+      - name: Python o'rnatish
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Kutubxonalarni o'rnatish
+        run: |
+          pip install -r requirements.txt
+
+      - name: Telegram kanalni tekshirish va index.html ni yangilash
+        run: |
+          python sync_channel.py
+
+      - name: O'zgarishlarni GitHub'ga saqlash (Commit & Push)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html products_clean.json
+          if git diff --staged --quiet; then
+            echo "Hech qanday o'zgarish yo'q. Push qilinmadi."
+          else
+            git commit -m "Auto-sync: Telegram @oymaoyy kanalidan yangilandi [skip ci]"
+            git push
+          fi
