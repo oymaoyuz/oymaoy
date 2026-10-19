@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 CHANNEL_URL = "https://t.me/s/oymaoyy"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_FILE = os.path.join(BASE_DIR, "index.html")
+KATALOG_FILE = os.path.join(BASE_DIR, "katalog.html")
 CACHE_FILE = os.path.join(BASE_DIR, "products_clean.json")
 
 def fetch_channel_html():
@@ -104,6 +105,7 @@ def render_cards(available_products):
         memory = p.get('memory', '')
         battery = p.get('battery', '')
         color = p.get('color', '')
+        condition = p.get('condition', '')
         price = p.get('price', '')
         photo = p.get('photo', '') or ('https://placehold.co/600x800/001f35/fff?text=' + urllib.parse.quote(model))
 
@@ -127,8 +129,9 @@ def render_cards(available_products):
         if battery: specs_parts.append(f"{battery} batareya")
         if color: specs_parts.append(color)
         specs_line = " • ".join(specs_parts)
+        search_data = f"{model} {memory} {battery} {color} {price} {condition}".lower().replace('"', '&quot;')
 
-        card = f'''      <div class="product-card" data-cats="{cat_class}">
+        card = f'''      <div class="product-card" data-cats="{cat_class}" data-search="{search_data}">
         <div class="card-media">
           <img src="{photo}" alt="{model}" loading="lazy">
           <div class="card-badge-top">
@@ -140,7 +143,7 @@ def render_cards(available_products):
           <p class="card-specs">{specs_line}</p>
           <div class="card-footer">
             <div class="card-price">{price}</div>
-            <a class="card-action" href="https://t.me/oymaoy_admin?text={encoded_order}" target="_blank" rel="noopener">
+            <a class="card-action" href="https://t.me/oymaoy_admin?text={encoded_order}" target="_blank" rel="noopener noreferrer">
               <span>Shartini bilish</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -160,6 +163,41 @@ def update_index_html(available_products):
         html = f.read()
 
     total_cnt = len(available_products)
+    top4 = available_products[:4]
+    new_cards = render_cards(top4)
+
+    # "Barcha modellarni ko'rish (12)" tugmasini yangilash
+    html = re.sub(r"Barcha modellarni ko'rish \(\d+\)", f"Barcha modellarni ko'rish ({total_cnt})", html)
+    html = re.sub(r"barcha \d+ ta telefonni", f"barcha {total_cnt} ta telefonni", html)
+
+    # <div id="product-list" class="product-grid"> ... </div> o'rnini almashtirish
+    start_tag = '<div id="product-list" class="product-grid">'
+    end_tag = '</div>\n\n      <!-- 4-rasim: Barcha modellarni ko\'rish tugmasi -->'
+    
+    start_idx = html.find(start_tag)
+    if start_idx != -1:
+        end_idx = html.find(end_tag, start_idx)
+        if end_idx != -1:
+            html = html[:start_idx + len(start_tag)] + '\n' + new_cards + '\n      ' + html[end_idx:]
+        else:
+            # Fallback regex
+            pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- 4-rasim)'
+            html = re.sub(pattern, rf'\g<1>\n{new_cards}\n      \g<3>', html, flags=re.DOTALL)
+
+    with open(HTML_FILE, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    return True
+
+def update_katalog_html(available_products):
+    if not os.path.exists(KATALOG_FILE):
+        print(f"Xato: {KATALOG_FILE} fayli topilmadi.")
+        return False
+
+    with open(KATALOG_FILE, 'r', encoding='utf-8') as f:
+        html = f.read()
+
+    total_cnt = len(available_products)
     pro_cnt = sum(1 for p in available_products if 'pro' in p.get('model', '').lower())
     budget_cnt = 0
     for p in available_products:
@@ -172,28 +210,25 @@ def update_index_html(available_products):
     html = re.sub(r'Barcha modellar \(\d+\)', f'Barcha modellar ({total_cnt})', html)
     html = re.sub(r'Pro / Pro Max \(\d+\)', f'Pro / Pro Max ({pro_cnt})', html)
     html = re.sub(r'350\$ gacha \(\d+\)', f'350$ gacha ({budget_cnt})', html)
+    html = re.sub(r'yangilanadigan \d+ ta mavjud', f'yangilanadigan {total_cnt} ta mavjud', html)
+    html = re.sub(r'Jami: <b>\d+ ta</b>', f'Jami: <b>{total_cnt} ta</b>', html)
 
     # Mahsulot kartochkalarini yangilash
-    new_cards = render_cards(available_products)
+    all_cards = render_cards(available_products)
     
-    # <div id="product-list" class="product-grid"> ... </div> o'rnini almashtirish
-    pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*</div>\s*</section>)'
-    replacement = rf'\g<1>\n\n{new_cards}\n\n      \g<3>'
-    
-    new_html = re.sub(pattern, replacement, html, flags=re.DOTALL)
-    
-    if new_html == html:
-        # Alternativ qidirish (agar oraliq bo'shliqlar boshqacha bo'lsa)
-        start_tag = '<div id="product-list" class="product-grid">'
-        end_tag = '</div>\n    </div>\n  </section>'
-        start_idx = html.find(start_tag)
-        if start_idx != -1:
-            end_idx = html.find(end_tag, start_idx)
-            if end_idx != -1:
-                new_html = html[:start_idx + len(start_tag)] + '\n\n' + new_cards + '\n\n      ' + html[end_idx:]
+    start_tag = '<div id="product-list" class="product-grid">'
+    end_tag = '</div>\n\n      <!-- Empty State when nothing found -->'
+    start_idx = html.find(start_tag)
+    if start_idx != -1:
+        end_idx = html.find(end_tag, start_idx)
+        if end_idx != -1:
+            html = html[:start_idx + len(start_tag)] + '\n' + all_cards + '\n      ' + html[end_idx:]
+        else:
+            pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- Empty State)'
+            html = re.sub(pattern, rf'\g<1>\n{all_cards}\n      \g<3>', html, flags=re.DOTALL)
 
-    with open(HTML_FILE, 'w', encoding='utf-8') as f:
-        f.write(new_html)
+    with open(KATALOG_FILE, 'w', encoding='utf-8') as f:
+        f.write(html)
 
     return True
 
@@ -235,15 +270,16 @@ def sync():
     old_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in old_data]
     new_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in products]
 
-    if old_keys == new_keys and os.path.exists(HTML_FILE):
+    if old_keys == new_keys and os.path.exists(HTML_FILE) and os.path.exists(KATALOG_FILE):
         print("Hech qanday o'zgarish yo'q. Sayt eng so'nggi holatda turibdi.")
         return False
 
-    print("Yangi ma'lumotlar aniqlandi! index.html yangilanmoqda...")
+    print("Yangi ma'lumotlar aniqlandi! index.html va katalog.html yangilanmoqda...")
     with open(CACHE_FILE, 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=2)
 
     update_index_html(available)
+    update_katalog_html(available)
     print(f"Muvaffaqiyatli yangilandi! {len(available)} ta mavjud telefon saytga joylandi.")
     return True
 
