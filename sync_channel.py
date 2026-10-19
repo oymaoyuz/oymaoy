@@ -1,0 +1,242 @@
+"""
+OYMAOY.UZ — Telegram Channel Real-time Sync Script
+GitHub Actions yoki lokal kompyuterda avtomatik ishlaydi.
+Kanal: https://t.me/s/oymaoyy
+"""
+
+import os
+import re
+import json
+import urllib.request
+import urllib.parse
+from bs4 import BeautifulSoup
+
+CHANNEL_URL = "https://t.me/s/oymaoyy"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+HTML_FILE = os.path.join(BASE_DIR, "index.html")
+CACHE_FILE = os.path.join(BASE_DIR, "products_clean.json")
+
+def fetch_channel_html():
+    req = urllib.request.Request(
+        CHANNEL_URL,
+        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    )
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        return resp.read().decode("utf-8")
+
+def parse_posts(html):
+    soup = BeautifulSoup(html, "html.parser")
+    messages = soup.find_all("div", class_="tgme_widget_message")
+    products = []
+
+    for msg in messages:
+        text_elem = msg.find("div", class_="tgme_widget_message_text")
+        if not text_elem:
+            continue
+        text = text_elem.get_text("\n").strip()
+        if not text:
+            continue
+
+        lines = [l.strip() for l in text.split("\n") if l.strip()]
+        first_line = lines[0] if lines else ""
+
+        # Model
+        model_match = re.search(r'(iPhone\s+[^\n,]+|Samsung\s+[^\n,]+|Redmi\s+[^\n,]+|poco\s+[^\n,]+)', text, re.I)
+        model = model_match.group(1).strip() if model_match else first_line[:30]
+
+        # Xotira
+        mem_match = re.search(r'(\d+\s*(?:GB|TB))', text, re.I)
+        memory = mem_match.group(1).upper() if mem_match else ""
+
+        # Batareya
+        bat_match = re.search(r'(\d+)\s*%', text)
+        battery = f"{bat_match.group(1)}%" if bat_match else ""
+
+        # Rang
+        color_match = re.search(r'rangi?\s*[:\-]?\s*([a-zA-Zа-яА-ЯёЁ\s]+)', text, re.I)
+        color = color_match.group(1).strip() if color_match else ""
+
+        # Holati
+        cond_match = re.search(r'holati?\s*[:\-]?\s*([^\n,]+)', text, re.I)
+        condition = cond_match.group(1).strip() if cond_match else ""
+
+        # Narx
+        price_match = re.search(r'(\d+[\d\s.,]*\s*(?:\$|usd|dollar))', text, re.I)
+        if not price_match:
+            price_match = re.search(r'(?:narxi|narx)\s*[:\-]?\s*(\d+[\d\s.,]*\$?)', text, re.I)
+        price = price_match.group(1).strip() if price_match else ""
+        if price and not price.endswith('$') and not 'usd' in price.lower():
+            price += '$'
+
+        # Sotilganlik holati (SOTILDI yoki ❌)
+        is_sold = bool(re.search(r'(sotildi|sold|продан)', text, re.I))
+
+        # Rasm
+        photo = ""
+        photo_elem = msg.find("a", class_="tgme_widget_message_photo_wrap")
+        if photo_elem and photo_elem.get("style"):
+            style = photo_elem["style"]
+            url_match = re.search(r"background-image:url\('([^']+)'\)", style)
+            if url_match:
+                photo = url_match.group(1)
+
+        msg_id = msg.get("data-post", "")
+
+        products.append({
+            "id": msg_id,
+            "model": model,
+            "memory": memory,
+            "battery": battery,
+            "color": color,
+            "condition": condition,
+            "price": price,
+            "photo": photo,
+            "is_sold": is_sold,
+            "raw_text": text
+        })
+
+    return products
+
+def render_cards(available_products):
+    cards_html = []
+    for p in available_products:
+        model = p.get('model', 'iPhone')
+        memory = p.get('memory', '')
+        battery = p.get('battery', '')
+        color = p.get('color', '')
+        price = p.get('price', '')
+        photo = p.get('photo', '') or ('https://placehold.co/600x800/001f35/fff?text=' + urllib.parse.quote(model))
+
+        order_text = f"Salom, oymaoy.uz saytidan ko'rdim. {model} ({memory}, narxi: {price}) bo'yicha ma'lumot olmoqchiman."
+        encoded_order = urllib.parse.quote(order_text)
+
+        cats = ['available']
+        if 'pro' in model.lower():
+            cats.append('promax')
+        price_num = 0
+        try:
+            price_num = float(re.sub(r'[^0-9.]', '', price))
+        except:
+            pass
+        if price_num > 0 and price_num <= 350:
+            cats.append('budget')
+        cat_class = ' '.join(cats)
+
+        specs_parts = []
+        if memory: specs_parts.append(memory)
+        if battery: specs_parts.append(f"{battery} batareya")
+        if color: specs_parts.append(color)
+        specs_line = " • ".join(specs_parts)
+
+        card = f'''      <div class="product-card" data-cats="{cat_class}">
+        <div class="card-media">
+          <img src="{photo}" alt="{model}" loading="lazy">
+          <div class="card-badge-top">
+            <span class="status-dot">● Mavjud</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{model}</h3>
+          <p class="card-specs">{specs_line}</p>
+          <div class="card-footer">
+            <div class="card-price">{price}</div>
+            <a class="card-action" href="https://t.me/oymaoy_admin?text={encoded_order}" target="_blank" rel="noopener">
+              <span>Shartini bilish</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>'''
+        cards_html.append(card)
+
+    return "\n\n".join(cards_html)
+
+def update_index_html(available_products):
+    if not os.path.exists(HTML_FILE):
+        print(f"Xato: {HTML_FILE} fayli topilmadi.")
+        return False
+
+    with open(HTML_FILE, 'r', encoding='utf-8') as f:
+        html = f.read()
+
+    total_cnt = len(available_products)
+    pro_cnt = sum(1 for p in available_products if 'pro' in p.get('model', '').lower())
+    budget_cnt = 0
+    for p in available_products:
+        try:
+            pr = float(re.sub(r'[^0-9.]', '', p.get('price', '')))
+            if pr > 0 and pr <= 350: budget_cnt += 1
+        except: pass
+
+    # Tab hisoblagichlarini yangilash
+    html = re.sub(r'Barcha modellar \(\d+\)', f'Barcha modellar ({total_cnt})', html)
+    html = re.sub(r'Pro / Pro Max \(\d+\)', f'Pro / Pro Max ({pro_cnt})', html)
+    html = re.sub(r'350\$ gacha \(\d+\)', f'350$ gacha ({budget_cnt})', html)
+
+    # Mahsulot kartochkalarini yangilash
+    new_cards = render_cards(available_products)
+    
+    # <div id="product-list" class="product-grid"> ... </div> o'rnini almashtirish
+    pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*</div>\s*</section>)'
+    replacement = rf'\g<1>\n\n{new_cards}\n\n      \g<3>'
+    
+    new_html = re.sub(pattern, replacement, html, flags=re.DOTALL)
+    
+    if new_html == html:
+        # Alternativ qidirish (agar oraliq bo'shliqlar boshqacha bo'lsa)
+        start_tag = '<div id="product-list" class="product-grid">'
+        end_tag = '</div>\n    </div>\n  </section>'
+        start_idx = html.find(start_tag)
+        if start_idx != -1:
+            end_idx = html.find(end_tag, start_idx)
+            if end_idx != -1:
+                new_html = html[:start_idx + len(start_tag)] + '\n\n' + new_cards + '\n\n      ' + html[end_idx:]
+
+    with open(HTML_FILE, 'w', encoding='utf-8') as f:
+        f.write(new_html)
+
+    return True
+
+def sync():
+    print("Telegram kanal (@oymaoyy) tekshirilmoqda...")
+    try:
+        channel_html = fetch_channel_html()
+        products = parse_posts(channel_html)
+    except Exception as e:
+        print(f"Xatolik yuz berdi: {e}")
+        return False
+
+    if not products:
+        print("Hech qanday post topilmadi.")
+        return False
+
+    # Faqat sotuvda mavjud telefonlar
+    available = [p for p in products if not p.get('is_sold')]
+    print(f"Jami topilgan e'lonlar: {len(products)} ta. Sotuvda mavjud: {len(available)} ta.")
+
+    # Cache tekshiruvi
+    old_data = []
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+        except:
+            pass
+
+    old_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in old_data]
+    new_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in products]
+
+    if old_keys == new_keys and os.path.exists(HTML_FILE):
+        print("Hech qanday o'zgarish yo'q. Sayt eng so'nggi holatda turibdi.")
+        return False
+
+    print("Yangi ma'lumotlar aniqlandi! index.html yangilanmoqda...")
+    with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(products, f, ensure_ascii=False, indent=2)
+
+    update_index_html(available)
+    print(f"Muvaffaqiyatli yangilandi! {len(available)} ta mavjud telefon saytga joylandi.")
+    return True
+
+if __name__ == "__main__":
+    sync()
