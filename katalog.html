@@ -697,7 +697,7 @@ footer .wrap {
       <div class="sec-head" style="text-align:center; margin-bottom:28px;">
         <p class="sec-kicker">Jonli Katalog</p>
         <h2>Barcha telefon modellari</h2>
-        <p class="sec-sub">Telegram kanalimizdan avtomatik yangilanadigan 30 ta mavjud telefon.</p>
+        <p class="sec-sub">Telegram kanalimizdan avtomatik yangilanadigan 31 ta mavjud telefon.</p>
       </div>
 
       <!-- 4-rasim: Qidiruv tizimi -->
@@ -707,15 +707,15 @@ footer .wrap {
           <input type="text" id="katalog-search-input" class="search-input" placeholder="Model, xotira yoki narx bo'yicha qidirish (masalan: 14 Pro, 256, 550$)..." oninput="handleCatalogSearch(this.value)">
           <button type="button" id="search-clear-btn" class="search-clear" onclick="clearCatalogSearch()">✕</button>
         </div>
-        <div id="search-count-label" class="search-count-label">Jami: <b>30 ta</b> telefon ko'rsatilmoqda</div>
+        <div id="search-count-label" class="search-count-label">Jami: <b>31 ta</b> telefon ko'rsatilmoqda</div>
       </div>
 
       <!-- Categories Tabs -->
       <div class="toolbar" style="text-align:center; margin-top:20px;">
         <div class="tabs">
-          <button class="tab active" data-tab="all" onclick="filterKatalogTab('all', this)">Barcha modellar (30)</button>
+          <button class="tab active" data-tab="all" onclick="filterKatalogTab('all', this)">Barcha modellar (31)</button>
           <button class="tab" data-tab="promax" onclick="filterKatalogTab('promax', this)">Pro / Pro Max (21)</button>
-          <button class="tab" data-tab="budget" onclick="filterKatalogTab('budget', this)">350$ gacha (8)</button>
+          <button class="tab" data-tab="budget" onclick="filterKatalogTab('budget', this)">350$ gacha (9)</button>
         </div>
       </div>
     </div>
@@ -725,6 +725,27 @@ footer .wrap {
   <section id="katalog-grid-top" style="padding-top: 10px;">
     <div class="wrap">
       <div id="product-list" class="product-grid">
+      <div class="product-card" data-cats="available budget" data-search="iphone 13 128 gb 86% pink 340$">
+        <div class="product-img-box">
+          <img src="images/350.jpg" alt="iPhone 13" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x800/00182a/2997ff?text=iPhone%2013';">
+          <span class="badge badge-sale">Mavjud</span>
+        </div>
+        <div class="product-body">
+          <div class="product-title">iPhone 13</div>
+          <div class="product-specs">
+            <span class="spec-tag">128 GB</span>
+            <span class="spec-tag">🔋 86%</span>
+            <span class="spec-tag">Pink</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="price-val">340$</div>
+              <div class="price-sub">Muddatli to'lov mavjud</div>
+            </div>
+            <a href="https://t.me/oymaoy_admin?text=Salom%2C%20oymaoy.uz%20saytidan%20ko%27rdim.%20iPhone%2013%20%28128%20GB%2C%20narxi%3A%20340%24%29%20bo%27yicha%20ma%27lumot%20olmoqchiman." target="_blank" class="buy-btn">Band qilish</a>
+          </div>
+        </div>
+      </div>
       <div class="product-card" data-cats="available promax" data-search="iphone 16 pro max 256 gb 91% qora 880$">
         <div class="product-img-box">
           <img src="images/349.jpg" alt="iPhone 16 Pro Max" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x800/00182a/2997ff?text=iPhone%2016%20Pro%20Max';">
@@ -1424,25 +1445,6 @@ function clearCatalogSearch() {
   applyFilters();
 }
 
-
-function renderPaginationButtons(totalPages) {
-  var paginationEl = document.getElementById('katalog-pagination');
-  if (!paginationEl) return;
-  if (totalPages <= 1) {
-    paginationEl.style.display = 'none';
-    paginationEl.innerHTML = '';
-    return;
-  }
-  paginationEl.style.display = 'flex';
-  var pagHtml = '';
-  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage - 1) + ')"' + (currentPage === 1 ? ' disabled' : '') + '>← Oldingi</button>';
-  for (var p = 1; p <= totalPages; p++) {
-    pagHtml += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
-  }
-  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage + 1) + ')"' + (currentPage === totalPages ? ' disabled' : '') + '>Keyingi →</button>';
-  paginationEl.innerHTML = pagHtml;
-}
-
 function goToPage(page) {
   currentPage = page;
   applyFilters();
@@ -1452,19 +1454,80 @@ function goToPage(page) {
   }
 }
 
+function renderPagination(totalPages) {
+  var paginationEl = document.getElementById('katalog-pagination');
+  if (!paginationEl) return;
+
+  if (totalPages <= 1) {
+    paginationEl.style.display = 'none';
+    paginationEl.innerHTML = '';
+    return;
+  }
+
+  paginationEl.style.display = 'flex';
+  var html = '';
+
+  // Oldingi sahifa tugmasi
+  if (currentPage > 1) {
+    html += '<button class="page-btn" onclick="goToPage(' + (currentPage - 1) + ')">← Oldingi</button>';
+  } else {
+    html += '<button class="page-btn" disabled>← Oldingi</button>';
+  }
+
+  // Sahifa raqamlari (1 2 3 ... formatida)
+  var maxButtons = 5;
+  var startPage = Math.max(1, currentPage - 2);
+  var endPage = Math.min(totalPages, startPage + maxButtons - 1);
+  if (endPage - startPage < maxButtons - 1) {
+    startPage = Math.max(1, endPage - maxButtons + 1);
+  }
+
+  if (startPage > 1) {
+    html += '<button class="page-btn" onclick="goToPage(1)">1</button>';
+    if (startPage > 2) {
+      html += '<span style="color:var(--mute);padding:0 4px;display:flex;align-items:center;">...</span>';
+    }
+  }
+
+  for (var p = startPage; p <= endPage; p++) {
+    if (p === currentPage) {
+      html += '<button class="page-btn active">' + p + '</button>';
+    } else {
+      html += '<button class="page-btn" onclick="goToPage(' + p + ')">' + p + '</button>';
+    }
+  }
+
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      html += '<span style="color:var(--mute);padding:0 4px;display:flex;align-items:center;">...</span>';
+    }
+    html += '<button class="page-btn" onclick="goToPage(' + totalPages + ')">' + totalPages + '</button>';
+  }
+
+  // Keyingi sahifa tugmasi
+  if (currentPage < totalPages) {
+    html += '<button class="page-btn" onclick="goToPage(' + (currentPage + 1) + ')">Keyingi →</button>';
+  } else {
+    html += '<button class="page-btn" disabled>Keyingi →</button>';
+  }
+
+  paginationEl.innerHTML = html;
+}
+
 function applyFilters() {
   var query = document.getElementById('katalog-search-input').value.toLowerCase().trim();
   var cards = Array.from(document.querySelectorAll('.product-grid .product-card'));
   
   var matchingCards = [];
+  var searchWords = query.split(/\s+/).filter(Boolean);
+
   cards.forEach(function(card) {
     var cats = card.getAttribute('data-cats') || '';
     var searchData = card.getAttribute('data-search') || '';
 
     var matchesTab = (activeTab === 'all' || cats.indexOf(activeTab) !== -1);
-    var searchWords = query.split(/\s+/).filter(Boolean);
-    var matchesSearch = (searchWords.length === 0 || searchWords.every(function(word) {
-      return searchData.indexOf(word) !== -1;
+    var matchesSearch = (searchWords.length === 0 || searchWords.every(function(w) {
+      return searchData.indexOf(w) !== -1;
     }));
 
     if (matchesTab && matchesSearch) {
@@ -1478,12 +1541,12 @@ function applyFilters() {
     currentPage = 1;
   }
 
-  // 1. Hide all cards first
+  // 1. Barcha kartochkalarni yashirish
   cards.forEach(function(card) {
     card.style.display = 'none';
   });
 
-  // 2. Slice and show only current page items
+  // 2. Faqat joriy sahifadagi 12 ta kartochkani ko'rsatish
   var startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   var endIndex = startIndex + ITEMS_PER_PAGE;
   var pageCards = matchingCards.slice(startIndex, endIndex);
@@ -1494,53 +1557,28 @@ function applyFilters() {
 
   var countLabel = document.getElementById('search-count-label');
   var emptyState = document.getElementById('search-empty-state');
-  var paginationEl = document.getElementById('katalog-pagination');
 
   if (totalMatched === 0) {
-    emptyState.style.display = 'block';
-    countLabel.innerHTML = 'Hech narsa topilmadi';
-    if (paginationEl) paginationEl.style.display = 'none';
+    if (emptyState) emptyState.style.display = 'block';
+    if (countLabel) countLabel.innerHTML = 'Hech narsa topilmadi';
+    renderPagination(0);
     return;
   } else {
-    emptyState.style.display = 'none';
+    if (emptyState) emptyState.style.display = 'none';
     var startItem = startIndex + 1;
     var endItem = Math.min(endIndex, totalMatched);
-    if (totalMatched <= ITEMS_PER_PAGE) {
-      countLabel.innerHTML = "Jami: <b>" + totalMatched + " ta</b> telefon ko'rsatilmoqda";
-    } else {
-      countLabel.innerHTML = 'Ko'rsatilmoqda: <b>' + startItem + '–' + endItem + '</b> / jami <b>' + totalMatched + ' ta</b> telefon (Sahifa: <b>' + currentPage + '/' + totalPages + '</b>)';
+    if (countLabel) {
+      if (totalMatched <= ITEMS_PER_PAGE) {
+        countLabel.innerHTML = "Jami: <b>" + totalMatched + " ta</b> telefon ko‘rsatilmoqda";
+      } else {
+        countLabel.innerHTML = "Ko‘rsatilmoqda: <b>" + startItem + " – " + endItem + "</b> / jami <b>" + totalMatched + " ta</b> telefon (Sahifa: <b>" + currentPage + "/" + totalPages + "</b>)";
+      }
     }
-  }
-
-  // 3. Render pagination controls
-  if (!paginationEl) return;
-  if (totalPages <= 1) {
-    paginationEl.style.display = 'none';
-    paginationEl.innerHTML = '';
-  } else {
-    paginationEl.style.display = 'flex';
-    var html = '';
-
-    var prevDisabled = (currentPage === 1) ? ' disabled' : '';
-    html += '<button type="button" class="page-btn"' + prevDisabled + ' onclick="goToPage(' + (currentPage - 1) + ')" aria-label="Oldingi sahifa">‹ Oldingi</button>';
-
-    for (var p = 1; p <= totalPages; p++) {
-      var activeClass = (p === currentPage) ? ' active' : '';
-      html += '<button type="button" class="page-btn' + activeClass + '" onclick="goToPage(' + p + ')">' + p + '</button>';
-    }
-
-    var nextDisabled = (currentPage === totalPages) ? ' disabled' : '';
-    html += '<button type="button" class="page-btn"' + nextDisabled + ' onclick="goToPage(' + (currentPage + 1) + ')" aria-label="Keyingi sahifa">Keyingi ›</button>';
-
-    paginationEl.innerHTML = html;
+    renderPagination(totalPages);
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  applyFilters();
-});
-renderPaginationButtons(totalPages);
-}
+// Sahifa yuklanganda ishga tushirish
 applyFilters();
 </script>
 
