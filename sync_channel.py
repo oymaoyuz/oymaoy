@@ -44,23 +44,30 @@ def download_image(photo_url, msg_id):
     if os.path.exists(file_path) and os.path.getsize(file_path) > 2000:
         return f"images/{safe_name}"
 
-    try:
-        req = urllib.request.Request(
-            photo_url,
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-        )
-        with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
-            data = r.read()
-            if len(data) > 1000:
-                with open(file_path, "wb") as f:
-                    f.write(data)
-                print(f"Rasm yuklandi: images/{safe_name} ({len(data)} bayt)")
-                return f"images/{safe_name}"
-    except Exception as e:
-        print(f"Rasm yuklashda xatolik ({safe_name}): {e}")
+    import time
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(
+                photo_url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Referer": "https://t.me/s/oymaoyy"
+                }
+            )
+            with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
+                data = r.read()
+                if len(data) > 1000:
+                    with open(file_path, "wb") as f:
+                        f.write(data)
+                    print(f"Rasm yuklandi: images/{safe_name} ({len(data)} bayt)")
+                    return f"images/{safe_name}"
+        except Exception as e:
+            if attempt == 2:
+                print(f"Rasm yuklashda xatolik ({safe_name}): {e}")
+            time.sleep(1)
 
     # Agar yuklab bo'lmasa lekin eski fayl bor bo'lsa
-    if os.path.exists(file_path):
+    if os.path.exists(file_path) and os.path.getsize(file_path) > 500:
         return f"images/{safe_name}"
     return photo_url
 
@@ -98,20 +105,22 @@ def parse_posts(html):
 
         # Holati
         cond_match = re.search(r'holati?\s*[:\-]?\s*([^\n,]+)', text, re.I)
-        condition = cond_match.group(1).strip() if cond_match else ""
+        condition = cond_match.group(1).strip() if cond_match else "A'lo"
 
         # Narx
-        price_match = re.search(r'(\d+[\d\s.,]*\s*(?:\$|usd|dollar))', text, re.I)
+        price_match = re.search(r'(\d+[\d\s]*\s*(?:\$|usd|so[\'’`]?m))', text, re.I)
         if not price_match:
-            price_match = re.search(r'(?:narxi|narx)\s*[:\-]?\s*(\d+[\d\s.,]*\$?)', text, re.I)
+            price_match = re.search(r'narxi?\s*[:\-]?\s*(\d+[\d\s]*\$?)', text, re.I)
         price = price_match.group(1).strip() if price_match else ""
-        if price and not price.endswith('$') and not 'usd' in price.lower():
-            price += '$'
 
-        # Sotilganlik holati (SOTILDI yoki ❌)
-        is_sold = bool(re.search(r'(sotildi|sold|проdan)', text, re.I))
+        # Sotilganlik
+        is_sold = bool(re.search(r'(sotildi|baraka|❌|🔴)', text, re.I))
 
-        # Rasm URL
+        # ID
+        raw_id = msg.get("data-post", "")
+        msg_id = raw_id.split("/")[-1] if "/" in raw_id else raw_id
+
+        # Rasm
         photo = ""
         photo_elem = msg.find("a", class_="tgme_widget_message_photo_wrap")
         if photo_elem and photo_elem.get("style"):
@@ -120,9 +129,7 @@ def parse_posts(html):
             if url_match:
                 photo = url_match.group(1)
 
-        msg_id = msg.get("data-post", "")
-
-        # Rasmni lokal images/ papkasiga yuklab olish
+        # Rasmni lokal images/ papkasiga yuklab olish (Referer bilan xatosiz yuklanadi)
         local_photo = download_image(photo, msg_id) if photo and not is_sold else ""
 
         products.append({
@@ -133,9 +140,9 @@ def parse_posts(html):
             "color": color,
             "condition": condition,
             "price": price,
+            "is_sold": is_sold,
             "photo": photo,
             "local_photo": local_photo,
-            "is_sold": is_sold,
             "raw_text": text
         })
 
@@ -160,44 +167,39 @@ def render_cards(available_products):
         cats = ['available']
         if 'pro' in model.lower():
             cats.append('promax')
-        price_num = 0
         try:
-            price_num = float(re.sub(r'[^0-9.]', '', price))
+            pr = float(re.sub(r'[^0-9.]', '', price))
+            if pr > 0 and pr <= 350:
+                cats.append('budget')
         except:
             pass
-        if price_num > 0 and price_num <= 350:
-            cats.append('budget')
-        cat_class = ' '.join(cats)
 
-        specs_parts = []
-        if memory: specs_parts.append(memory)
-        if battery: specs_parts.append(f"{battery} batareya")
-        if color: specs_parts.append(color)
-        specs_line = " • ".join(specs_parts)
-        search_data = f"{model} {memory} {battery} {color} {price} {condition}".lower().replace('"', '&quot;')
+        search_str = f"{model} {memory} {battery} {color} {price}".lower()
 
-        card = f'''      <div class="product-card" data-cats="{cat_class}" data-search="{search_data}">
-        <div class="card-media">
+        card = f'''      <div class="product-card" data-cats="{' '.join(cats)}" data-search="{search_str}">
+        <div class="product-img-box">
           <img src="{photo}" alt="{model}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x800/00182a/2997ff?text={urllib.parse.quote(model)}';">
-          <div class="card-badge-top">
-            <span class="status-dot">● Mavjud</span>
-          </div>
+          <span class="badge badge-sale">Mavjud</span>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">{model}</h3>
-          <p class="card-specs">{specs_line}</p>
-          <div class="card-footer">
-            <div class="card-price">{price}</div>
-            <a class="card-action" href="https://t.me/oymaoy_admin?text={encoded_order}" target="_blank" rel="noopener noreferrer">
-              <span>Shartini bilish</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <div class="product-body">
+          <div class="product-title">{model}</div>
+          <div class="product-specs">
+            <span class="spec-tag">{memory or "Asl"}</span>
+            <span class="spec-tag">🔋 {battery or "100%"}</span>
+            <span class="spec-tag">{color or "Titanium"}</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="price-val">{price}</div>
+              <div class="price-sub">Muddatli to'lov mavjud</div>
+            </div>
+            <a href="https://t.me/oymaoy_admin?text={encoded_order}" target="_blank" class="buy-btn">Band qilish</a>
           </div>
         </div>
       </div>'''
         cards_html.append(card)
 
-    return "\n\n".join(cards_html)
+    return "\n".join(cards_html)
 
 def update_index_html(available_products):
     if not os.path.exists(HTML_FILE):
@@ -207,15 +209,8 @@ def update_index_html(available_products):
     with open(HTML_FILE, 'r', encoding='utf-8') as f:
         html = f.read()
 
-    total_cnt = len(available_products)
-    top4 = available_products[:4]
-    new_cards = render_cards(top4)
-
-    # "Barcha modellarni ko'rish (12)" tugmasini yangilash
-    html = re.sub(r"Barcha modellarni ko'rish \(\d+\)", f"Barcha modellarni ko'rish ({total_cnt})", html)
-    html = re.sub(r"barcha \d+ ta telefonni", f"barcha {total_cnt} ta telefonni", html)
-
-    # <div id="product-list" class="product-grid"> ... </div> o'rnini almashtirish
+    new_cards = render_cards(available_products[:6])
+    
     start_tag = '<div id="product-list" class="product-grid">'
     end_tag = '</div>\n\n      <!-- 4-rasim: Barcha modellarni ko\'rish tugmasi -->'
     
@@ -257,6 +252,19 @@ def update_katalog_html(available_products):
     html = re.sub(r'350\$ gacha \(\d+\)', f'350$ gacha ({budget_cnt})', html)
     html = re.sub(r'yangilanadigan \d+ ta mavjud', f'yangilanadigan {total_cnt} ta mavjud', html)
     html = re.sub(r'Jami: <b>\d+ ta</b>', f'Jami: <b>{total_cnt} ta</b>', html)
+
+    # JavaScript sintaksis xatolarini to'g'irlash (Uzbek apostrofi sababli)
+    html = html.replace("countLabel.innerHTML = 'Jami: <b>' + totalMatched + ' ta</b> telefon ko'rsatilmoqda';", 'countLabel.innerHTML = "Jami: <b>" + totalMatched + " ta</b> telefon ko\'rsatilmoqda";')
+    html = html.replace("countLabel.innerHTML = 'Ko'rsatilmoqda: <b>' + startItem + '–' + endItem + '</b> / jami <b>' + totalMatched + ' ta</b>';", 'countLabel.innerHTML = "Ko\'rsatilmoqda: <b>" + startItem + " – " + endItem + "</b> / jami <b>" + totalMatched + " ta</b>";')
+
+    # Qidiruv algoritmini ko'p so'zli (multi-word) qidiruvga aylantirish
+    old_search = "var matchesSearch = (query === '' || searchData.indexOf(query) !== -1);"
+    new_search = """var searchWords = query.split(/\\s+/).filter(Boolean);
+    var matchesSearch = (searchWords.length === 0 || searchWords.every(function(word) {
+      return searchData.indexOf(word) !== -1;
+    }));"""
+    if old_search in html:
+        html = html.replace(old_search, new_search)
 
     # Mahsulot kartochkalarini yangilash
     all_cards = render_cards(available_products)
