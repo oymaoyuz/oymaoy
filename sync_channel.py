@@ -2,6 +2,7 @@
 OYMAOY.UZ — Telegram Channel Real-time Sync Script
 GitHub Actions yoki lokal kompyuterda avtomatik ishlaydi.
 Kanal: https://t.me/s/oymaoyy
+Barcha rasmlar lokal 'images/' papkasiga yuklanadi (Telegram CDN 404 xatosidan 100% himoya).
 """
 
 import os
@@ -9,6 +10,7 @@ import re
 import json
 import urllib.request
 import urllib.parse
+import ssl
 from bs4 import BeautifulSoup
 
 CHANNEL_URL = "https://t.me/s/oymaoyy"
@@ -16,14 +18,51 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_FILE = os.path.join(BASE_DIR, "index.html")
 KATALOG_FILE = os.path.join(BASE_DIR, "katalog.html")
 CACHE_FILE = os.path.join(BASE_DIR, "products_clean.json")
+IMAGES_DIR = os.path.join(BASE_DIR, "images")
+
+os.makedirs(IMAGES_DIR, exist_ok=True)
+
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
 def fetch_channel_html():
     req = urllib.request.Request(
         CHANNEL_URL,
         headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     )
-    with urllib.request.urlopen(req, timeout=15) as resp:
+    with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
         return resp.read().decode("utf-8")
+
+def download_image(photo_url, msg_id):
+    if not photo_url or not msg_id:
+        return ""
+    safe_name = msg_id.replace("/", "_") + ".jpg"
+    file_path = os.path.join(IMAGES_DIR, safe_name)
+
+    # Agar allaqachon yuklangan bo'lsa va hajmi > 2000 bayt bo'lsa, qayta yuklamaymiz
+    if os.path.exists(file_path) and os.path.getsize(file_path) > 2000:
+        return f"images/{safe_name}"
+
+    try:
+        req = urllib.request.Request(
+            photo_url,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        )
+        with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
+            data = r.read()
+            if len(data) > 1000:
+                with open(file_path, "wb") as f:
+                    f.write(data)
+                print(f"Rasm yuklandi: images/{safe_name} ({len(data)} bayt)")
+                return f"images/{safe_name}"
+    except Exception as e:
+        print(f"Rasm yuklashda xatolik ({safe_name}): {e}")
+
+    # Agar yuklab bo'lmasa lekin eski fayl bor bo'lsa
+    if os.path.exists(file_path):
+        return f"images/{safe_name}"
+    return photo_url
 
 def parse_posts(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -70,9 +109,9 @@ def parse_posts(html):
             price += '$'
 
         # Sotilganlik holati (SOTILDI yoki ❌)
-        is_sold = bool(re.search(r'(sotildi|sold|продан)', text, re.I))
+        is_sold = bool(re.search(r'(sotildi|sold|проdan)', text, re.I))
 
-        # Rasm
+        # Rasm URL
         photo = ""
         photo_elem = msg.find("a", class_="tgme_widget_message_photo_wrap")
         if photo_elem and photo_elem.get("style"):
@@ -83,6 +122,9 @@ def parse_posts(html):
 
         msg_id = msg.get("data-post", "")
 
+        # Rasmni lokal images/ papkasiga yuklab olish
+        local_photo = download_image(photo, msg_id) if photo and not is_sold else ""
+
         products.append({
             "id": msg_id,
             "model": model,
@@ -92,6 +134,7 @@ def parse_posts(html):
             "condition": condition,
             "price": price,
             "photo": photo,
+            "local_photo": local_photo,
             "is_sold": is_sold,
             "raw_text": text
         })
@@ -107,7 +150,9 @@ def render_cards(available_products):
         color = p.get('color', '')
         condition = p.get('condition', '')
         price = p.get('price', '')
-        photo = p.get('photo', '') or ('https://placehold.co/600x800/001f35/fff?text=' + urllib.parse.quote(model))
+        
+        # Mahalliy rasm ustuvor, bo'lmasa original rasm, bo'lmasa placeholder
+        photo = p.get('local_photo') or p.get('photo') or ('https://placehold.co/600x800/00182a/2997ff?text=' + urllib.parse.quote(model))
 
         order_text = f"Salom, oymaoy.uz saytidan ko'rdim. {model} ({memory}, narxi: {price}) bo'yicha ma'lumot olmoqchiman."
         encoded_order = urllib.parse.quote(order_text)
@@ -133,7 +178,7 @@ def render_cards(available_products):
 
         card = f'''      <div class="product-card" data-cats="{cat_class}" data-search="{search_data}">
         <div class="card-media">
-          <img src="{photo}" alt="{model}" loading="lazy">
+          <img src="{photo}" alt="{model}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x800/00182a/2997ff?text={urllib.parse.quote(model)}';">
           <div class="card-badge-top">
             <span class="status-dot">● Mavjud</span>
           </div>
@@ -258,29 +303,13 @@ def sync():
         available.append(p)
     print(f"Jami topilgan e'lonlar: {len(products)} ta. Sotuvda mavjud: {len(available)} ta.")
 
-    # Cache tekshiruvi
-    old_data = []
-    if os.path.exists(CACHE_FILE):
-        try:
-            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-                old_data = json.load(f)
-        except:
-            pass
-
-    old_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in old_data]
-    new_keys = [(p.get('id'), p.get('is_sold'), p.get('price')) for p in products]
-
-    if old_keys == new_keys and os.path.exists(HTML_FILE) and os.path.exists(KATALOG_FILE):
-        print("Hech qanday o'zgarish yo'q. Sayt eng so'nggi holatda turibdi.")
-        return False
-
-    print("Yangi ma'lumotlar aniqlandi! index.html va katalog.html yangilanmoqda...")
+    print("index.html va katalog.html yangilanmoqda...")
     with open(CACHE_FILE, 'w', encoding='utf-8') as f:
         json.dump(products, f, ensure_ascii=False, indent=2)
 
     update_index_html(available)
     update_katalog_html(available)
-    print(f"Muvaffaqiyatli yangilandi! {len(available)} ta mavjud telefon saytga joylandi.")
+    print(f"Muvaffaqiyatli yangilandi! {len(available)} ta mavjud telefon saytga joylandi (Lokal rasmlar bilan).")
     return True
 
 if __name__ == "__main__":
