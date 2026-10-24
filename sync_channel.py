@@ -301,34 +301,6 @@ def update_katalog_html(available_products):
             pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- (?:Pagination|Empty))'
             html = re.sub(pattern, rf'\g<1>\n{all_cards}\n      \g<3>', html, flags=re.DOTALL)
 
-    # Paginatsiya tugmalarini dinamik render qilish skripti mavjudligini ta'minlash
-    if "function renderPaginationButtons" not in html:
-        # Paginatsiya yaratish funksiyasini qo'shish
-        pag_script = """
-function renderPaginationButtons(totalPages) {
-  var paginationEl = document.getElementById('katalog-pagination');
-  if (!paginationEl) return;
-  if (totalPages <= 1) {
-    paginationEl.style.display = 'none';
-    paginationEl.innerHTML = '';
-    return;
-  }
-  paginationEl.style.display = 'flex';
-  var pagHtml = '';
-  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage - 1) + ')"' + (currentPage === 1 ? ' disabled' : '') + '>← Oldingi</button>';
-  for (var p = 1; p <= totalPages; p++) {
-    pagHtml += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
-  }
-  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage + 1) + ')"' + (currentPage === totalPages ? ' disabled' : '') + '>Keyingi →</button>';
-  paginationEl.innerHTML = pagHtml;
-}
-"""
-        html = html.replace("function goToPage(page)", pag_script + "\nfunction goToPage(page)")
-        html = re.sub(r'applyFilters\(\);\s*</script>', 'renderPaginationButtons(totalPages);\n}\napplyFilters();\n</script>', html)
-    else:
-        # Agar funksiya bor bo'lsa, applyFilters oxirida chaqirilishini tekshirish
-        pass
-
     with open(KATALOG_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
 
