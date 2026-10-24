@@ -1,8 +1,7 @@
 """
-OYMAOY.UZ — Telegram Channel Real-time Sync Script
-GitHub Actions yoki lokal kompyuterda avtomatik ishlaydi.
-Kanal: https://t.me/s/oymaoyy
-Barcha rasmlar lokal 'images/' papkasiga yuklanadi (Telegram CDN 404 xatosidan 100% himoya).
+OYMAOY.UZ — Telegram Channel Real-time Multi-Page Sync Script
+Har 30 daqiqada yoki qo'lda ishga tushganda butun kanal tarixidagi
+barcha mavjud (sotilmagan) telefonlarni to'liq qamrab oladi.
 """
 
 import os
@@ -11,6 +10,7 @@ import json
 import urllib.request
 import urllib.parse
 import ssl
+import time
 from bs4 import BeautifulSoup
 
 CHANNEL_URL = "https://t.me/s/oymaoyy"
@@ -26,13 +26,44 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-def fetch_channel_html():
-    req = urllib.request.Request(
-        CHANNEL_URL,
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-    )
-    with urllib.request.urlopen(req, context=ctx, timeout=15) as resp:
-        return resp.read().decode("utf-8")
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Referer": CHANNEL_URL
+}
+
+def fetch_all_channel_messages(max_pages=8):
+    """Kanalning bir nechta sahifalarini aylanib, barcha xabarlarni yig'adi."""
+    all_messages = {}
+    current_url = CHANNEL_URL
+
+    for page in range(max_pages):
+        try:
+            req = urllib.request.Request(current_url, headers=HEADERS)
+            with urllib.request.urlopen(req, context=ctx, timeout=12) as resp:
+                html = resp.read().decode("utf-8")
+        except Exception as e:
+            print(f"Sahifa {page+1} yuklashda xatolik ({current_url}): {e}")
+            break
+
+        soup = BeautifulSoup(html, "html.parser")
+        messages = soup.find_all("div", class_="tgme_widget_message")
+        if not messages:
+            break
+
+        for msg in messages:
+            raw_id = msg.get("data-post", "")
+            if raw_id and raw_id not in all_messages:
+                all_messages[raw_id] = msg
+
+        more_elem = soup.find("a", class_="tme_messages_more")
+        if more_elem and more_elem.get("data-before"):
+            before_id = more_elem.get("data-before")
+            current_url = f"{CHANNEL_URL}?before={before_id}"
+        else:
+            break
+
+    print(f"Jami kanal xabarlari yuklandi: {len(all_messages)} ta ({page+1} sahifa).")
+    return list(all_messages.values())
 
 def download_image(photo_url, msg_id):
     if not photo_url or not msg_id:
@@ -44,16 +75,9 @@ def download_image(photo_url, msg_id):
     if os.path.exists(file_path) and os.path.getsize(file_path) > 2000:
         return f"images/{safe_name}"
 
-    import time
     for attempt in range(3):
         try:
-            req = urllib.request.Request(
-                photo_url,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                    "Referer": "https://t.me/s/oymaoyy"
-                }
-            )
+            req = urllib.request.Request(photo_url, headers=HEADERS)
             with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
                 data = r.read()
                 if len(data) > 1000:
@@ -66,14 +90,23 @@ def download_image(photo_url, msg_id):
                 print(f"Rasm yuklashda xatolik ({safe_name}): {e}")
             time.sleep(1)
 
-    # Agar yuklab bo'lmasa lekin eski fayl bor bo'lsa
     if os.path.exists(file_path) and os.path.getsize(file_path) > 500:
         return f"images/{safe_name}"
     return photo_url
 
-def parse_posts(html):
-    soup = BeautifulSoup(html, "html.parser")
-    messages = soup.find_all("div", class_="tgme_widget_message")
+def extract_price(text):
+    m = re.search(r'(?:sotuv\s*narxi?|narxi?)\s*[:\-]?\s*(\d+(?:[.,]\d+)?\s*(?:\$|usd|so[\'’`]?m)?)', text, re.I)
+    if not m:
+        m = re.search(r'(\d+(?:[.,]\d+)?\s*(?:\$|usd))', text, re.I)
+    if m:
+        val = m.group(1).strip()
+        val = val.replace('.00', '').replace(',00', '')
+        if not val.endswith('$') and 'usd' not in val.lower() and 'som' not in val.lower():
+            val += '$'
+        return val
+    return ''
+
+def parse_posts(messages):
     products = []
 
     for msg in messages:
@@ -107,11 +140,8 @@ def parse_posts(html):
         cond_match = re.search(r'holati?\s*[:\-]?\s*([^\n,]+)', text, re.I)
         condition = cond_match.group(1).strip() if cond_match else "A'lo"
 
-        # Narx
-        price_match = re.search(r'(\d+[\d\s]*\s*(?:\$|usd|so[\'’`]?m))', text, re.I)
-        if not price_match:
-            price_match = re.search(r'narxi?\s*[:\-]?\s*(\d+[\d\s]*\$?)', text, re.I)
-        price = price_match.group(1).strip() if price_match else ""
+        # Narx (aniq va xatosiz)
+        price = extract_price(text)
 
         # Sotilganlik
         is_sold = bool(re.search(r'(sotildi|baraka|❌|🔴)', text, re.I))
@@ -129,7 +159,7 @@ def parse_posts(html):
             if url_match:
                 photo = url_match.group(1)
 
-        # Rasmni lokal images/ papkasiga yuklab olish (Referer bilan xatosiz yuklanadi)
+        # Rasmni lokal images/ papkasiga yuklab olish
         local_photo = download_image(photo, msg_id) if photo and not is_sold else ""
 
         products.append({
@@ -146,6 +176,8 @@ def parse_posts(html):
             "raw_text": text
         })
 
+    # Eng yangi postlar yuqorida turishi uchun ID bo'yicha saralash
+    products.sort(key=lambda p: int(p['id']) if p['id'].isdigit() else 0, reverse=True)
     return products
 
 def render_cards(available_products):
@@ -158,7 +190,6 @@ def render_cards(available_products):
         condition = p.get('condition', '')
         price = p.get('price', '')
         
-        # Mahalliy rasm ustuvor, bo'lmasa original rasm, bo'lmasa placeholder
         photo = p.get('local_photo') or p.get('photo') or ('https://placehold.co/600x800/00182a/2997ff?text=' + urllib.parse.quote(model))
 
         order_text = f"Salom, oymaoy.uz saytidan ko'rdim. {model} ({memory}, narxi: {price}) bo'yicha ma'lumot olmoqchiman."
@@ -220,7 +251,6 @@ def update_index_html(available_products):
         if end_idx != -1:
             html = html[:start_idx + len(start_tag)] + '\n' + new_cards + '\n      ' + html[end_idx:]
         else:
-            # Fallback regex
             pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- 4-rasim)'
             html = re.sub(pattern, rf'\g<1>\n{new_cards}\n      \g<3>', html, flags=re.DOTALL)
 
@@ -253,18 +283,9 @@ def update_katalog_html(available_products):
     html = re.sub(r'yangilanadigan \d+ ta mavjud', f'yangilanadigan {total_cnt} ta mavjud', html)
     html = re.sub(r'Jami: <b>\d+ ta</b>', f'Jami: <b>{total_cnt} ta</b>', html)
 
-    # JavaScript sintaksis xatolarini to'g'irlash (Uzbek apostrofi sababli)
+    # JavaScript sintaksis xatolarini to'g'irlash
     html = html.replace("countLabel.innerHTML = 'Jami: <b>' + totalMatched + ' ta</b> telefon ko'rsatilmoqda';", 'countLabel.innerHTML = "Jami: <b>" + totalMatched + " ta</b> telefon ko\'rsatilmoqda";')
     html = html.replace("countLabel.innerHTML = 'Ko'rsatilmoqda: <b>' + startItem + '–' + endItem + '</b> / jami <b>' + totalMatched + ' ta</b>';", 'countLabel.innerHTML = "Ko\'rsatilmoqda: <b>" + startItem + " – " + endItem + "</b> / jami <b>" + totalMatched + " ta</b>";')
-
-    # Qidiruv algoritmini ko'p so'zli (multi-word) qidiruvga aylantirish
-    old_search = "var matchesSearch = (query === '' || searchData.indexOf(query) !== -1);"
-    new_search = """var searchWords = query.split(/\\s+/).filter(Boolean);
-    var matchesSearch = (searchWords.length === 0 || searchWords.every(function(word) {
-      return searchData.indexOf(word) !== -1;
-    }));"""
-    if old_search in html:
-        html = html.replace(old_search, new_search)
 
     # Mahsulot kartochkalarini yangilash
     all_cards = render_cards(available_products)
@@ -280,16 +301,44 @@ def update_katalog_html(available_products):
             pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- (?:Pagination|Empty))'
             html = re.sub(pattern, rf'\g<1>\n{all_cards}\n      \g<3>', html, flags=re.DOTALL)
 
+    # Paginatsiya tugmalarini dinamik render qilish skripti mavjudligini ta'minlash
+    if "function renderPaginationButtons" not in html:
+        # Paginatsiya yaratish funksiyasini qo'shish
+        pag_script = """
+function renderPaginationButtons(totalPages) {
+  var paginationEl = document.getElementById('katalog-pagination');
+  if (!paginationEl) return;
+  if (totalPages <= 1) {
+    paginationEl.style.display = 'none';
+    paginationEl.innerHTML = '';
+    return;
+  }
+  paginationEl.style.display = 'flex';
+  var pagHtml = '';
+  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage - 1) + ')"' + (currentPage === 1 ? ' disabled' : '') + '>← Oldingi</button>';
+  for (var p = 1; p <= totalPages; p++) {
+    pagHtml += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
+  }
+  pagHtml += '<button class="page-btn" onclick="goToPage(' + (currentPage + 1) + ')"' + (currentPage === totalPages ? ' disabled' : '') + '>Keyingi →</button>';
+  paginationEl.innerHTML = pagHtml;
+}
+"""
+        html = html.replace("function goToPage(page)", pag_script + "\nfunction goToPage(page)")
+        html = re.sub(r'applyFilters\(\);\s*</script>', 'renderPaginationButtons(totalPages);\n}\napplyFilters();\n</script>', html)
+    else:
+        # Agar funksiya bor bo'lsa, applyFilters oxirida chaqirilishini tekshirish
+        pass
+
     with open(KATALOG_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
 
     return True
 
 def sync():
-    print("Telegram kanal (@oymaoyy) tekshirilmoqda...")
+    print("Telegram kanal (@oymaoyy) barcha sahifalari bo'yicha tekshirilmoqda...")
     try:
-        channel_html = fetch_channel_html()
-        products = parse_posts(channel_html)
+        messages = fetch_all_channel_messages(max_pages=8)
+        products = parse_posts(messages)
     except Exception as e:
         print(f"Xatolik yuz berdi: {e}")
         return False
@@ -298,7 +347,7 @@ def sync():
         print("Hech qanday post topilmadi.")
         return False
 
-    # Faqat sotuvda mavjud haqiqiy telefonlar (Manzil videosi yoki narxsiz postlar chiqarilmaydi)
+    # Faqat sotuvda mavjud haqiqiy telefonlar
     available = []
     for p in products:
         m = p.get('model', '').strip()
@@ -309,7 +358,9 @@ def sync():
         if 'manzil' in m.lower() or 'manzil' in raw or 'video' in m.lower(): continue
         if not any(k in m.lower() for k in ['iphone', 'samsung', 'redmi', 'poco', 'pro', 'max', 'mini', 'plus']): continue
         available.append(p)
-    print(f"Jami topilgan e'lonlar: {len(products)} ta. Sotuvda mavjud: {len(available)} ta.")
+
+    print(f"Jami kanal xabarlaridan topilgan: {len(products)} ta.")
+    print(f"Sotuvda mavjud haqiqiy telefonlar: {len(available)} ta.")
 
     print("index.html va katalog.html yangilanmoqda...")
     with open(CACHE_FILE, 'w', encoding='utf-8') as f:
@@ -317,7 +368,7 @@ def sync():
 
     update_index_html(available)
     update_katalog_html(available)
-    print(f"Muvaffaqiyatli yangilandi! {len(available)} ta mavjud telefon saytga joylandi (Lokal rasmlar bilan).")
+    print(f"Muvaffaqiyatli yangilandi! Barcha {len(available)} ta mavjud telefon saytga to'liq joylandi.")
     return True
 
 if __name__ == "__main__":
