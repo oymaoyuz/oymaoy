@@ -1,5 +1,18 @@
 [
   {
+    "id": "350",
+    "model": "iPhone 13",
+    "memory": "128 GB",
+    "battery": "86%",
+    "color": "Pink",
+    "condition": "86%",
+    "price": "340$",
+    "is_sold": false,
+    "photo": "https://cdn4.telesco.pe/file/JgM_IWvEsv2N2LTVp4OJ7K_HAt11KqnsicCbYmkRJNt1hfPaklUc_PdkNVCsJU8Z9c9Ggpqct489dBfToWrr9n7uPyds9d3yYzRK5p1p4FnH5_IAHeKuHwPEUthN0-bD7uwY1L9IQBw3lFu9WFEGZk2dSAjXSXpbENGlyIBJLWqfUAyp9YExlzzUdvzJ5wBherAopJmX7a2f6fv09h-q8GxxAEemQRbxVy7JYxdFThpEDmqlNvPVb12RBKccpI6r0GxwMU_OSOE0gA_rc8WiUWXNMYPI-BF990APdiraAMhe6bR7AtpEQyoettiPw0CRXCHaGS9zihyS2isMKmWQuA.jpg",
+    "local_photo": "images/350.jpg",
+    "raw_text": "📱\n \niPhone 13\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n86%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nYaxshi\n💰\n Sotuv narxi: \n340.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
+  },
+  {
     "id": "349",
     "model": "iPhone 16 Pro Max",
     "memory": "256 GB",
@@ -1415,18 +1428,5 @@
     "photo": "",
     "local_photo": "",
     "raw_text": "15мах\nИдеал\n✅\n749\n💸"
-  },
-  {
-    "id": "175",
-    "model": "13 ози",
-    "memory": "",
-    "battery": "",
-    "color": "",
-    "condition": "A'lo",
-    "price": "",
-    "is_sold": false,
-    "photo": "",
-    "local_photo": "",
-    "raw_text": "13 ози\nИдеал\n✅\n349\n💸"
   }
 ]
