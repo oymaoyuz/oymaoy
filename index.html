@@ -1105,144 +1105,6 @@ h1 {
   }
 }
 
-
-/* Desktop Widescreen Layout (Left content & trust cards, Right 3D phone) */
-@media (min-width: 861px) {
-  .hero {
-    min-height: calc(100vh - 68px);
-    display: flex;
-    align-items: center;
-    padding: clamp(20px, 3vh, 36px) 0;
-    box-sizing: border-box;
-  }
-  .hero .wrap {
-    width: 100%;
-    max-width: 1240px;
-  }
-  .hero-showcase {
-    display: grid !important;
-    grid-template-columns: 1.15fr 0.95fr !important;
-    grid-template-rows: auto auto !important;
-    grid-template-areas:
-      "header visual"
-      "btns   visual" !important;
-    align-items: center !important;
-    text-align: left !important;
-    gap: 16px 48px !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-  }
-  .hero-header-block {
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .hero-header-block .pill {
-    margin-bottom: 14px;
-  }
-  .hero-header-block h1 {
-    font-size: clamp(38px, 4.2vw, 56px);
-    line-height: 1.1;
-    margin-bottom: 14px;
-    text-align: left;
-  }
-  .hero-header-block .lead {
-    font-size: clamp(15px, 1.3vw, 17.5px);
-    line-height: 1.55;
-    max-width: 34em;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .hero-trust-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 100%;
-    max-width: 480px;
-    margin-bottom: 6px;
-  }
-  .trust-chip {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 14px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    font-size: 13.5px;
-    color: #e2e8f0;
-    font-weight: 500;
-  }
-  .trust-chip-icon {
-    font-size: 16px;
-  }
-  .hero-showcase .visual {
-    grid-area: visual;
-    height: clamp(320px, 46vh, 460px);
-    width: 100%;
-    margin: 0;
-  }
-  .hero-showcase .standalone-phone-video,
-  .hero-showcase .standalone-phone {
-    max-height: clamp(320px, 46vh, 460px);
-    width: 100%;
-    max-width: 540px;
-    object-fit: contain;
-  }
-  .hero-btns-below {
-    grid-area: btns;
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
-    margin-top: 0;
-  }
-  .hero-btns-below .btn {
-    height: 52px;
-    padding: 0 34px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-}
-
-/* Mobile Preservation: Exactly preserve phone layout */
-@media (max-width: 860px) {
-  .hero-showcase {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-  .hero-header-block {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-trust-grid {
-    display: none !important;
-  }
-  .visual {
-    order: 2;
-    min-height: 260px !important;
-    margin: 2px 0 14px !important;
-  }
-  .standalone-phone-video, .standalone-phone {
-    width: min(100%, 360px) !important;
-  }
-  .hero-btns-below {
-    order: 3;
-    display: flex !important;
-    justify-content: center !important;
-    margin-top: 10px !important;
-  }
-  .hero-btns-below .btn {
-    width: 100% !important;
-    max-width: 320px !important;
-  }
-}
-
 </style>
 </head>
 <body>
@@ -1273,27 +1135,18 @@ h1 {
   <div class="hero">
     <div class="wrap">
       <div class="hero-showcase">
-        <div class="hero-header-block">
-          <div class="pill">
-            <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-            <span>Apple iPhone muddatli to'lov</span>
-          </div>
-
-          <h1>Bugun ol,<br>oyma-oy to'la.</h1>
-          <p class="lead">
-            Barcha turdagi iPhone modellari muddatli to'lovga beriladi — <b>boshlang'ich to'lovsiz ham.</b> 
-            1 oy kafolat va Trade-In xizmati.
-          </p>
-
-          <div class="hero-trust-grid">
-            <div class="trust-chip"><span class="trust-chip-icon">⚡</span><span><b>0%</b> Boshlang'ich to'lov</span></div>
-            <div class="trust-chip"><span class="trust-chip-icon">🛡️</span><span><b>1 oy</b> to'liq kafolat</span></div>
-            <div class="trust-chip"><span class="trust-chip-icon">🔄</span><span><b>Trade-In</b> yangilash</span></div>
-            <div class="trust-chip"><span class="trust-chip-icon">📦</span><span><b>Tezkor</b> yetkazib berish</span></div>
-          </div>
+        <div class="pill">
+          <svg viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+          <span>Apple iPhone muddatli to'lov</span>
         </div>
 
-        <!-- Standalone Floating Phone Visual (Right on desktop, Center on mobile) -->
+        <h1>Bugun ol,<br>oyma-oy to'la.</h1>
+        <p class="lead">
+          Barcha turdagi iPhone modellari muddatli to'lovga beriladi — <b>boshlang'ich to'lovsiz ham.</b> 
+          1 oy kafolat va Trade-In xizmati.
+        </p>
+
+        <!-- Standalone Floating Phone Visual -->
         <div class="visual">
           <div class="visual-glow"></div>
           <video class="standalone-phone-video" autoplay loop muted playsinline preload="metadata" poster="hero_poster.webp">
@@ -1304,7 +1157,7 @@ h1 {
           <div class="visual-pedestal"></div>
         </div>
 
-        <!-- Buttons placed below content on desktop, directly below phone on mobile -->
+        <!-- Buttons placed directly beneath the iPhone image -->
         <div class="btns hero-btns-below">
           <a class="btn" href="katalog.html">Modellarni ko'rish</a>
           <a class="btn alt" href="https://t.me/oymaoyy" target="_blank" rel="noopener noreferrer">Telegram kanalimiz ↗</a>
