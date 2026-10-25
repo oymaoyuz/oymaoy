@@ -644,16 +644,7 @@ h1 {
   margin: 2px 0 clamp(10px, 1.8vh, 18px);
 }
 .visual-glow {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(520px, 92%);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 75, 122, 0.65) 0%, rgba(0, 31, 53, 0.35) 50%, transparent 75%);
-  filter: blur(50px);
-  pointer-events: none;
+  display: none;
 }
 .standalone-phone-video, .standalone-phone {
   position: relative;
@@ -673,15 +664,16 @@ h1 {
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.35) 88%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.35) 88%, transparent 100%);
 }
+/* Faqat pastki fonga ulanib ketadigan joydagi yumshoq nur */
 .visual-pedestal {
   position: absolute;
-  bottom: 4px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 32px;
-  background: radial-gradient(ellipse at 50% 50%, rgba(41, 151, 255, 0.35) 0%, transparent 70%);
-  filter: blur(14px);
+  width: min(580px, 85%);
+  height: 38px;
+  background: radial-gradient(ellipse at 50% 60%, rgba(0, 75, 122, 0.45) 0%, rgba(0, 49, 83, 0.25) 50%, transparent 75%);
+  filter: blur(16px);
   pointer-events: none;
   z-index: 1;
 }
