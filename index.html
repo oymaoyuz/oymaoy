@@ -565,7 +565,7 @@ footer .wrap {
 }
 
 
-/* Hero Showcase (Buttons placed directly below iPhone picture as requested in 5-rasim) */
+/* Hero Showcase (Grand, wide, with smoothly faded bottom video and single-line web heading) */
 .hero {
   position: relative;
   min-height: calc(100vh - 68px);
@@ -573,16 +573,16 @@ footer .wrap {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: clamp(24px, 4vh, 48px) 20px clamp(24px, 4vh, 48px);
+  padding: clamp(20px, 3.5vh, 44px) 24px clamp(22px, 3.5vh, 40px);
   box-sizing: border-box;
-  background: radial-gradient(65% 75% at 50% 0%, rgba(0, 49, 83, 0.6) 0%, transparent 80%);
+  background: radial-gradient(75% 85% at 50% 0%, rgba(0, 49, 83, 0.65) 0%, transparent 85%);
 }
 .hero-showcase {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 860px;
+  max-width: 1120px;
   width: 100%;
   margin: 0 auto;
 }
@@ -590,14 +590,14 @@ footer .wrap {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 16px;
+  padding: 6px 18px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--line);
   font-size: 13.5px;
   font-weight: 600;
   color: var(--mute);
-  margin-bottom: clamp(10px, 1.8vh, 18px);
+  margin-bottom: clamp(10px, 1.6vh, 16px);
 }
 .pill svg {
   width: 14px;
@@ -605,58 +605,62 @@ footer .wrap {
   fill: currentColor;
 }
 h1 {
-  font-size: clamp(38px, 4.8vw, 62px);
-  line-height: 1.12;
+  font-size: clamp(38px, 4.4vw, 60px);
+  line-height: 1.14;
   letter-spacing: -0.03em;
   font-weight: 800;
-  margin-bottom: clamp(10px, 1.6vh, 16px);
-  padding-bottom: 0.08em;
+  margin-bottom: clamp(10px, 1.5vh, 16px);
+  padding-bottom: 0.06em;
   background: linear-gradient(180deg, #ffffff 40%, #9fc6e2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  white-space: nowrap;
+}
+.hero-br {
+  display: none;
 }
 .lead {
-  font-size: clamp(15.5px, 1.4vw, 18.5px);
+  font-size: clamp(15.5px, 1.35vw, 18px);
   color: var(--mute);
   line-height: 1.55;
-  max-width: 32em;
-  margin-bottom: clamp(12px, 2vh, 20px);
+  max-width: 64em;
+  margin-bottom: clamp(10px, 1.8vh, 18px);
 }
 .lead b {
   color: #fff;
   font-weight: 600;
 }
 
-/* Standalone Phone Visual */
+/* Standalone Phone Visual (Enlarged & Bottom Smoothly Blended with Background) */
 .visual {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   min-height: auto;
-  height: clamp(280px, 35vh, 380px);
+  height: clamp(300px, 38vh, 430px);
   width: 100%;
-  margin: 4px 0 clamp(12px, 2.2vh, 22px);
+  margin: 2px 0 clamp(10px, 1.8vh, 18px);
 }
 .visual-glow {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(420px, 90%);
+  width: min(520px, 92%);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 75, 122, 0.6) 0%, rgba(0, 31, 53, 0.3) 50%, transparent 75%);
-  filter: blur(45px);
+  background: radial-gradient(circle, rgba(0, 75, 122, 0.65) 0%, rgba(0, 31, 53, 0.35) 50%, transparent 75%);
+  filter: blur(50px);
   pointer-events: none;
 }
 .standalone-phone-video, .standalone-phone {
   position: relative;
   z-index: 2;
-  width: min(100%, 520px);
-  max-width: 520px;
-  max-height: clamp(280px, 35vh, 380px);
+  width: min(100%, 640px);
+  max-width: 640px;
+  max-height: clamp(300px, 38vh, 430px);
   height: auto;
   aspect-ratio: 16/9;
   mix-blend-mode: screen;
@@ -666,16 +670,18 @@ h1 {
   border: none;
   pointer-events: none;
   object-fit: contain;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.35) 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.35) 88%, transparent 100%);
 }
 .visual-pedestal {
   position: absolute;
-  bottom: 8px;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 75%;
-  height: 28px;
-  background: radial-gradient(ellipse at 50% 50%, rgba(41, 151, 255, 0.3) 0%, transparent 70%);
-  filter: blur(12px);
+  width: 80%;
+  height: 32px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(41, 151, 255, 0.35) 0%, transparent 70%);
+  filter: blur(14px);
   pointer-events: none;
   z-index: 1;
 }
@@ -684,18 +690,18 @@ h1 {
   50% { transform: translateY(-8px); }
 }
 
-/* Buttons Placed Directly Under the Phone (5-rasim) */
+/* Buttons Placed Directly Under the Phone */
 .hero-btns-below {
   display: flex;
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: clamp(8px, 1.5vh, 16px);
+  margin-top: clamp(6px, 1.2vh, 14px);
 }
 .hero-btns-below .btn {
   height: 52px;
-  padding: 0 34px;
+  padding: 0 36px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 999px;
@@ -1140,7 +1146,7 @@ h1 {
           <span>Apple iPhone muddatli to'lov</span>
         </div>
 
-        <h1>Bugun ol,<br>oyma-oy to'la.</h1>
+        <h1>Bugun ol, <br class="hero-br">oyma-oy to'la.</h1>
         <p class="lead">
           Barcha turdagi iPhone modellari muddatli to'lovga beriladi — <b>boshlang'ich to'lovsiz ham.</b> 
           1 oy kafolat va Trade-In xizmati.
