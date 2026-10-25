@@ -275,6 +275,11 @@ def update_index_html(available_products):
             pattern = r'(<div id="product-list" class="product-grid">)(.*?)(</div>\s*<!-- 4-rasim)'
             html = re.sub(pattern, rf'\g<1>\n{new_cards}\n      \g<3>', html, flags=re.DOTALL)
 
+    # Dinamik ravishda "Barcha modellarni ko'rish (XX)" va pastdagi matndagi sonni yangilash
+    total_cnt = len(available_products)
+    html = re.sub(r"Barcha modellarni ko.?rish \(\d+\)", f"Barcha modellarni ko'rish ({total_cnt})", html)
+    html = re.sub(r"barcha \d+ ta telefonni ko.?rish", f"barcha {total_cnt} ta telefonni ko'rish", html)
+
     with open(HTML_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
 
