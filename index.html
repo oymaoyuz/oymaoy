@@ -568,7 +568,13 @@ footer .wrap {
 /* Hero Showcase (Buttons placed directly below iPhone picture as requested in 5-rasim) */
 .hero {
   position: relative;
-  padding: clamp(16px, 3.5vh, 36px) 0 clamp(14px, 2.5vh, 26px);
+  min-height: calc(100vh - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(24px, 4vh, 48px) 20px clamp(24px, 4vh, 48px);
+  box-sizing: border-box;
   background: radial-gradient(65% 75% at 50% 0%, rgba(0, 49, 83, 0.6) 0%, transparent 80%);
 }
 .hero-showcase {
@@ -576,21 +582,22 @@ footer .wrap {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 820px;
+  max-width: 860px;
+  width: 100%;
   margin: 0 auto;
 }
 .pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 14px;
+  padding: 6px 16px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--line);
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 600;
   color: var(--mute);
-  margin-bottom: clamp(10px, 1.8vh, 16px);
+  margin-bottom: clamp(10px, 1.8vh, 18px);
 }
 .pill svg {
   width: 14px;
@@ -598,11 +605,11 @@ footer .wrap {
   fill: currentColor;
 }
 h1 {
-  font-size: clamp(34px, 4.2vw, 54px);
+  font-size: clamp(38px, 4.8vw, 62px);
   line-height: 1.12;
   letter-spacing: -0.03em;
   font-weight: 800;
-  margin-bottom: clamp(8px, 1.4vh, 14px);
+  margin-bottom: clamp(10px, 1.6vh, 16px);
   padding-bottom: 0.08em;
   background: linear-gradient(180deg, #ffffff 40%, #9fc6e2 100%);
   -webkit-background-clip: text;
@@ -610,11 +617,11 @@ h1 {
   color: transparent;
 }
 .lead {
-  font-size: clamp(14.5px, 1.25vw, 17px);
+  font-size: clamp(15.5px, 1.4vw, 18.5px);
   color: var(--mute);
-  line-height: 1.5;
+  line-height: 1.55;
   max-width: 32em;
-  margin-bottom: clamp(10px, 1.8vh, 16px);
+  margin-bottom: clamp(12px, 2vh, 20px);
 }
 .lead b {
   color: #fff;
@@ -628,36 +635,37 @@ h1 {
   align-items: center;
   position: relative;
   min-height: auto;
-  height: clamp(190px, 26vh, 260px);
+  height: clamp(280px, 35vh, 380px);
   width: 100%;
-  margin: 2px 0 clamp(8px, 1.8vh, 14px);
+  margin: 4px 0 clamp(12px, 2.2vh, 22px);
 }
 .visual-glow {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(300px, 85%);
+  width: min(420px, 90%);
   aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 75, 122, 0.6) 0%, rgba(0, 31, 53, 0.3) 50%, transparent 75%);
-  filter: blur(40px);
+  filter: blur(45px);
   pointer-events: none;
 }
 .standalone-phone-video, .standalone-phone {
   position: relative;
   z-index: 2;
-  width: min(100%, 390px);
-  max-width: 390px;
-  max-height: clamp(190px, 26vh, 260px);
+  width: min(100%, 520px);
+  max-width: 520px;
+  max-height: clamp(280px, 35vh, 380px);
   height: auto;
   aspect-ratio: 16/9;
   mix-blend-mode: screen;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.9));
   display: block;
   outline: none;
   border: none;
   pointer-events: none;
+  object-fit: contain;
 }
 .visual-pedestal {
   position: absolute;
@@ -680,10 +688,20 @@ h1 {
 .hero-btns-below {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 10px;
+  margin-top: clamp(8px, 1.5vh, 16px);
+}
+.hero-btns-below .btn {
+  height: 52px;
+  padding: 0 34px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Telegram banner bar */
@@ -1039,43 +1057,7 @@ h1 {
 }
 
 
-/* Notebook screens (laptops with short viewport height) */
-@media (min-width: 861px) and (max-height: 850px) {
-  .hero {
-    padding: 12px 0 8px !important;
-  }
-  .pill {
-    margin-bottom: 6px !important;
-    padding: 4px 12px !important;
-    font-size: 12px !important;
-  }
-  h1 {
-    font-size: clamp(30px, 3.6vw, 42px) !important;
-    line-height: 1.08 !important;
-    margin-bottom: 6px !important;
-  }
-  .lead {
-    font-size: 14px !important;
-    line-height: 1.4 !important;
-    margin-bottom: 8px !important;
-  }
-  .visual {
-    height: 180px !important;
-    margin: 0 0 8px !important;
-  }
-  .standalone-phone-video, .standalone-phone {
-    max-height: 180px !important;
-    width: min(100%, 320px) !important;
-  }
-  .hero-btns-below {
-    margin-top: 0 !important;
-  }
-  .hero-btns-below .btn {
-    height: 42px !important;
-    padding: 0 22px !important;
-    font-size: 14px !important;
-  }
-}
+
 
 @media (max-width: 860px) {
   .hero {
@@ -1167,9 +1149,9 @@ h1 {
         <!-- Standalone Floating Phone Visual -->
         <div class="visual">
           <div class="visual-glow"></div>
-          <video class="standalone-phone-video" autoplay loop muted playsinline preload="metadata" poster="videos/hero_poster.webp">
-            <source src="videos/hero.webm" type="video/webm">
-            <source src="https://oymaoy.uz/videos/hero.mp4" type="video/mp4">
+          <video class="standalone-phone-video" autoplay loop muted playsinline preload="metadata" poster="hero_poster.webp">
+            <source src="https://cdn.jsdelivr.net/gh/oymaoyuz/oymaoy@main/hero.mp4" type="video/mp4">
+            <source src="hero.mp4" type="video/mp4">
             <source src="videos/hero.mp4" type="video/mp4">
           </video>
           <div class="visual-pedestal"></div>
