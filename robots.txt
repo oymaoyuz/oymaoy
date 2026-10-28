@@ -1,0 +1,65 @@
+# ==============================================================================
+# Oymaoy.uz - Robots.txt & Bot Security Shield
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /katalog.html
+Allow: /images/
+Allow: /videos/
+Allow: /hero_poster.webp
+
+# Xavfsizlik: Tizim fayllari, skriptlar va test sahifalarini bloklash
+Disallow: /sync_channel.py
+Disallow: /requirements.txt
+Disallow: /.github/
+Disallow: /*_*.html
+Disallow: /test_*.html
+Disallow: /products_clean.json
+Disallow: /*.json$
+Disallow: /*.py$
+Disallow: /*.sh$
+Disallow: /*.bak$
+Disallow: /*.env$
+Disallow: /*.config$
+
+# Xakerlik skanerlari va zararli botlarni qat'iy bloklash
+User-agent: sqlmap
+Disallow: /
+
+User-agent: Nikto
+Disallow: /
+
+User-agent: WPScan
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: Nmap
+Disallow: /
+
+User-agent: DirBuster
+Disallow: /
+
+User-agent: Gobuster
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+# Sitemap manzili
+Sitemap: https://oymaoy.uz/sitemap.xml
