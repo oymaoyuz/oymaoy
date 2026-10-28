@@ -280,6 +280,30 @@ def update_index_html(available_products):
     html = re.sub(r"Barcha modellarni ko.?rish \(\d+\)", f"Barcha modellarni ko'rish ({total_cnt})", html)
     html = re.sub(r"barcha \d+ ta telefonni ko.?rish", f"barcha {total_cnt} ta telefonni ko'rish", html)
 
+    # Dinamik ravishda "Tezkor bog'lanish" formasi qf-model tanlov ro'yxatini yangilash
+    unique_models = []
+    for p in available_products:
+        m = p.get('model', '').strip()
+        if m and m not in unique_models:
+            unique_models.append(m)
+
+    def model_sort_key(name):
+        nums = re.findall(r'\d+', name)
+        num = int(nums[0]) if nums else 0
+        is_pro = 1 if 'pro' in name.lower() else 0
+        is_max = 1 if 'max' in name.lower() else 0
+        return (-num, -is_max, -is_pro, name)
+
+    unique_models.sort(key=model_sort_key)
+    options_list = ['<option value="">-- Qaysi model kerak? (Tanlang) --</option>']
+    for m in unique_models:
+        options_list.append(f'<option value="{m}">{m}</option>')
+    options_list.append('<option value="Boshqa iPhone / Qurilma">Boshqa model</option>')
+    options_html = '\n              '.join(options_list)
+
+    pattern_qf = r'(<select id="qf-model" class="input">)(.*?)(</select>)'
+    html = re.sub(pattern_qf, rf'\g<1>\n              {options_html}\n            \g<3>', html, flags=re.DOTALL)
+
     with open(HTML_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
 
