@@ -9,6 +9,7 @@ Allow: /katalog.html
 Allow: /images/
 Allow: /videos/
 Allow: /hero_poster.webp
+Allow: /feed.xml
 
 # Xavfsizlik: Tizim fayllari, skriptlar va test sahifalarini bloklash
 Disallow: /sync_channel.py
@@ -63,3 +64,6 @@ Disallow: /
 
 # Sitemap manzili
 Sitemap: https://oymaoy.uz/sitemap.xml
+
+# Google Merchant Center / Product Feed
+# Feed: https://oymaoy.uz/feed.xml
