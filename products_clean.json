@@ -1,5 +1,31 @@
 [
   {
+    "id": "365",
+    "model": "iPhone 13 Pro",
+    "memory": "128 GB",
+    "battery": "75%",
+    "color": "Кора",
+    "condition": "75%",
+    "price": "420$",
+    "is_sold": false,
+    "photo": "https://cdn4.telesco.pe/file/fGJQtV2HJVps2etD6Egb3QzJuRkgEhuJ5x8VdP-or7ZCfaltUY0ahXu-Bd1OKAST8YnE4Mj2z0fxujOt7OjTBmqgzInTbQGHxVddcEqb5f94v7EREObfZfCKHa7ngJckTHe_uddB25Bn-4JBwZBL5JnXZzddxX0P2Jy0Z2KTgckQPgbOdTDq4nUgJMHPUmyicOXuqfIlbpCbQ18SerU5-7E5BMMBhUq5ZQ63vB8rYL2BDOlBR-lClSgJXISfja0U2ChcPKUG8EgkRKul1__rliAl70EJRU7TDdjUGndTn7UqDJ5ZPWr5H2tLOMVsESgjZFvwIbINErqCmACMW6Y9Fg.jpg",
+    "local_photo": "images/365.jpg",
+    "raw_text": "📱\n \niPhone 13 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n75%\n🎨\n Rangi: \nКора\n📦\n Karobkasi: \nHa\n✨\n Holati: \nO'rta\n💰\n Sotuv narxi: \n420.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
+  },
+  {
+    "id": "364",
+    "model": "iPhone 13 Pro",
+    "memory": "128 GB",
+    "battery": "75%",
+    "color": "Qora",
+    "condition": "75%",
+    "price": "430$",
+    "is_sold": false,
+    "photo": "https://cdn4.telesco.pe/file/QA3tpuNdVqHD0a7htQupF2pc-SRJ56f0LOCOgonTuF2uCMHuWeZ2o6GC9vzF6Zu4oHhjnL84auzOnuTlrMJmgZAZuuKGJYrtT2hm8k804wbDF_28KQQ6kkORutG0YYeXxlwFSlCykfAb3MoIt4Og9T4b2ZqUX4sZOCsZH60aGYm_MquoCUWlRd7-w0qa2G8dYqGU7DMODFKXLVZSu8F_tmJeeMn996w90tVeRfPN03cLYyKpMeVgryYsREjcLG-WHYCNwxkRGvY8DqAFjg1r3_w0Wgc3UeF95h9YATLZ27Mf1iPIaeaeD4Ul07L4wptJwuIzH-b9mN9x5xzesGqpcw.jpg",
+    "local_photo": "images/364.jpg",
+    "raw_text": "📱\n \niPhone 13 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n75%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n430.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
+  },
+  {
     "id": "363",
     "model": "iPhone 15 Pro Max",
     "memory": "256 GB",
@@ -1480,18 +1506,5 @@
     "photo": "",
     "local_photo": "",
     "raw_text": "14мах\n329\n💸"
-  },
-  {
-    "id": "185",
-    "model": "13про",
-    "memory": "",
-    "battery": "",
-    "color": "",
-    "condition": "A'lo",
-    "price": "",
-    "is_sold": false,
-    "photo": "",
-    "local_photo": "",
-    "raw_text": "13про\nИдеал\n✅\n429\n💸"
   }
 ]
