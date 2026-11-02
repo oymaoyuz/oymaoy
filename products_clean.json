@@ -1,5 +1,31 @@
 [
   {
+    "id": "380",
+    "model": "iPhone 17 Pro Max",
+    "memory": "256 GB",
+    "battery": "95%",
+    "color": "Oreng",
+    "condition": "95%",
+    "price": "1100$",
+    "is_sold": false,
+    "photo": "https://cdn4.telesco.pe/file/cJWx0C1Xh1uC4Bk6RNsbiojeotX-lxL6Jm8bmx0BdHIf_Y8_z6cwZtjrLLmNugXxGzhOAFTD_vZGDj5poQj3i5xxs_ZRoIjDKJqCD_bBQqhywXpSgrO0S7aH5TsLs8BbTUhj7F4VQoSrvX2BjgsqUDY-l_7g3HRYJSw5nC6xGW2YGXwkaUU3ntFtT0ySJMVlVvAkMCKH_KfUiZ3efA5A0gVIc_sovJZ93HJPL_TMJ0p8DQQ3qTQKFNv9TPcXQlUqrgQP72tHl90cvOnxyO6IkjsJeGnhH5Ad-JOFzFK5sVRUG-Ce_YmfKayjb3mcZjKt9umJoAVx6QiGWyrUGbX5fA.jpg",
+    "local_photo": "images/380.jpg",
+    "raw_text": "📱\n \niPhone 17 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n95%\n🎨\n Rangi: \nOreng\n📦\n Karobkasi: \nBor\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n1100.00$\n🌐\n \nBarcha telefonlarni ko‘rish\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
+  },
+  {
+    "id": "379",
+    "model": "iPhone 13 Pro Max",
+    "memory": "128 GB",
+    "battery": "74%",
+    "color": "gold",
+    "condition": "74%",
+    "price": "500$",
+    "is_sold": false,
+    "photo": "https://cdn4.telesco.pe/file/kSE-KAYplnfSn7dC482XPgshm7g7gj3QZPiKODqcd77FnYq82b1zH55NCb-8venW9HngLeFe0lSEAc-9Tbof2QM4Eu8GCS-5l_qEfjVTM-wK_taKM8jgiV7Rx2q0l9eVTpgLb3Rgha2xuZUNoWv1nGWN1JcyDkxNTVED9vNZnA6tOs3FdYSe2Po6lqtAv8z6CvMFWehCMrjpw6sDrJhWO0g-aF1PG6O-nGSjbi-YOyaT-Z-KSBJUtM1r1rxthgJO9Vcecp9nZtkjYIdN0ZT7IXMengaEzrpv21cGbMuKZcR_ow5sjJZXxXP3cGUeqSHmA0jkuNLaERZfqn1d1FVlDg.jpg",
+    "local_photo": "images/379.jpg",
+    "raw_text": "📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n74%\n🎨\n Rangi: \ngold\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nYaxshi\n💰\n Sotuv narxi: \n500.00$\n🌐\n \nBarcha telefonlarni ko‘rish\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
+  },
+  {
     "id": "378",
     "model": "iPhone 14 Pro Max",
     "memory": "128 GB",
@@ -255,7 +281,7 @@
     "condition": "95%",
     "price": "1200$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/O9th1gD3pZMbZP7zzWqZwI3RE6EpOL0kyvz4mfh2Lry0jl9Z_J78kRbOJOcPnniYkh63l5DGTLRPc0FA-br34F6iVhQxmZ59biFgtArRpAwDANhCMy4NxZH7kHmkL7uHaa5CFkwR9oURz03XSaJgm-OK8jJaQOPrTUOePaT7d26jb9jGarBLVK-udduA788bhNhzvtZq5_LbHu33JK-6kwsC_DFVE5OHIkf26kBlFGpQohq5N9MDwmsgJq9c59tr_L3OmRlik-HXmBiedzvgIush5hC0MyI0I1xgfIPgwlraER9tQM3ls-svoXUZlIXjo-PgueUA8yiSDdAZiLMAOg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/YmYPeMEJcsnVwje8V9bpfrBfcIaHsX_2XsnD3YxMy1rN1pKjg-dq_VuafzxEBoLW_cVHxcla1cmAP0zMnDrJeuAHKmUAdJYt0Ji96oV6cMda-HMjxVFi45-PjOm6jgZbhsF_cMcnC5zzHumbnIPG5txGFoGDvhq-3al86bUOJTTnStuDlNH37rGnANZPl3GAvuKq13Q0ueagr2EPtwP3peBK8306qsFrZaQkuouF_Wkb8Mq3EtjGhSRZ7Gw0sxZ_VpY-3QvJH81ffKPzCZiCAhffQiYPvcTTXde7Aul1pITEc4f8EgRo62oaUQOY_j-WerzXmIUHCCeUiVU9rbacfw.jpg",
     "local_photo": "images/355.jpg",
     "raw_text": "📱\n \niPhone 17 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n95%\n🎨\n Rangi: \nSilver\n📦\n Karobkasi: \nHa\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n1200.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -268,7 +294,7 @@
     "condition": "89%",
     "price": "920$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/myDP751qym99YktYi_Fd8a96bvocdHZqQbEDbT5xVMgp4ILIzdI_LI4EhoZxmFf_u43N-3R64dC2m4jGUJjEOhkKSi6U0ga61AH8b4PeaZjB3519RYSLZ0NVrrA33sOmvLWGhl_aNL-gVPFfrpIFY5pJxkXZdR6gi8aBFmdcur_LHsM4VFHKISRfd29wA596t_3k-Oky2B1NMk8mROxObx8KRoTIMSSgReilTYNEAtCkYutsgRt3uxJjvhR4sHmg0MkmlfRSYWgm4RsPHE28wLwdzstPswuth-gRTyo9_0Q0memFLRFLdSyHiuTmKZT_ieF-bU4mkFNswCGoXlxCWw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/jED2LaKNyrFUBUQMrtQKrUzM4SrGblp6kna9OnKpz8iZ1SxBxe9Kfv-9JCP8DXoi3RXLubXw07HStZEDGNhYZWzg1NjDzEr2xjXxygMC3epvpAikuqA1hDGbwpDr7cyi0_4Wxi1_hrccUA3JA5ddeOAAzc9p6pie9UQRmhpxBr4OVk1oJeD-8nkwRSPnkPQLzx5nQdQcVB7aVCJkg7rwqdA6DjTQSKNcs1dNWMC6rr38in1zO5RHLcGCfeIcwNY56ushPHZ9wL5PStg7omfDe_nXlQxuWtxuySGAiEY44xZ7Myaodkjs3rLPiTDGZ6KoO4VqSkya_IZz_LdC-wt3NA.jpg",
     "local_photo": "images/353.jpg",
     "raw_text": "📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n89%\n🎨\n Rangi: \noq\n📦\n Karobkasi: \nHa\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n920.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -281,7 +307,7 @@
     "condition": "92%",
     "price": "550$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/awr1Px4AteJBKOfq8AwxHvCAR8xXmrNsBj_dIj3ESe56urDtFq7XBA6tZxHonlyiYhW-KPbiab94NHXt-F-5YeVda9bUVedV_jO0em8sVd1eIkWGntYChRd9bw2gc3zn7Prfmrg9Jc0_U53z1sJ5n8eiHrOXaOr4GoT-nvJsO93sdgrfVdRV-e9BW7tSPgbYEyC4a6_XgKeokEosk2AUbTl1rLLERa5ABjf_VGaM5uUB3FZ4XxDXelxeES6O6oq1grnxHP7d2_VG6qmZ_NvsDaDeeXM7rnkgE7_-47sfgTBwaE0N__7plDhzujclX74vokFPyWglYFSRS_QfiCnZnw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/Gz480jde4_h7dxMISdKcEOZ4_K0e3Nu8A8qZMBehbrMAp-nW_9l-2LnuMFx2eKXAilEKNsTRnBDSegQnsgVUacbTrDoWjUnb43d1MNfRvM5r4IAQeHze3J9jxO7GwzDkAaHdKU8aZjhFawktcz2PffUrBaoV1swxxts9VJmkbMv1eG3Rw3gTYHepF5Jy7U1fg957-gLuI3OoySjHxXdLXun-Gg09c7lU1P0juI8QgvTOYAfNnkG99BuUqyjlr0JpCE6iItSVuZe9_HhWhMxplLvGCNUbuCGXSVatTLyrBz9SWfdfui9h_uk_UknJakVQZoeH4Pgcfbch6TmzgHEbVA.jpg",
     "local_photo": "images/352.jpg",
     "raw_text": "📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n92%\n🎨\n Rangi: \nOn\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n550.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -294,7 +320,7 @@
     "condition": "100%",
     "price": "350$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/XgN80ACeLHOKOjEU2GTLHs1Hw8DIhFL6OQ_9MPG86O25q-7stv7q32CeOW3IvwCw8kYgIw12wQ1WU-FfyyLcL5Fng2l7c8mg8KwldzdWzIlsv81i_4ujWv8N0FNU6k98Yf8BWbMhHueFdw5MRTvOGphsgdjNDUMcm1jeOdJ1LagjVLfEM7jtjxS18eANlV2pJm3j1K7lH0e5A-Ji_SelDKtdQVl28vB_uVQ4172DrdMIGkU4T24-GeHhh9y-cthlqiVCQmyOCDHpmsxG1om5f3fB7rvrzsNIPopJh3dukVEfR_46JmupV5s5qxMuo0VdNU8lBF-UpWNRrH-UhaBFBw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/i_z5ggYT4hN3ALyIfMkjEo8puoBGjKsxqxrwWHteLWcksXUxubugbzDaHpgGBQYQ83xp5Lpl14BmpNhf2giwCIlPSlKS4k8rqQBo_egfMqxU47lH-f5zX53r2qDA1xqAFTN8L2bukKanc7FdjYdB954NpbQB40x9vwDFmJ5L71wjilmM7b7-SoOxz5bG17LtnRNEelBM_n1pr3Pl0wmA_8sw-cjKfM4vxqBWEafBOU1Qz8SiS9pM_P0LJ6IB545yW6iVx_0VAj5tM69TtNY8fXi4NBW2A06LDC7-TCmG72wSrVVTSMy0nHPHDH_oZKfSZW11YVYKL_NZW3NWAL-HSw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n100%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n350.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -307,7 +333,7 @@
     "condition": "86%",
     "price": "340$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/Uq3geg-M3dgQ-n4iGOqwBaCXbtMNbcp0Y0oKFMnyvn9MZRFTOg-8Mf7iKw8QJPy7xwz9m3e8AZfXy0Lx2dP3WsowSnfTWiV8IakHK_mZLjvXKHCU1VZWrZLj_kS2mj_NXoYKWg_TTLV43AZnpFQK8BWdtbY4qVDDvaXnFM6YByLBAeC6Emvmni2_lGam_Q1zriZx_XHbD50hwzduc-5jDamWt-Z3H55zIp8btoB3wy2ImnvJhnBGAUNj9zdr30QSsqgdRy7IAnStC_vF2Oyzicj-T7346Y7mcVEz8E4yjQt4Emlyx84sRCgUdQRLgpMDxzBmJhoChTwKVBVBid3qJw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/v13iHWMKFgnACHbHCdgA7M4ZW1-hg3Kdy56kpMXRWdeihH8Jq-IpOcLbz1VLUYPafIaJAKrO4gEQufctbr6eqVGW1AOzpkly_kivXLaW6sr8_i1PdA67CnsGCePiMRBG7NZb0CLRw8gVs2fR5jZLWkWBZcws91Yq0roz_dqv85bP5NLGmmMRcL5Beza1M6mjmmm1RSDmpSG0XDP0-XWNNtOWyCMREj4wDi9te_ZZbIYSY3Sg4fULF0gjVXqp_6Oa8KVfeqT9xwavgQm7umvM-l6fUS6JHcGme_ZLKkLZI2B9GsY5-JYsn5FDdoQtoqDOLOVhED054MXU6_V0oUYs9w.jpg",
     "local_photo": "images/350.jpg",
     "raw_text": "📱\n \niPhone 13\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n86%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nYaxshi\n💰\n Sotuv narxi: \n340.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -320,7 +346,7 @@
     "condition": "91%",
     "price": "980$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/pV-O8MfTq-CX9IRURSxpTRlSZoEsh-0VXoJ7FGNIoQ9k01G7elR2U3tEPdpePljjy0HiLIfdGDQR7VXENnGK3__VZQ3r7ilcOiu3JtGDxPTPeLFtNPhnKyLrp3YJqYCaIqaNpF6ZZTRkKLqQ9ZQZQ3gxyswLOftjhCXKDvpT2LHlIoihF1akWY6jwZRySyesJoOf98WDCmrQvU7gToKiYndRxZOMQik5kfP6ZjNTRe5TKvYRRTdEeIVvdOIhHYptDsAI6-IDnx_aMfV3Ph4xZy6vTzgm1fo-rADGPPS0sdzWj59RB34umuyAWvyPC6taNpj0H4XCw49RdmgZj-BE9w.jpg",
+    "photo": "https://cdn4.telesco.pe/file/mebvItCqPYP6qB9gtyozxKwO7kvxFpEd0I8GOipE-_qDYh4B207vwVuvTz3-Z6TxQRmEO6ALOYTQJXcMsIOyk0ektgSzPnkoz7V2HFPYi4Sva06b5iDcVrEutkRMISSzgYNFZqV_s2eXdNgB_sWifGyS4FYR4pAuvdxteRXNcrJTLf01xhF8Z-eChzCXm_HsiQ18Tos8j2FXqxrtN516xOtZ43UF3FUZ7vwMlw_mcFfnlnU-61HSeeHs3EMq7xKPjqzB0cdxSf-UX8uCealG4m1c2Bp49DInGG-yDhZl3H51Ig-VTsnTkcuAY5RcqhgPyBdM2mxxYncvaw87HRPFSw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n91%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n980.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -333,7 +359,7 @@
     "condition": "85%",
     "price": "750$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/mKUnvoE-mYwUn26hL_rvWf8QpAhCHchXf8GmGprfi8oyB2uZill1bl4I4NlVrArDdqL4vRUXcEP1KQs6bpWM2CHCTCtk28aMltIuPSEpKf-vH76cKV8EW1jlo19bjEfciwAZ9lCwcjvZzowzFaJwONG3JiZw-kS8muJjBSD8BALVPvXqQJUEg4jbWEA4wG7y3oWZamHNLKUeH0rYVVj8lM5XAUQ-7YqI_U6MvygIRN1kLR6DZ8_CBBqg2wGZ9HIi056uPTi0ymX8YclfRDfC9DoBvH4SA2cggOgxJWxj5kKowusGOy1X2WUJW_rtexglE77aX8078OvOmH4hPorTCA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/VnxMs3c6ZmTT4ohQb2RGDG7etyhB3JmQdEfeXLQxlvFITtkQV8krV6m15qi7Fl1Wg9DFymOWLMPOlHgFwBydhjZ_x9S4DGCCahg8Ao0e4SEQG4xxrWTP41xFlgbG3nXgzaTFIzM9V6-1QUEoUEeNo9BB828QXGWp0__ABlB779CNZ9hbUn2YuP9zQvu6MMuGdwSgOZBNIsuVoxmynAxLHVSZZ_7yeUyogXbOKG7tA8eQbTJ7qmDfbn5_WqobO-Ubc_cWdVQj-7OObBKgap9N9WI3TanWM_PgwGpGXvqx7mv4z5KHeyd_bjrfQJhDlJWcjqDUryd5Q0hEdRmuauk04g.jpg",
     "local_photo": "images/348.jpg",
     "raw_text": "📱\n \niPhone 15 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n85%\n📦\n Karobkasi: \nKeladi\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n750.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -346,7 +372,7 @@
     "condition": "79%",
     "price": "630$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/qzkr1nU_elbJE5_uaFqUrKMdEmk6sEuZiH1YjB73dbr-oMF9ru-UROj2jawiEvbMY-FaNapSgnhQplN8JFco0J9C2wCLr--WHl9ORSzTulC6HvtGM06vfqysk1XTNBS6FBwb3RYFc-076N2lMMcGlykh6LUxs0Szt4GtmDC5cgtyHIw4JtQb8gIISRg4SfW7j89kaeEroByQtYhcqzebWKpYB2fQWiKz-4rcWBNYFzdjqGMYZKJskf46dSEhUf5shfpEeFRQ5GsaY1jhVUMhc1zvsBhl2KRZgy9uyjGeLqrgd9ZbVPd_R2WNWSEFpG0jz9guNNH8A70Tky2qRPd-Mg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/dBiPLRbUFGGc1G-7K3k5gRDp2GL5HK7pgu0nh5NWrGBM7AvsubHxHikPfj3yh1JEyu66FJbg4ZFm3R2diuqIoqxHS3Cf1lV2biuXtI9KsE-Mml3gDOciQ_3bNjT4HPjZMUKg3Rg0DgW9XpKuO_2-_xjBoeEACbb5VDBW_T7Gk_45DP5_qEe6EKxXs3XOnIa7fFBlsxvd98BJC7-5aX0Us2dkmK7YzBf68QXv7g-4eysE3kiWTF4ffQBRvXBIE7Q2Lxgjyo8HgEKayzcKx3rPkyv32pCCXyt2OnhYfAPWmNpbUHXRJnu5qaXFmGopo5pZ4lpSSV_z3oBAGUNlaumtAA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15 Pro\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n79%\n🎨\n Rangi: \nKok\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n630.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -372,7 +398,7 @@
     "condition": "76%",
     "price": "230$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/AmUdCXOFJs_jgXmmGpv5klOVD3BU5zr6HQosY8kor7Fo8_hjW0jvln0fb6V1-ad-cejinby9jDPO7ldYV8GzWRfxtOd43qq3zoli71tG16Ws_uBgMWW4u0bM2P1SHyTWeGq_BEQ0ozVxImm_NyZpy6mkIZeHLBnq2x0Co8X2xwi9jA_8kX4f_LH9ffcOjCQP8ZCIP-SVIwwxoNzHCQzXSF3KHdfq8yCGwjh0ugS52g7CUsCocYc7xZaK9yhTfjYFcqDqaJUV3ATkXohj-PDPnuhcK1yQaB58rp2w8JLeK5Ij5iWz1d09-t3N8zRUCLeRY7cvLrW7EsXSwJp2Q0-YHw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/IdEgNTYCckMM9B984qlkth5I5_JTMFJ4L9miKAiBHBs78vjHT03soP-bqxVS67yFTBxR5TFBjZcAw9hJ70Hc9GQIQLRUKPzXKv7UXJXa9cpP-csFhqQRojqnimZem36LKRJ9uaIjxI40KXg_ZjSHoBAck-pBIU3aZTvrVBJd78mjM4fVoBPWat7T1RWts8wT7tLwFN5jVelUYLxXcr4ymPfL0V3AGdnrrGdT9BW1TNsBEjb4ixdUFPTa58KOSDYtM62mhjwNscbVmrDbiq1rL9MXi_4VdexvTW-Z3zs0ABpIxfKTwRoolxFZ_Emvr63VgFas6_FzIQXFR_SPuXdwYA.jpg",
     "local_photo": "images/345.jpg",
     "raw_text": "📱\n \niPhone 12\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n76%\n🎨\n Rangi: \nКок\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nYaxshi\n💰\n Sotuv narxi: \n230.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -411,7 +437,7 @@
     "condition": "A'lo",
     "price": "90$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/FTX84ODvO-MNsTfSxae19c7XUv9iiKWEpe30-z6Jkar0NTtILigDqW2u4ueGzI27DKouzUfxqwdvU9FaQNPI7rMXM3sBWyfcmct9ktJlqguVnoMeum2g8SivEwsTv7X-b28KLrRZu0Vgi9BhT41ynKwh3IyHjf96HTXFMr3pmhOvG_rE_ziz7xhOsI5yVrc_dZEGih-1OKT_MYgH1J3YkiggmShbnJaynxVidbgVpOKycXFXjUj0UpRYUJlLVCdCrK3tAOfKR5Evi95UGhnEz3GFee-pQeeQhYZXh8PUhPXYXqbZDYBMceEv0Y4S2hc5bPQrLQRZ0V305U-9KcxXyg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/T60wyXgaFJfCWsqZB-CxfA9QWRVFFeQ8OjvqMv5Q4ZP1C8MPARylCCF0NTPF9-T35SMlfLX0KUNbW8hQFtNcKG5QHEciXG0lPD9CSpWvK6L_c3ZcGnuRAufgmRvTs0TrKMKhWNSIvCIvsEfsHXs39BIclsX-7BojjFp4DzygOEEiRRxBI7tTuwQKAWjPPCx8yakdJfp5Oc3jCMCsBKxmEtyrXFK9ICwLg-Xr5fypk3QUhnMAVylfDgzqa831VWxzb3qJy-ciWQaBBki0L5qujTjm03o9GONb_7c55eDLZdIGVPjiVmBMFw5JkMbiCHw1H86u5F21RR29od3oaRxK5w.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \npoco S80\n💾\n Xotirasi: \n128 GB\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nKeladi\n💰\n Sotuv narxi: \n90.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -424,7 +450,7 @@
     "condition": "84%",
     "price": "670$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/alQLcRBsgFRiDfMNykgmW_GWpWqULihdQmA-bBU66tL0TBE2I2Zq3HEhJelUYp2K-DwqNFDV_wr265uEUwf9hyShb94gsDVZ9a-ep_hR_FTjBSQUZ6Y4-e0tV6Yr7QfKWI5mDeNiKrjHf6MAQTlgVYQ5gwHqe9Dlty-br3ykymDpikzpTiRBch2aHi69I46S-5ilI6O8o6znix6ABJjBWNGF_BR7o4Eq19v5yy-lw6JLeBFRRZv5wx1dnxoCZjYCNzs87uq9YJ4XeEn-TeRC6CXVsHLUr9OABOvwMKcdcitzGeFfYLAAV9ptYx6uE7ExZVGF6FjfUezokD2zMMwW0g.jpg",
+    "photo": "https://cdn4.telesco.pe/file/BvbD2z6KWfAIhdqX6mz8QkYbngc6TvMwOxiyhOp4YBnh1z3hsCOO33agEI-_FAE2tGZwvY8p15tnGx78w785M4PN9IlMIEu3z4yPaFL_4rB-rGmZuBF5P8awTMKDzg0Xrz-msh1SgFO-MX67McPmfgs5UOoZVqp4t9DUTbGoMVBySqXKt32N4v1R1j9CrDukdFTcscUqDYd7nrdRjFncjjf8nWdRUpA-WO--8FfuD7n-rTk95MAXhRes5-JG2dnGRuFLj_WgXGg2DYRhaopGmkOM_LLtKwLFYCEcz7xzexylVA7C0hFLSkj-iCIBe7W5CzFNxmAHw7L1EaG75vUzTQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n84%\n🎨\n Rangi: \nPorple\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n670.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -437,7 +463,7 @@
     "condition": "78%",
     "price": "550$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/AeMJDbaJ0dJ8XbmCg-SXVwZ-_-grswTXH56ARsKOwenwfB58EDiQLfjlTLJxsj2hpTdrhG4KD-jKttAxKNe61hLmMjXs6hSX_Cw0vxZVM9TSSmI3LDSO6lT3y5roW4GiOrmgNvMuRSKxv0V4wXSsMOemLIJgesK3KToOvqi_dEW5M_qRte3lCitStGvfewkvMdhlm4pCKoan2e4wdqwglvlb__nb33BUWww3TS4fKM3arYmmYOvrM54id_upMTmZB53BLtTKNyXU2sC_lpmNfN_UdHefH3d3cx37eYxsXsmOYCib1qGkrF3vjxUtt5HzNwjTqimrmjHFDGqyayGDEw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/ETGbNxecJrHIktbaCdZkiLuWSAXsN6GdZWQb5v0_cbpYKihwCie48SnXdeqo8ISxsu6zzcEcnPT-b5j1toNZOFnPVZNix9NmKOigEfVVFaT0u9SYxBGbaaukeF6tuCxV8XTIS_ZGsC7ykYo9JnMSLaPkzoLonwRBFYl7ggsL1F_PFB11eCHzd3YA18RiWwPW4K5j5LOW9JM9BITHb3iRjHf9_z_1Bp9V3ncvVPWw7YshTklfkXCovU1MI4g7fZOt2C3PwJrlsvdgOSd6IGH5H3LLp5lo27hKs5FwuZ7ZlDZhmobbuV-u4HW7KwgShk_uP7Aaxclzh1uaXhDA7tASkw.jpg",
     "local_photo": "images/340.jpg",
     "raw_text": "📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n78%\n🎨\n Rangi: \nPorple\n📦\n Karobkasi: \nHa\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n550.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -450,7 +476,7 @@
     "condition": "68%",
     "price": "175$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/Z9LwB1DedrIvFefm40UnSf7QuVIiCpLadHO-9brF3HBiirF2Ym7dmQ1825F8cs3BIGmPVV7G2PCWrj8i7R8TBI0ceVsWNCkuGUfy1NjbfWvQlDF-w2LJGS86BE_qb1b4GoLv_hLBNmMf3J_3vuthR4lpE4LlrOvLPL8icpvdG5t3P-_KuUP8yx9Lp8E2hKIviy3L72oP4O4rcOmtUuiAwYI092UCekCBPdWfg45tHocjhsKAA6ZIkRe5GONvyn0FJ__T6NwJRVBWOEX2ESRRP013MZIRYYDzubbPps_JKqFsmgeNianqw2wAyCnvbBezGTjMhTsh6s3yc6fv99U_3Q.jpg",
+    "photo": "https://cdn4.telesco.pe/file/lrM5sTiN9sgrIDUKXPWEa_mMLg9dqC0-EfgPpHp6McrcLHtGJkHbf4ckBH-7GcL5jhxY-5Ok4wznq5wDOY5ryHa8WNczNQTy3s_dE-D2qtoQ1LaDOB-lym_iM0sZBGXMOzluSfW_X_-UH8IYkUTUzlJwyj54jkZSPPwO_AYgjd3zZj_TXE1390U7jmNh4IkzLUgjSTp-ChF3_kspELizbd_GzWbsRnp3QxNljM9UApuySK4pnhhTT9Sp4f748L-zcBHDVPo9Cx3qPgD2clc77E_bY16Ql0Y41xiZZwD-BzPBNVdlqKHbYE5LTH2NCDuwwMqriuLRaDJyP0FsFWMHeA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 11 Pro\n💾\n Xotirasi: \n64 GB\n🔋\n Batareya holati: \n68%\n🎨\n Rangi: \nKok\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n175.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -463,7 +489,7 @@
     "condition": "86%",
     "price": "170$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/WEMYtCGmdOPErfHL8yRBCEtfWKfTEoIaB2J3UFy9cjc15N_ZqEm9jr5digcey9GyAoKbbJl6pmot27PFdok-LFzej1pjrXVMI0pDCmI1LPEodMJrxYlBO8H6jQjmvlksylk8CNzh1mz1p0aFBvyq1-0k7gkZnxF-BiHmTcY4pRnGI5XnOOsAddKiYQsbel9xmb4dEOwdbODUrfKS0edgfQV3Iqw_vLsVICuZWY6VQtb8qm4bY1_wULo1OY6BLOUpjySzdHr555u4JqIwEkdJdPdj81meTneoLdFrwnLHcXBxFUhaDG-jinvCH3NKQlRSCzl0iuvW3Xj4-Nrt9gdSMQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/iFrAuisw6ylavkAAhAJQLUtZac7FyV8ZkXz1dtD4ZwR08nTH1fuyQdWVOQjJdcRu2QCr7XvPO2LkLLyrB8NXj9pnrFCpfl_kDhTGnyZewxL5YQNkzZ28wKmZiK6eEaof7mypRZuQqTy_-nTq_PC2mvdU9YdfwkzyH496y_768gsf6_hdgbwPoVVCUnGZg3BrJ-T9isEfrOMlqzn58VH0FLSXCCs6aW3SCZ3UOudQ19LlqegVhz8Tw0kS9aothFGdPymMupaYzGBl4_pCXTq4T3TVAUD2iHA5U4YWkH0RF74C4iqrw6rVDwel4Pz4xULeOkWp8elozFx8BwrWY2JYZw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 11\n💾\n Xotirasi: \n64 GB\n🔋\n Batareya holati: \n86%\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nKeladi\n💰\n Sotuv narxi: \n170.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -476,7 +502,7 @@
     "condition": "77%",
     "price": "550$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/fweg81E1Qe2erl6NpHc_5iH-ntf1UiYz3FfCCYiHG877kVkPlDHC-2UIZ6HKHpExM_Srhjce-9yvsN8oEKZDpILVHXt9fHQeABDanNXfTJ2SL4VTAbP_JlH0OxXKbqnlx9RYnkG3TXUweaq31sh34ieEoQNbDbtb0s5vNSv17xgy3UoBpQLhg7Qfz-DOVhsowr9PVufl-Bb0Fn5S7iSGsXc5lEpYxCrIwWtZdOwx_TnOvq9eliKdwmZKvG5XGB_4MWxLVFtXxFGra1nfiEOXfThQBNqE6oCvfNIrjGzB1B_mSQE3126dSI1OVH68l2kPh4CapsVBr14XAAupSJEz2g.jpg",
+    "photo": "https://cdn4.telesco.pe/file/CT6puK6vA_IxbXqoDcds-4YUVNgD4xUpkVJ-Sf4KWWbmwsvjcLN1iYvmXFBW4hW3vINDC2MpNf4Qj3x2ia-g-DexXLlKyKg5Kpgn5KW41pDFUAX9j1EIdpZUZ9_XtLJDcCuP7sWfsaKD2uhC_Leiljzkl1PBgQ7cJ2uDLC66kBfyHsKpPZFM8L-UWbaaDdsCk9zmCPFvDxnLz69ujnkGgakZLdLQ2goYLDqxcnswRCTLhxRixQJMp88c8Y-BXvhYQPeNV1u18baE2j2eBdrBZcZ6gsEE8fIE1kpHWsxIBjadmQJuyHIV2Xkyy_DHMlb6sS4dznkIpHs8cj2NwUFjSg.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n77%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n550.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -489,7 +515,7 @@
     "condition": "74%",
     "price": "550$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/ujT1PyGRzsLWdkdu7w2uL-G4SYh0raQNS5L2ZBLrCkWhiFnBgTdi8--LD1J3r9HIfeBccpK2gfqvVSEF2QxQEju1qmgm1QnHdlidoekB1ELUhJRvr0FMEUUikckdnjlr0_k7kMRCSkWDTK97qJoAV49N11YhgE2VpR-WLVjN39-n1lmRiwAo8jNVP67R1kKg2LZLpzlboI12zQuIBmJ0YjEaOUXfy05XCzqt6tFwkc9VnLKC0wBMijBlJnNy1LAGs82IuH_MfJCZmm58ffFoluoyEgacFEbyocQvWoSXX2hGq5Zqyemkl6nXvyLzYJOxlXch6-DO5XcVVYoV5OZ0nQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/t6Yyl_oo7OYLdxR0b86LrOEbN-aN3DYSMQByip2vQr5jXeLCBF5Qk8-Iiv4N6aeYVG8QOHTCUqV1hpy1KEFFiGHRPt0XOX_NArKalq7kKYnlR5dwwFpYzhITuuMNJvzWI5vtvT7ZdVMG3WdbA-EepA6-Ngymw8WHXSj0i6yaad7RSPtzTUJczb76mieIcSh8Fo5JRLOm8yjXFJWPbZANTnjIYNxW9kpcEaEV3bmn4frJdD7pgtYi4o8JcZVZL91g7F0yAC0vEExnDPD9lGAdpiBKjgM4PbT7_pE4OzySiX7iY2SU_ipcY9D-AgCmfAL6-zDsMTiYzJUBORh3f4mTWQ.jpg",
     "local_photo": "images/336.jpg",
     "raw_text": "📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n1 TB\n🔋\n Batareya holati: \n74%\n🎨\n Rangi: \nGreen\n📦\n Karobkasi: \nKeladi\n✨\n Holati: \nIdeal\n💰\n Sotuv narxi: \n550$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -502,7 +528,7 @@
     "condition": "71%",
     "price": "180$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/iI3xcgbaIzh46R08-fQjlTOfu-ZHP-5O9izUGgYqK8Jx27qx6CEB-zV2AT_XlIuVnf-RXTwcuBhO1FZgu6oDb5QqTClX6wuRhh4Edni6iuLjnR6pHeF4xszo82ljdA9_zdnvMesbMdXaq9rPdNcP9CNz3FFHh6w5ghcbRNIwNqiiaxDD0bifxKTQMmCvIGBAQq1MBBKwEf4zD_0QqE5g_6TVC5h0kdxjxaiFeuf1RdBItfrbSI-jYrpuRwD-7Ec12R4A6IbRF6tYHLTzzqodaxVMw7UmiAi0tGaVP7NTUJheIocgr29k_vKXLzYMMdgNgnT5nECtFT9egI8QwguMdw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/IgARZrwa05S6tiQ0oc62A-odAudPFikTWB24K5WCulVGAkJ_9smv_Qg8De45hudxdqS_O-Nty3D2bUozAI3Knuw1qZW_CzR78YEH_Dq55AlLY6mO6Idh3kVR0ta2Iv-wRH_NMXdeODhR2BavfWMmQuuXfEVY3Nt5QVHiASnIeYrxatVfKx0HZWWYQHJsg3JoHzXKNEjsCFTSllJeHK3Y0abFye2CY1URnfE8FP3X_2E85zuXhB80pG4ArotlffCGCFiYpxaNkf7RFIDZKZth5ErmvP2RF7x4_EEo6S8DcLpLZvaDuU1evcHlMDYpwXNHcyufk47nloDyUMLhFc52Xw.jpg",
     "local_photo": "images/335.jpg",
     "raw_text": "📱\n \niPhone 12 Mini\n💾\n Xotirasi: \n64 GB\n🔋\n Batareya holati: \n71%\n🎨\n Rangi: \npurple\n📦\n Karobkasi: \nHa\n✨\n Holati: \nYaxshi\n💰\n Sotuv narxi: \n180$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -515,7 +541,7 @@
     "condition": "80%",
     "price": "730$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/M0UiV0GSavUqfFezuhKbBSRK2yMIriyF_yXnDvE-HwKqCaAAy5IsLSLIMlo0FDOIzDStXdoMbAkU8EzldA-yxP1wMnBOsA130yA_Go80cjF-ipVo6i0XVvu0ioGWMPke9Gvb5j_6fDPg7mdKvv-datThqS4RrmhsGgBqZkbzR1YnBqJYwRtP-IfiTOUtb7t96ItZyilsA_skduh6gijHyDVZiyDwF5U7KzKLu61z-6CyA7Z1BOYz4Sq7Vo6le_N8Ts4UwlBndneZRxeMDR7gJkAWDuLXQkQsmvwQyyNZRmB1U4aRnrOzgqdYbdAa4cWCvEPmFMvduoxwVf_0MhhB5Q.jpg",
+    "photo": "https://cdn4.telesco.pe/file/q1w13PaR5n2y1ASbVk1adphRjKz6r-ck0umVsLpoGEB5nOTbvge1HdazEhHY-7F25itzqFDWgo1chIxdD4ELA7ykkHCyAn3wvCabEcNbvh_ueyJUOOBzzHP4sn4wFSImeYe9PPxjhcgfAn0e3Hu-fkDMrzKjEFaAUuYmVZy8wGs8asDvJPIhGzlV1DT5r9BsC0kd78XTbwAEyLEzaK66xXMAXBzBWywPWvsl4dDfryygMIgmoKw9T0iDU1rkMvocEfmlilVGMCpzBYaoq53r3LG5xQR222HIY3qQ-Y7FXHTN3exB5XvsVBT65405Au8DQPFypjGZD5vsMi4DVQF24w.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n80%\n🎨\n Rangi: \nKo’k\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n730.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -528,7 +554,7 @@
     "condition": "88%",
     "price": "930$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/jhuqtPNTfpydvMWkd7-oD38rGh6zUyEddovws8pJ9kiYeMc9B4JgONt-QsczV-4sfUhOwnpvFAW79DdG4lSj47PeNOyvgHMGaD5pSReg0UQ0ZHX4qF-dUTSjXEPH6YgNl6ZHPr06BXl146jNIR0sicU0WexKHUsAi2teGrbTjqKH7FQCHdy20dQrUGV-Bxt8xZVg1lnH5_rWdH5C-OJMmN1-uwaOVzGmir-aw0u1I3Tq3N4daNa8cGjTtrbEQZyPxFeOvzdfQ1pcXUYGfMmUu3JMu7euZ3gMqVWh9m0DrxBUvYOlMRkZCpSiPdl_T1QvUL37JwT8lTVTOyDxaIINDw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/fff8C9kxA8dZHQgKzTLIRihyTIVpBFWHM3DmTjQwPc_XYZVpQ-Z_Bvr9hzoyoBtzV5g5lC-QPsGfKfLRJ4zebvwxpA9liewlKeEvK_7dQ3JwxtyVdXF4fjlB02N-rGYKqkzveby-DTtc2sHAyTetv3MoBY84zYKQynQDrXaXv0CI7sUC7gZZc_7jvZEaFk1urnk3dYP3mzh_9JvDBiKlUk9Q6KMQTOmWl6r8odzxrEyA5tEXJCJ7F1hwe9TggxmFyHZUFmEQ4gjKwPMXnkfkMRe705KBzmK8OrBe9hrMU91YlpOJorQLlcc9uyl0UtB_nk8_Bk6HsW7Hwt4hvRS9kA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n88%\n🎨\n Rangi: \ndezert\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n930$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -541,7 +567,7 @@
     "condition": "87%",
     "price": "660$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/dbNlXIQ_IKHGi_urTOHG1Wu05xGZ3KnmKESxnBbWGRxAZUk7IQnYsHRLOhB03bBkn6RfUJgT2GPrHebnq5OVPZCd_50iOyi3pnL6HF8Wmx26jehvFPtarpcw4SaraEGh-KuixrzCylCYn0beH7pbmmhjt6HbVTWWYEUGZsoTtybJMJrBl099RNy5anWxHw5Q0Bw-ZJt-egdpgQyXknFD_olU3w2O3ENN8J2VOj1nPkc3jqMtRHuyisPKA7oIHgHnYEsOzcYbXSFB7F1POjG1j1y6B2my6L69oo4uvp-eTRr9Tf4p7T5Z51zos6swM4u47gySOdUIsm4O26DHF-zjpA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/VkNUzgXNoJOfOydxq0AmLMEhFyfO7WIZ7mMyhVC5wbslyyLxdJW_P60JF0pANPxFO53NRJQaUZK5S9waRSFK3fSyrN5zwaoAA-ZzpQLnzPT35yH6X2I4Jm8dmM0DSI4m_Z5dja26DeYizEsZyohA_gqkjYKb7cdeDQ99v95jOjy7-P-P5h3qBbvgrHRXpRhrGo-KpsQK2EfkH_actEGs59vmd4zkDX5pLuYZc3q197LmsCm-4SJC6GL2aFFM_z0ut4HGLkAzuyD5nwm7XEncx4eke0kn3FlpsmL-eA8FRG5UT9slISjWBTmsvt1GoYziZajYj6XduIwQjNfD0AmDxw.jpg",
     "local_photo": "images/332.jpg",
     "raw_text": "📱\n \niPhone 15 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n87%\n🎨\n Rangi: \ntitan\n📦\n Karobkasi: \nHa\n✨\n Holati: \nO'rta\n💰\n Sotuv narxi: \n660$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -554,7 +580,7 @@
     "condition": "80%",
     "price": "800$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/Ug8c-uRQPvs1Qae6oC7hm20Ir2hbz9RxpqgVsKJCBr1BtULr-tjbIwnaPZSFtFZIYhJzLPpkFYyAWIOvccGnR_QuF5gcRDaoAMuQZ3mwFi-lL-pGWz2pshm6fQJkLK6S391vohZIZMnfxKzqQE7gFMYvrwn9xubf7k4ZkO5WnJcCMM8HScy4711gY-_O9icFrxKAGImw5SCEMuhjoAygOqf6oKgsBP_XWWSAuP5ngrwGkkQUZqTGwY2PQI0-oiUwhHoqn9tvMtH9dqUtU74BCPpjQ3Ie66xjUWXeUI_i0TOaNC290GBtIgIAPefvzU9mx5tyxx5Wn8WF0Y2yWg-wPw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/QAHaE45y4hlg0I8XyepNneVOEko60Mw8ankvFCsr78mwyNdPaFGvK0DfxzZnXS_e-T5bdsDOKsmfyarhpE4JVAWRder4icV8JRtXHZsR2FUPBBAzlnXchQYswng7G1hCnjKe0OodB0LNYci6kYfG9k1gobW9BZRP1KUilUXip9KYiyU4JtqnbLh0TIRCjl9ZXTiq1vyj6K2wkeww7-BnQELTYYL6aFHApd9avcng4hIsO7iUftJZlsodVtVx1Urob7jsBpa-K8wYVJK4SAjZKJaqZ7pzXbuwvZCftxtQUtxSbdSVwoQ0H2PI2agCuoakjPKRBq2xAtk36New223guw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n80%\n🎨\n Rangi: \ntitan\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n800.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -567,7 +593,7 @@
     "condition": "88%",
     "price": "550$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/eUL8luwgYMv_AscWzg3_OSs7fr9p0LoZsrgVkHxMxbiFzvJlTMeBx6wgtDPTKIffLj5GLFSXwmZbLxYwfTcRpt88xkStvmv5iEt8hzXG8vdgKAv8bhBhFUtSjs84TncuOTkQ-nX0rjSlCihQxBRvhatE23RladWT12faJlg0W8Mzg6fLC-foNZNopJXbzS1DN3paOEDS0UdrAvlgPKUomP0H2kxC6633ULSTfmoCQGPDND-qlcM1x57Vxnlulpz4uqBwrQ1slu_QASAapHUAxidDSgwpJZRZOwyaDJxoccQLToiCRXjNE74azXNExPAAYbRCb5mcArBjCJXbr13c-Q.jpg",
+    "photo": "https://cdn4.telesco.pe/file/hXYIJGkQ_PBWjr1PJWosPfPyQNoYVRsvB67ogLJqXOzqsOKdEqFBo-DRnp3Ug4e3Qgs_O6MC56frcO6K5VdMAbJy3OMmKBIZUOZg8yMXP2zCLBJLMTJhDf2jE59QBDeGM-tWXUEB_n5jejFmM8BPsIAjMbnnmwuav3K-YAWhtn6P7d2_mFrg0yWa6_FfnbZ6JfSp5rqzPO6PxxTRJCwHWJCUWkYPREhLPwd_kQ-T4Avtqt4XitmRI4LaKapiHWcs4ba6QVfS6krnadZCRQqZ2CQQYGgl-1kpfEdrDWJxiiE-PSXpdZUeNw0ZXxSMKp9-cS1FPjQier_xJQZYcrSfbw.jpg",
     "local_photo": "images/330.jpg",
     "raw_text": "📱\n \niPhone 16 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n88%\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nYo'q\n✨\n Holati: \nO'rta\n💰\n Sotuv narxi: \n550$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -580,7 +606,7 @@
     "condition": "76%",
     "price": "540$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/jEgLkR_WlT8WUfpnDfNrDzN4WSxGZv3CpQKKIQbEnl_934xAS37zc2Y7mYnX60hSVB9ZhnErnY7B4GOMgYyCRV4VFbOOszhP4c_VGcd81HUUHPugoG6wGkGZT89SZqVnTdn8HmBiQ9MLhANQkJjCHgdSZAJZRnl4feC-bZjy81meH0uyjiXLCLiDPpVQL7c4--EHRkMZDfyop2oIn5ZEFVYEZnPcUv4YlkMIC3kuRRTrgWmkpl8qdZYD4JJkVdwrpHsw1pFsvkCcvTHXJ1MlI0GXVzS6Z_tG09TFDkSca-v1d7qF6m0HatNSeqk500ebmjF3qvGvt7r1UvRRc98EQA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/D2LiRB3CzFsSNy3i7lUc0ZPa9IF6b4ik3SXIo_6tNwHcWRg2os97lxc_jccmd4DmtxVxWhGWkl9K_0aDH4adgh4i3O50stksIqx5RsGNRrOnVuZkpuFgTO6E3pParDxPX2sH3wvHih6oC_LyL-Q3Rlxeo448tjSOrfZvqtLyUyFA4im23t3NyBYAadsJLCiM7cjZTHM7S2dBU8cAVYs4VezesMpt5EcYTPOd2DNHK7XmUmm9VSqau0pk7JfyhXiNDa1gg3wbM_uPsPWWHkp1IiFpSKjISY2lnI-pzPE4HfbJZhsKtKpH5BNWn72tIel04MQbUl-VMXBF78ujiI6q_Q.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n76%\n🎨\n Rangi: \nGold\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n540$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -593,7 +619,7 @@
     "condition": "77%",
     "price": "350$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/NlIA1FkbwI_zS7hUS30tNcqk1BGCbFVKKrHkdthnYaQHn0E5Whnsvam2nfNVHyZKQfOjDH3geXlQKP8nlGTpQ0jPm-aBrUBPavxGcKiopqzzkuRWwDBe6PRfCe18Y407qzEJb_BA2edW35EZNwbQOvGWlUc-TbP-XViVyELIy5Y5nC_MtwT1IO1yqWvDMYC8txm8Oh4Pi12gLnh8QsGOgA4fzNxW-C7AdPdb3NP47owzIVajyBF4e88c-0xgefG_M3t9G4JZdpZFFWHLZeVxSF9atuE3tInsda83N0v4cLRlUDy79k1hDkJ-T8AHkwE4Kf8e22kJqxeMk0IFw_W9Jg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/oKAgd4zGrlK8RYtZHq2_FhmbhlseqGi4kxWMvRrzSHkutErRhhT7Lgl8ApWFCi-vBWpnD-wvzsJcO0_qYW2fC-yhfWKDwSXK1qDatWSnQTy_NoU9ibZr_YCUo1t5byd7LgmfNhKoVyzn-FsULl4c6xpUmPg4QbboGUz5fhM21gtMz6vsaXatCuXekUOuiWeRpE0jH9ctfSvaSRWXQyGRmt-7jE-la9xxo7hu9XnhoZbTunsl5OnyLojwQyh1P3xc0MGIz0J2ztdtqxumBI6D6lSDk9N4c4usaYIckBRCopAAAWkSs07HBqFNODWytT3hv1lMl1HbN9DDjEJKUZLUFQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n77%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n350$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -606,7 +632,7 @@
     "condition": "91%",
     "price": "920$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/MUnzrOEC9ycfwIdNcPRsQglJKTqPZuE4KO4FjQtCY7Pkj0WSw8-EmqW22m5Ebfh78yKp00rUzlVeJlyHiYSyQFQfaHwDA6wALO7MR2wjDpO0YO5k1CkJN4QQHjLjvQpx2GuFXyMGRrCQ-qHBYeBuYPutuO4lg-jB18GQyUxYBNwP8CL82aLsy2gntjW7r9-XIkgQfeEQ5tlrFEOSzyHHRXnj9F4XrhRhMbdvnzy2VwIGVRny2NpAdoz-B-386y43oN6T27seg_QFamvCetS8RkQLlIy_MYB_S1WgF7o1ax7--hlHgMAnolG75H6u0_qciY-1HMyLr3OshykLleTe3g.jpg",
+    "photo": "https://cdn4.telesco.pe/file/hWKzEmGWoTSjp_9dHsdaEhIP3nVPeVHxz2MEmcRJCUc4RR_1yudgpNmDqLIv4k6KV7U-g0hrxcdM4QdM_hTlGrXs6Jyq90R0C2ZNJT2JdQF1tTPmwnPyfv7aJfQU98IrxnV-Vk1blE9PK_QvTa1Xgq_q5tR8aG57Glsem_sMi_su6wAF4FCtAL4E-_7tczbtC2345n8MLWN12Ne9yU7qHF7t8pU5JoFHTfD14_4EpIGzva8KqeqkrGANY3orqQFhZlyHd_S_Jt4SJ99MPcrbYUnlLr2PLFbPxhiuYUDK74kQ39GsltIvduGPdjaYoFEOck0rUCjtPkyMKL2SUFNYKQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n91%\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n920$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -619,7 +645,7 @@
     "condition": "85%",
     "price": "320$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/bq-THWKGBljEXRWk1Lr0PN0SJdMZgpSvilQfPoavwfeSE4mEsAro90vlxUdRtQe_Ny4zLw-C9EGDtSTH3rXCSn1d1yQTvjV4Lg5ZaJHrpze1d1IeEOgc7hIY0hwLKsjzoNnkjB7aUXuYsNfNYxM2mS8m8rhPfW3r4bBFt6_beV97KO8T8orQTrwie8KlneYkjAVHzjcxFiEc5Refd2xd6fzSD-q2IMojqqcZsez0jn0PoFvYTKPN6M-ArGS1jbvR9nkBDeBNE8yEn3EqAca82q8bTQwhkQD3ZDHBtW0il1LynJhFtjWKbJzcXkBgXyqOPaxAkklCU47hFy9YeajpJA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/ecCNou9UcH4s9jQF4nB9GXBmD_tqddG7bnNSKnDUHrKWJq9CoyYwtG_gaAWDWZBvdtk4icfy28Ud24io8S12KKkKsWTPiSkjgiksmXv2tfki-76_yrrB_kYsw5Gdh5ICyBHirTsO4MN2FG1X3DBMD490ZgdXPYJJaLFm9olD0VfxlGX50oVSn7CNFONakzpJN9crEsTFTkJvOXCHq9opvODYsp0qVpMCSXmj62aOHwMjuhR35LBHCdUPkPkfFza4rW9QgiMGyBjTU68dRirhfpUmbV5ceVVsNWC5Me6x1c0mYr1_fJecQENdAydC1znczTgAqfUp2TlVlplBiSQZ8Q.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Mini\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n85%\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n320.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -632,7 +658,7 @@
     "condition": "76%",
     "price": "650$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/jpP6RfNZyaf094hQtR5kNveQTIvpUarB9SXicOQ8GTaj2fm0L9E_8Jfhu_hrYpGRsWBWB5d5FBWczmfucInkmXXjb98uN5DBd80zM7-KKQQVrMzS_iBihs9xNsS_4G3X9W1TS6ZfXnlp8s4BZJxkLfPZynHx0J7ItAwD8IMU1DTVqA628SDPNmn3OA-WiEgI3JrHzKCv4XzkBTUWIULBJclwW67OAQy-5bN4bVatPvkDxOFuWD1-oO7K6QupSKg5FFCkZ6BmWSi-vARosy0g9zsjhcGw-sC3OEKMr9-LwxqwOiT-JFRJ22AxhubNxKW5TPTp8kKEDLVP4s5Dy8fOTg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/fZieR0vUQS5kac93CGDiHaGyziZcM0buB0DBIEM6mUL1LACkxMPAwlPwHM4HBq6k7jPPziqiwv1E7qljshT2XuF6VP5zaj6dLeYRWS7fPxwUndXSI04RocFj2CbLHL82Z53ZXKev9O-9OkaGcpTgQnxUxmSx6wpk_mYkHeoz4dop5AO92W6pwszKu69nRJQRWLIG7IJLGIDJs8js2KyAYERwj9mAnq-nXBUA6aTY2c0DaregYsR57cb2RV0PBLzTyeZmuVI7xBnCo1SRTTsTNnvRylQ2FDtpTcFhJF9blgshUdsN1XARcsIE956OqP6G93SpWEj7ATQc9OFRAUUzBw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n512 GB\n🔋\n Batareya holati: \n76%\n🎨\n Rangi: \nPurple\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n650.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -671,7 +697,7 @@
     "condition": "72%",
     "price": "370$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/GTETWqVI-YzcOBNUTKZptKEV8cGM_xc967qZTJeADexTcnYnaiJyxsaGsqPS4VAIRjJI6Lmbrm5YVRaMdjaU1db3ZGYzicKRCVVW8Gc07VVsLxRHNfBCp4YmHGgIhjd7H_ImL1S_PI01ZzuPy4DgGT8Z3DqbroviCHje2ubus4vejQFZvnRKgLHpEU846E6H4TOdxe4LDg_7MUFHhygZG1B79QzUoKQeXDyn7pZ6OJ6EaKAwn9PrQ2UDAGEsIXl43r6ti_NqHPTB33_oAhDoG1-jHrku1CxQDxFIh5ixcoziqnBiqDQej5Gg8HzfVsHj0D9O5uUNPLN5D9FkUJszLg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/AR9YCNkWraycu5_NMko7f2kurAL8Vrhhm9-NaaLHTQizljsi_t71HNw8wztses8hhNOaL0N31COxpxqb0VMAbx07tkjbIHBiNQpTAyj5tkRGRplTNod8wWI4nbITasDuXodMS-akmcFvIiBAJP538yYfsX1fNVAHNQ2Seo058S2FONQgCCAeU-eZMDPAMkl6HV-5RmXdF5TWcJ3Pd7jnfi9ZrTe_JtMWuJEZQ2e41xobOHwzrwe2NpbIMhFRvx0NzIGhUicLEM2jnh3BRL31nJdCdoDJ9XTvci-JAqDwktOBFd_ZH3UbYvfgL6rJdWBBNp8kjLeXnNxKjUacg1TNbA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n72%\n🎨\n Rangi: \nqora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n370$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -684,7 +710,7 @@
     "condition": "72%",
     "price": "630$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/dlq_HqxxHPglLbqQ_LAeu3eMMVqKh1sQJIzwEbkHJtc_2z-G7CxIZ54vIbLOk4bhoBm7nKWPmci3i-MdGEtZ5b_BQf9hs1SLlQHUn3z2ToTrVS3e4FIvJ85SMnN5Ju55Hr8HI5EjjgMyYYQ8E7frz1Wiv2_3OPpeDCcf10rXEUWTfJEoN6XIXOT2lEJcwbQ_zB50XQHa27j9ffV09bQQ05jXKo1C-GYse5m22N9VmPgvR8tSx7-yerWO4GUTDVFuWTab5anl7PRuxmHtw_-e8lYfr4Dj3c59PbYkD3TuI3smr8I8P_JHI1h_Qota2H-_Jrp-6v6PBVwa8nuJuDub9w.jpg",
+    "photo": "https://cdn4.telesco.pe/file/CTkN1fZoA9uGdO39PYgZlRr0JrZBTNPi59CexN0YLInqESgYTz9X7nv-JthYDYUnkc83CsZWuySs-BwFaRjiCamlwLQuTR8iwBLgTC4lYCD8XzlCbmTdWX46foF3p0jivnVZA1zlhH8tiXSalMVKv5TmJkXxfknudDTp27Yx8cIDivPDIWNzxqu4X_QuIxBzbnltc2y1zSnh7XGXJnw-lwtN_u4L956J3yzwvw8UGQaICmi0l-ygSPtL2x_JVbXb63eYRTAWKnoWVr1nSezxP_x2spD7kBRiW7j64XXgD1SiL_roIUHTkYfLujlWCZB9eoES3LMbi1ecnokLwFvtJw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n72%\n🎨\n Rangi: \nOq\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n630.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -697,7 +723,7 @@
     "condition": "88%",
     "price": "630$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/ebUSI65X9morKCSS5BU1LikAcnjLrD9sECJSgg_BJaKm6M6TygoX2N2BuTOdeOrBvJ1E5WkcIb_5g5KEGZb-hNKQ-qjdx9OXkHq5tWZARow4A__yBcCklcqOS_UY_9AlhbLgaEBDGSXMiGSpMY40T45z5E1ygKCSobVF0BXzS9m7PhwUFgB1xd-XkjQ0hhbT-qj-1Xr6mO5S_ZadYhwJimiXChW-M5uBDwzxpkiSzCVjoyIBtyHrbvYLMA2UhrMVpf9KrRMIz5Ut9BzfvOZwKTvO6dSk3-Qyz-UEhX3ijxuTMPZhz7NLMu732v76R99i1J7cFAbprTVw9JTFXgYbKw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/WHyFSWkBAfv6t8TGTgVjlMNYDPLxuALbUiZZHU4QjBGtPKwsNH_w0WgQuPiEtAUZ0YCgHNnoe0eYu0zuXfGsYSPD21THcK-UYbErCnAJ4ZQJ1r6GUVTuJ8g7PPCnvhm0NFsFv3KXJzGMoHCdqYKx6OX7-6rIKNHT_f82P6FtVnZzEUur_PPgH14JWqIEEYTzBOHTAKWUhfWSmKuljc4VIhTWN4eRK-iMdW1k2Q603KExoHxd_4RCIktCkjTudsmIjS6wLmo93D0qJLWeyiNaY4b8EkulvGOrn4eEIBoWppmzEfT-_vMWKQAj6te-SoKha45IDWR_HK7IPsIHv7eV4Q.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n88%\n🎨\n Rangi: \ntitan\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n630$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -710,7 +736,7 @@
     "condition": "A'lo",
     "price": "450$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/oJNCSBbpM2MyKIKXJHTXzvpfpisKG8jZgOH5r_fVlavUv23KaE3gfSwck9ysVEpQaFoOLDvvwhbWbiQONZBHj4gv4UkIOMxKyLY6xxk1VCRu20wKXe2jlqurTN9pDp5glo_oNoeL7vfYnukFBwAdkPOERRHvXV8CjcTx5pEgNxbAxnhppfhRL9n0BES4rnwvUkWw_AFdtqbEGhk3c3LQ4zN0e1tLEOLkF8umIYz2NCrn9q5y_2EAdU2QrJE7WwGcl_o7FLauh9xkdZaqRQhYS92f3CKh5lh-qE2le_aU9IrLiKAi86JcbTgV497ucucUUkpAe666sAR-irAnrpkU6A.jpg",
+    "photo": "https://cdn4.telesco.pe/file/ve3PFGoEtIxusYYC6VU_6SxAeO-i2BztChR9skj1-HmN3zJuuKEIrIWlG8iN22hLD1GqVTcOL5wtbcemn2d93r23mHxwLGUXrwr7ZiI6oKwbew0UBsmds9JkA7q90IE5h1_GPAlcxe1ZvaTfHcb5Fz6DPOD4jBSDfT4yAm5dTR3fndYYwnhQ6i9pgKKjoHrlsNn0mMnkwGV7gukHXtzzxwoPjvnk5kVMrYbdRFLM0WOxbjrr8yyhI6Le7-t14C6qfRM5uyQnEeS68sUG1kY6MzHuTKtxghYs8lSeolBm1YPByKBTPN_6YMyHf6h3OUhrr5tU4ulo0P9oX72NAh6LAQ.jpg",
     "local_photo": "images/313.jpg",
     "raw_text": "📱\n \nAndroid samsung zfold Boshqa\n💾\n Xotirasi: \n256 GB\n🎨\n Rangi: \nTitan qora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n450$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -723,7 +749,7 @@
     "condition": "72%",
     "price": "370$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/VRXYhQSI6MIzDI_wHuYaBBn4F7K6vEKYS8h_shm2HytHORvY_XD6lgUR7Nms-Ja4CO419ew7I2sU53xanymxOnwpY_jU0YW9IgNt4ZK0OhP3sgfGxmkXiNysLxw5HynxT0sxJ4gHYmMuJVhk-SXJ0j7od4orVoGx9FVMH3eNAHabjfdvMLTZlHnDp6wja0KqyB-4FbeqJV7wquO37De6hh-GNt7d2ub_tSa4qE-ybHTsY9Z080fAuMZzA0p-JOVRoHVbgZVQLxCWKrUgwDGzDsU05N0aPDCY432AtseeIws_7lB5lRMqaG1XK_sJTecYSNf_jI19eQNH2BTj91Ffhg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/q0q0FwgVHCy8-eeAXL27aN5SnhGH0xe-iU1U3cHF6powBelBF1ekB7olt2xqmWdBFiZCxILCPyGYyRhRn8CDhICZZV91_U1iCsexeYl_CnoNeW2zj6SVOWJj0RAhb99BPs0ec-KUN6i5u8dPbYW7u0imZjfFYFnFq7Z8vWGp_mlQkDoEctC0x2aCGDpdTmMMg6WoTX-MMNLnguhrRUOUnoY4MiR5qw2Ng4irLw6AJpA8dXcAR97XcL92wcH1KVrCBpN5cHfSn1G53UaOJ2xprdoO2R2VJc5rDiz31nASyI7sIxx7-t8sdaTA1EObiRsPWMCKfvsZiVnr0RrqU2GlGw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n72%\n🎨\n Rangi: \npink\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n370.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -736,7 +762,7 @@
     "condition": "100%",
     "price": "300$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/czOcjPOrOkr4ATllob5FBCp2wHmOW8cy9aXeiWSjunaJaQ_Kh6KlpmQQQzMwbhC53jorFgq1LqvU67UYPQXQGQ0d3rXXg9nqoYwZ33qrd6pu-7gu8OPFfJmjimbeL5kMxUFhMkqnOG5ro0AKTHXlXHgAkSEeYWRGTrpbW8Jk6soDzGJYrdtfaMfwlANevrBWXQGYiOywpBSG6_SojQ4sjolkUyUMD1AkxazvYxqa88eNmKHmHdWjGTt5kTeruQxCeopwiykFt0qBpQoH63j-FuESmsCi63iDRCf8Av4f_Z1mQkvuVwH9cKAl_MbG2bvi7VaCKrq9dgR8ZVZxUlnuOw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/ArhkCywINT0wFPQJu5hVWNV31fnByFE4uo2keKUyjaSph13Q3L0lyQhi67O6ez1IhuPqrd1EPcloyqXZO24NT-XtBbvPP9Kmrf6f5IwO4NsmqbMBxuhdJHmJItZdJBArooCDmaCf-5pFdosXJJsN6MXoBCfsft6sfF4A0X055tpfDMux3qabTJjmnYonL9RLxrr87RQo9KcuAEdFmGnSTqhztV_xSROyzNlL_jjEgGOIw0-K4ImchtXqWkmn9Tz6W1RnZndWQ6NxI-aHaCFAGPIsbyJTK0Kia44yCAGsipOFzoUQc-bWOJt8oEJ7PnnYP9jw1QT9hbmhZ_BEZ7nP-Q.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n100%\n🎨\n Rangi: \nkok\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n300$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -749,7 +775,7 @@
     "condition": "100%",
     "price": "370$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/PaULWXAKM1srgDeMvn7d9NK_dG2R1W8mPvY4vEWGlX8-VGMjWcE4zByT-bVldIIyAAcdFSwB0UA-G0GPCWRkhBJwWmcFqjDe1NOMEewfqXE0X3M4GdaE_pQ-pyROSqLbXzJc6xECbAAYlsFtf2zHrnhh6FB4_YWg16e5ZI4-94hLdGGfbA2_MX9gxJLCftRWmf_--secCiCj390aMLmibr3clImgOLj3mRAeWgQo-Sw9tGh4K1MdYLc4MMNRWQMNjRK9FFvYyKmA-NrfW9uFcAqs_3rRUMLwAUCkS_lowHA_Vp4mRYxFQ6JCahKOfPgaKgdYYjyjgdyzqYZhNF0irw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/bHuKdq_rMjVIF-W3g8cTKeYxF2h7CXDsfSTgyWhnvLTU7AvRkeM6svmNbNyK19F92uoTBXPrxBzWvIThUiJ0JleGkPx_SRBONcLF_1cRjxAlcQRb5jIJ4R0QzzOxIbG5FgFVPGlf5HDdUDJAdzY2-5tYvKenpZg3IVS4Oxr4tZxj2kkhIz-dijjJ4AOzNLLJHl4JQKZqSV6_qarPfwqPS7_CAiRoBazFUdX02TOWqpk0Mj-HYbqS5ViLL3n6D0K8XE4JdK2rWnZgPhgnU8BGtG_UT8p2144GyXri7dk879y63VuHO2MVLbIbdqjAqriROSQIOanNH1hgYHikA2qadg.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n100%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n370$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -762,7 +788,7 @@
     "condition": "75%",
     "price": "350$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/ZmgOvDvCeFGT4z8lNvIdTpN5QCMOdkvXJ3-UPK0Kl9ruwj6TFYYR81pr_KUgj9rtQ4XAxTQsooCJjgdozn4L3fGGHJbGFs7pP25K4IEmkgfm5sS6w1OHtOvPlii0oJ5YCYZ4ncd0m9FeBXCQhem0IU3RgiG1ShGBTXVGmW6VIZM4BZ_b4LtGNBDS8EHZQaH2-QNXRoBMf6JfAznkVLhy0-bn3HWagPR-m85-8W30FW7HZbnZPMirxJewUBOjWdVmFUxt_ggBhKiBOVvwWHr-TqmhQl0RvVfh8XkIWekVXGu8eUZvtTml-4EWmGEGit_gFDiItjyMdoCVmWBP3rKZMQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/URG2YbzP3BpP9aPUOvZ86WR020XusJqfvcHidn1UvxSE3qRUoDMxXKt6JJ9980_oHwocdXv0gzk2i7oSnhca3Nql2zF_8FCTKr0LP120NqDE8kmsHbWmxnJGSQia6WcVVK-HeDfEzYmJ5ojAUD6aLIqVkyvQPY-kO4gTULBQ_xPm3ycPetMIUsqKugr110hAwlgH-2aXSH2elCzEvWiXFKltDQd5Ubb8ixbYE1RSXb0R1Jj52lTumS4JR7f8mZoa6Mw4r056RHPU_ivjo-62UDVCW0Ju2CzJ9RgEP_XNxFYoLZPmYTwuBbOF0yYivlBUJeytX_FtOrVi407GqhbExw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 12 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n75%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n350$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -775,7 +801,7 @@
     "condition": "86%",
     "price": "370$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/DOfN-A9OEhYgOYo1dTgHCds8vXoA85guoL3StlP9yYcCHk8HWqJhQZBMwPb1XmcWParS5uIF1kdvoKSgNGViO79BThLASeMZ8HYIjHU_hO3jOapmG7gsofPTjVe15LBO3yzTDpwRsz9nV1tcymU_lgT8CbBtMx0-cbH_zBzNFkqbGe1V2X0GvkLvLXfSy8oRZqmAzTjmV9q-3ViMwFLMKrLg0WlCDYaWcgHAaP5rrFvEalMje53wLylAHodyLLMTVwi1UCliSCWdudzWZddy3A_yUPuN-_KyNL7aWlc1KGd2XkdkK_Xi57TkThoYA0PRyaQY7BUmpW2Cgvz-Duk_Cw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/bdUj7UPK3G7DrfsetD9SdaYoxgfJCoub2Z9XAnFUX77ex4W2C9i5JCIpuljHhDP_7w-VfGIWaj9pg-PawaS3-sje2zyF2orGVzzsJWQysLEkkpO8Ii_K16W2K16H5QrjBXHrEqWVqXnmPPydIeUxt8CkpNyPw6inmBu2baHTDEhw18RYx98o50Z2lc7wTzKKlrdKDlpEB7BtfvopgnQfN2sAdx7nBG8F3BPrVPQf47OTYXmnxgME169_kPGHJCAfxqUnNGixWvt8kq_1gvh6nIfY5vFrrvkew7tMbKT9jvJBxKaDc30W0EYB63LIbrWx0G9wKZMoblPqjSXFmZjI8g.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n86%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n370$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -788,7 +814,7 @@
     "condition": "74%",
     "price": "350$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/ksuSm4FiC84J23S54CDVvgMn65jVb3TBI_b-6cn2a-wII4N4rJTmPKZmOeYsL2PYDUfI8R9hSYO-E7RZhUqMVpKNl6kawKW8aDl6tOO5DYUFCF6uht0eGJ-2ag3mLrVyOZ3mPLRXIum5evm0LfvgcsNHvmYu1GysEsZoB0oVwUn88r162KkjwgJztpSAyZnnV9cBQG8TtJr8JCqNcWRs3uDyFCUvR_ZypEWKFnQM3p5paZgFxy_sGjjn1j22ULEZYume2hIrDWEx6RJ6lajMD1nD8dDykqAkLaJZjSS_FM0KM8rPQSjxZz574-CWiwPwWUN8iNRy9tzxkmaR-NSdMw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/oiqhg8RswfNAjmMauPQTt6xMBynb8qw-fdXA83Hz0v9ly8JaquP8faFE8iBBzLwADnwlHZFM4RKOHFMnJIAV-j1cDdJfBT-tiCjQ7c9LkLn8uwJe7USByeZEepWc8mF4_AteQk-DLEb5cHpJakTTzuS5vOzmTBaH_xVFAZJ6FYpOKvQLrLz6rmTi1VTPMwlSYnrk9NZK_iQHvdUEbg1OYNzsCapy7sr6uaoIJ8AtAFgLmAYCrusB-DsowKyVr-86T3zD4v5iODlNBecYYvOd4bn9ny4hEm9CDhHfvF0LThTaqfb8tvNNN9pqOP1gFfJqh9RY7i6kgYRDt9iLGwN71w.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 12 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n74%\n🎨\n Rangi: \nGold\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n350$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -801,7 +827,7 @@
     "condition": "69%",
     "price": "180$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/txk2Am2mpcSJFgQsS3GYNn1bGdJePbepoKss-g2mh3qbuPGEIZFZMyLEDtfRO92TXZuAxzhoZ_fdCQ5rGk6LErW9anF3Z4zCSzPMys1NcXgLb9uXl82ucjBqO5kvR6sSsMCnjfdC-6mC1kJ3KAJd4hCJj7u2jIoIB6UxGehm5jN5rIx3KVN8KHBRFPdtr5HWuZY16dhcfqOLsOSBsHqUQQFHwv9VWtd2rzRx4tO8h2FBTJKMSMFUuQ-5zopOtOHqzDS5L1n8_eMLK9o3h5y7ks_lzK4YcO49FddBQ-Jnv2d9uqL0dekh3jYknHWf4Fsymw3qfNBUwYjzv40PQX3Vhw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/LkPZ-9j68YeIBZrSjwdtAcrUNqR3C_tBUOpoHszVVU-yeVjhRvD2yAIhKzfE7qFjhe2LbXUteeMSm8QK31PAt1bQby-Tcozo2lF9rttdn0POkExfVvLO3mzIhhO1Y9qvol_Oz_lkxLOvXicSsn3LA6hYDo2aMTLp0p-TTiGiPBmzTp0CfMGZCaRdCSqmFB4kce5VktB_wsp8VBsfd3RoJ_G6WYLPQmFSwP8HZAP-5MNxqE2imv9XzR7SsJO66vHAh5i4G-HVTQE4gLMzK8RN2b7R5d6FSniwId48rfWmgbtrbTCh635qlOvRKkc7bWHpFvBex3N-J8gQdLVRLLNlvg.jpg",
     "local_photo": "images/306.jpg",
     "raw_text": "📱\n \niPhone 11\n💾\n Xotirasi: \n64 GB\n🔋\n Batareya holati: \n69%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n180$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -814,7 +840,7 @@
     "condition": "87%",
     "price": "420$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/jAdoLRaJ8JjWCsU8Owkty5mDpE57D89IIJmjwKF4ZV4vlXawTQ52tkUVMDAh6UP_BtHJpu5xSV26k4URfhGpi5mWMmVE2xyTeb4iQYaUu-wxLJ3Acdg4mjnGbwFEn3a0bCJcei5bZkV7_KiJoe_TEASx1LXGcokEbjiYbJrLOaTnHyqcnBNlCW8kdD41c9YLbMXAel9KGQ3cXdMxp9s7gLYWD4Zyq9i6AqUTJiBwvevTYuwF5smHZ45b1A_fshjH6olPDmlPUrcdNXacIxG4lIxwkU4VWNbhk-llqF8FP0ABU5Ii1gmKJdvavkX_hqVL-fV_5mtkW20UiCIaeza64w.jpg",
+    "photo": "https://cdn4.telesco.pe/file/knGchLFo56pDa9Av80oQKHJUIum05Z-17sJ4l0yQq1Mi24LsACWknz7X92HopscTJ9NFSTAeQ10eui-STWuXvX69Wm2bDKOor42_FAc-o8zkW_XqBZ1-NKRb0LMt70l6yln1nDhJhPkOH9ascTtJO8WOo7BkHr0u6VToHCEl4B4KZKK-3MeHprMj8XsNrZyeLDuTQ3uZzodgvgT6f1G_JLfvJWOHl0E_sXKoVxwF6Y_AMmcubK04Ge9p1jpvTBDJm_bmQNCXXq6K13Uh4VA2E674yHohWKsbYTpOeSc-JSKswCDbY0bg4d9wAU_EMNnaAULOFx_HVSlyEnAs3sFEUQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n87%\n🎨\n Rangi: \nKok\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n420$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -827,7 +853,7 @@
     "condition": "78%",
     "price": "125$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/nAxTkw-Ld3c0_CUQ-WN3dXRhqc8bHhfFhluzJZ48kUVSx6uxp7xVJr-FQe88xgw5f4_H27Y2Z1CIFbgDFLjH1mwddN8RL8RAMtJUAdNTfUPzVI59N3x4_nQUtTAlyYCYIH1pfFhU1yLR0Vl8_N9C9UjtJqVNM7plqSgRhovdhOEPUwH-6vwRnaISJSUR58YSpbsPxqXpCdni9vaFNb6R8MduM116bbi_eiITiBQnVlYugkdvyZRbgA3bJksjDmU60tsMnq2ClEi573l0k_NH100NOGvbBYNsjxYV2opn44zJOPKRaQ1bole7sYLeISjG6eQ9w7U2tPWDbkstLiV_1Q.jpg",
+    "photo": "https://cdn4.telesco.pe/file/dTOE0hvSdMbKfGtUn_Sa4gd6llzydUYbdoW0ifC3qJ1dYtyP556SlFanZ4m3Wcw7ciAi6eVlBZtM4ubPjRLl0BHtIYq8XIHvQEqdafWud7QJvRu0_J1AabO9sWH0x0pHf55ce2l68F3ZfA_2ZuAlMIRf5cGQegwxmg_JtUW0KeGCBgFGGuvgch8N4ySaFnVKflppjWIt4e7T7YyvLmaXrFG9qZGeIB_F8hac9Jv-bZO2x57_acjkPm_XFtUH7U05IopvZpiaL5D2n51YTsSm770xK3x-5SiJ7yOfX8_YB_sQq0J4zrvGTj6GrfKqjLYqmrR0yzh8pNXJDQGTmMT1TA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone XS\n💾\n Xotirasi: \n64 GB\n🔋\n Batareya holati: \n78%\n🎨\n Rangi: \nGoldb\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n125$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -840,7 +866,7 @@
     "condition": "84%",
     "price": "520$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/N-mil5LbV9sxExM8E1LugAhTRAWXmKe0DmgPkQ_LXfEFm32MQQzknQ1Ex8VlkmVEDPkbWQQSwyDJ1nMfvAMcMbaYHYMjGyADR30Mab6516aS1VLP4y-rWf5hqTyV6jp6rMGHiCLE7tESwg3EGZ4yuyIejC58d-UrkxesjJScElzYZaVZ9KLIbYBUSQTI3jKnrYzJcJaWNDIrVQBbN_dj1h589zWCZ2bgaXo2CzQT1YqD4DB_iwkIbMDAH4Pt8JUZY0oZgzKyKw2S-TKMlCizK6SZFc_dcZuvYexdYoTvV8gZzwt4kcU2SPMtBPad826tnBL47mh4aVA8gjCXmBXyVQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/keXDQu8W49JmEOfPuZs1MUBMxwT7bQ8xDrLfzLwd-pRLy_Iwyr1NmKCJKB5qby8CUtMDyPzP7DLqRJKHZZjgxW3Pv9KykMDLkV-hUbLRNZETzT92Tac23cc7q2S1aDdgevU9AHzvElX8WIqDS-JT8fb9IOEpGHJrpbDD0qsCjuEeUUZ8-BqTW32tCykR8uaLwdODF4bzgT_1jIs9gQfADny7TqvUZzvKpYsVS5rxxR4q5MAUs3hEx9elutYopvQ3SkaVeIKtoPLLDloMFBheR3R6uwgAA0EWVozTRumc8ZfjyzoAxZ-c7772EFdYuOUqybOneWwViRD707GonsnpzQ.jpg",
     "local_photo": "images/302.jpg",
     "raw_text": "📱\n \niPhone 15\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n84%\n🎨\n Rangi: \nPink\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n520$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -853,7 +879,7 @@
     "condition": "100%",
     "price": "550$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/TgMt31-hZHg7uuthiGJxRqRWUbjk8XpR_rL4HuRaUiQZ4lo0RCOnZEA8aiotSxlk1Q03j6WqXBavBptqOxLIBx2zmoTSqohmkti-5n7-ggXGegjo_mkteag9Svx0iRhjxqdCsQhZKBlUukj7dJF1ebO-Rv50j3fqlXbTKZGPSMFikX6-pT7CYoif4Igi4NvjkzdcHusYTJ6_BfxOHsOpgkK-eyshpKBmITTYPNNA3_5tMnlODd2sT_NWCRfbwmBYB1fEMGwVJfgJCU-bLsw3zxqODjFQUWiZfDwQzYW4sFoOgzimUpmSnTr54XxehVDK3sWWxGSxpa3pyfSs7ebCAA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/jLJdRhO7SaX_-FSI3N0eNPtJ2-JK4ysj0X7YYh3wJ4pNqUIc87odNEHGX6as8Hx3qk8q5MJGy5tjvlplvRjNaL_Z7T2zZVrdeTgDf5gWosgo8ftaIZuw1XfEs9E3Wi9Ix27PAfa3854z0d3QabjsdkOVM4fNNkaI2VzVQDa-26Ea9wrj2n_Et-TwGvXuUDFapZVSiwLcJmuZZ0vFiWZWtsojSIIcOqd7AEx42mtS5woxM5YgCOSzQCJIsy3HUBlpaNOVzKQeMuz3hMScFgr7N_MNhWR3YqbLv71zfNULkG2QdI2QSFvi06-mpKHDVZyM7XqRpy-VOTSf2UTNuxRslw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n100%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n550$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -866,7 +892,7 @@
     "condition": "74%",
     "price": "450$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/KduGqQeu_J5qk4O-FAZglynrqKgXEWY_9Jw_L1bBXFIyyQyOYRDVHKOeoOS5xBgJswo2i5qadKg4qX0PE0rd9ccAzcEfZT6mlUyTtCO0HpI-WeAXOkBdWg73YxFCHVcBWEdgOzi1c6w1p_CFbqIN3QSZigi61x3HJeL-JzoOYuvs46X5RVNtwd2FgRyrHxeMV83jyvWTFBRfgI_iPucSNCTxM9EgUve8C9wBZCvDxNtE7YDGk7CPsBcbUtlgybOyBRWbRONX3JqwMhFPnhvlJlECgAebqjmF8penvAgFNVvs5FxkkbRqIZp7MOymvOOTxloVU0jnrqLQgwwtW_7rkw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/XNZGk68obf1-lKZxocQ9X6w39HiPwOAQMJWsnBSkqSCH4_epZVAB9gkJOuJFNSvT9irVDifzlpQsfQkVh8GQxZeR3T-TsIwtt0NV1kj8r6p56i5cwAFx3pHVvXRbiQruMOeeEO6G1jSxIAXvKJmC2dQHvrTFhaC4juDnd8-bEUzyU7jDoD970kl6_wnmz-kEzZytpLYniTqQxus2nN1LmBpGWTKoBWFSMwgRxiw6ReonAdY_LRO9QOPPlthDtUo-OU03F4XbQb882PIFEWxM8nunMDpKD8-CB8MseUwPABWo1Qtmhs2jJjT3uOMyVEzv38eqtfCLy5FFnaTGHmFdcQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n74%\n🎨\n Rangi: \nKo’k\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n450$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -892,7 +918,7 @@
     "condition": "83%",
     "price": "570$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/VKghDXhau_9u16ZrsdsQVd0folV_JpHiKdE7sqFwLNYnzM4cfRjk3hwatMg6fDw9-JPlD9wSDuKfSgX7aw87K4YvaRjzEeA_FbsemUhOi8t3Q_uOLSpzmAB6MnEmr5KuvwvP-Jp1yVqXfzXK5OuNGMYG_49KtqWWdVpXbxk11uBonI36ag0OD7iWroNprHy5neKKi3AQS8KxBoKqTrsGltZt_96q9vHmI7DKWhDFetQywZs960JBv4KdFJfSf1QgSccrSxsPwCztitxC2gndYOqKQhU-aKW59FcIP0J6Ak8yotgC-4ZSWlJm1wbwb1sIiLlmyMKtDcTxYGZAttmFTA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/iIYFtO0CAf21HC6ufpI6e5Rad7gWmkQzrGExV28B2L02r6xgCc40lWKTbQTWqcQZ9LkEnY14HFj3j_q7rT6Pt-d-BtoNVtuEFRf3BTSK-qUGLB3hA_sJrS5KCwhY6n8Fyrxgc3CesAGXh1KMHuK0ijNxJx6ndlnRJr2338csCFfhAdVnYj_mlnq53alSMHQJO5S5ZVfVIWERLwnBDWawVx5e9nJHx7GFF13iz-Bp0BGtNm0q5VV5D8wXENdVRcT9hAk2U6otHrZRA9DJD-5MUqAeShhqe2N-KRlqa51r3C48u5LXe1tnDCWj5_BX9TQWaOtdb0lkHZ5Zb8gARUyYZQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n83%\n🎨\n Rangi: \nKo’k\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n570$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -905,7 +931,7 @@
     "condition": "90%",
     "price": "800$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/KiOnxhNdggmWrULn6E8SdMc6HIkuGlZoqWnMuI3xPIbjym77zmXtNVCK4MYOndE-ffz--1LxxS5ja7TZM_OF1NCm0WaYoPqWGoVVkJe5U5eudZOyz_jL8GfbVvYwG-f9Ak_dvOqurPwPw2CKO3XvCHwNLGmnuIfi9NlAjGscOfKMtu7Uh-3Mxv8jd99N-kY9scLerinj-hJ1aZFUFwkT8zPJmtKNN1WzhBphYaA4-cVeouaZw1KDTeiD0BJILFfAlus0nR5G_XNx9Glh8mtZFuTsa2kHIdFSF-nU7k5DR4LOJgEwJX7HCMhUIJ6y_Xv3aWSrd8iEelM80tOt9_Puyg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/r7drXapeOQPjZ0BkOeFezpvTyLkIcidZoPoQoYOMj1MIWimdZv432KXlzLPhFxKLpu57Z1rXqzVSTPbXnMw36jmK0vMpAOcJB-YCzV3Yo95mUQuzSLjqrWfiDjMsluLQw5AEXo1OQTI_IT4wOKaXRzVZXia4Als-Y7cLRFPNR6BdbC0d61nbNcR9IA0xdG5uRIB3MFwmMVl9sjn5TnHNcpXo-345qJe8miDw9768VQyZwtnLbyNos2df2NT0bpuFON_e6j9U_k_xcAv3hv4NKqUA6s1KtrkMt0N_dA6Y2W-L9iwKyLj1JYaV75TGtBzLHSxdSiDZkfQVs1GNB13Mrw.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 16 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n90%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n800$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -918,7 +944,7 @@
     "condition": "87%",
     "price": "500$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/Gq-TTzK8ZEgb-p43DX2i6HI9XZ8R6UTP9GkTddCouwDfoUqas-NwMZCTXkcPhLHJTEkhCY3NJE0ROrUa4HNc9o0LL9BKptswuPjTuH-XYeUM8wgFoASitIzxAllv0Kr1lMC7HVF1MMmClHjmDanGS7q_MAuqV1iAaxB8yDkP5KJIzv1zClt7TSHhrImmbUTqs3HXeL87exRHEbukAt1rJutrash7T3KraviSTlnQv6qKDEBVpzOfX9d29dHoZm27CTuCY0oH6HC0kTql_ioCgXumga7Izxh-NqrtT_HhXOed70rfAh9WvB5Rsgtc5PEl7X-BSJQ0hJK85VrgQWymLA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/R7pMWPM2ocsipGHVS-TNMaKEvmasmMaTw4lh09tCa9jooVk9NB9WgeEgs474-UOhf092eeb-W91tYT9CuNFUmH1hD1O5Dg1yWUkQXZz_G4mNhJyy9-RHKtNgB6KJqtDVqoJ3iJgaVOf17X8HDw3AAhK1m2wYOt3WjQM-c2bQKwo3yuAQBhtK3UVtCdmFpvxFg6v7IZyCod9gNHSELcerYsAZ2YMQn7822wbNuqZeFfAEZ-DCL9AjgXAOsuoWu9SvzogwqLPJLljBPW-uLMNBkwzMFIwE3wulvFu4rIHwbAgQi-m8s95tr7UAdtJ4nDoLpfuN9GXS4sz_zLofkTTLgw.jpg",
     "local_photo": "images/296.jpg",
     "raw_text": "📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n87%\n🎨\n Rangi: \nKo’k\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n500$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -931,7 +957,7 @@
     "condition": "84%",
     "price": "530$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/MsH-rAnNyzxtibgIzKfawesMUT0i15X5QsLBJk7Gk7GrmahTCmbXuujX_jCer_RL6vdjoLIXupPaW9Q-ab03u30bC2MCxVTnhZ-3x8DFy9-XhL0OZ_P5J4qtICQ2fCEVScSCPk6N0CcHCfexuNSDHgG61s5MhdrIid89GoON1b8p1QTPWxinLl35lU8fsko3bFJUz4t_oHb1KJGLkcqWMXJQJSfNAJlG14dXyClW-Og4-iNtXFv9s-73HyRRlLHSCrE8gkXJQ9-iCbfbKstEFElwk_UiVhVD6jnvYGYFsU2cMawJCcgffy-QTtx1OJEvHzGXAQb9wCCtfEAp41lY1A.jpg",
+    "photo": "https://cdn4.telesco.pe/file/Jbdv_mgYva0qLmOD2hknjfTI-K6HPBKI5Ku_QjmtSi-ffqKNYHeHf1x7FPdmwmo-SNDuX5J5hJeR7EzFAV9pCVASno82xmKYisNoFLFAj0S-BWDoGm6yeWysDHV4M0lbqBbHJU7aoGn2WgyJ8YOrLe8ZTaQpk2nyx5WJtMYn9WvzOOenAv9AgCbCqWWp1vPhFoRVloIYzfwlCnHEQiuWgIL6oglR4NAD6-i9Nw3Qn8hvrBCoIE_20OGdxFb_qUaL3XgzWMjf0vCokvkxxWXBSpUIzTFB-wWRHVyS9oV0XBRzxkvSREQJ1LtolA44loIm8NKVP3Eao-WUSMxfvrEDFA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n84%\n🎨\n Rangi: \nKo’k\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n530.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -944,7 +970,7 @@
     "condition": "89%",
     "price": "820$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/SxW2Ivp-_qgcqkE7h_k9lf82eQlytrb2RJ_a1kusGDqUVyIHGDWzspDk7FOuXef_323h6GVpd5Yx0v1PcKhfT6tq89v5I0XDxVD4DPrbV_OJX7h605ZNcuU7ry6JMEJbTXlX_biKKmIip9gLFR4s95IRyDtQtdJgf89qDKoR_ak_7eXECb2FA90GdqK6pDUFqI01C-i0E-B8z7FnbLyc9LQebz2T_Sm24HsNId7o3IiZBQHs5w9imd7G-btdWCgXFImHdU-NoNnETsaoC_YyeiKEBt7TmiWeg6TsqR5KVTKvEXz_GpTTdy1pEff4vFvhtRqiDeoXElvd2gaRvts0gw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/QRBl-kBqW4CBGCGKX0wSSr9iaYXAUTiEhwYgZmXdDgTSlbdJx7sb3vdeRDAB6v7Iz28TkZzquVz7Nbt5yeQQJmMZctDZg-Hjb_yl-TpC1wtli0HN3LVM3JVHJxaNSns-_NWoQeKDnB236panTfRoPhJi4aEtKIBADemRNA0p4tvojI0sKabxRnUASpUtdhSQg0Tfirkh2OJDZJW7dlwLbvu_h2Jbn1vfo2OdVtz2OVyzJv6VZeb1MzzbAtAIW7s_LOZvNmPtaq34navSHtaa68LrnNHY3bbNBNV9fYyMQL60_YNfAuHEOOJ0-jyg-CY-lqE-tHojyKSv8yUH8C6d-w.jpg",
     "local_photo": "images/293.jpg",
     "raw_text": "📱\n \niPhone 16 Pro\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n89%\n🎨\n Rangi: \nDisert\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n820$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -957,7 +983,7 @@
     "condition": "84%",
     "price": "550$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/mBz6la1dbraDcIyZU0J482Gh740LBGMlOvNi0NDoNmewutY6pr8srusRZqSPrGnx5cxsSNSf9SR5mwW2cZZFXLCF25OIQARwYot9mmfQ1q1LW-beQtGseBuIKXSMTYIcBulVFgJFHFSVxbOSxDU0lfyy0QHxZvwOBWp4gmrrTp7zRqw6YmLj8yfGyPhZJ14CUkgEBe3aHDBUxasV_bsIqoe9vT2Siqqj8orU3SvR83bgyumir5-a8mJeYICs9h_39HEJpfYMCg-ctUwoeURCp3gYk4SuumZM-fYbiwvyO8ssH8Ft3FHo1BLZqeXJgNHFTnBXsRmlElVbIrbURKXSUQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/IOsR1Lz90OXRBmisRrvi5He9I-PaLgxnpiuaG3qw4jGSCRCHRl18SlTMKs0qPGdVpLFjSeZS6rzHhJHBbtZpl_uL8t_-DDtcKbpjEz9_2YajXecQoWO4iDL2bnW_m8IuuAftsIz2_zV5vwvz25ualVaLq-ALDGuxLAD03BybU-7MWgYEDJlokdtJlEngAONwrWYXDV2vrtQ_7_9uFXI3jWylfXCkeSBD3SqnAx0LrRMzBm38iAp3a0KSaPiqy1F46VKJjnR-9c8z76T_j2VgglT_BudyW0qGQ_39xO6oQ3H8zFlRXOIC0j-OajcxXnx1PsIgv-7BrWtpvIx9TPApwg.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n84%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n550$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -970,7 +996,7 @@
     "condition": "77%",
     "price": "550$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/BW6YCJQw-GssXkcf6w_KcrZYjZ4xlQy_9ipsUjHuSsWStEYtnMeLNTi4W15UPq6lr6VwYW15M-qTtw6iPbG58O3i6n1MBtmoNoSg6WQHwMPMav7m8-Z2HzhlMrkAIHP0oM1dvyu_LgAUvRWc0cF28DEck7CpO_ZJ-xDDaQSJhTOYo6bHDiqG8s2jgEQcTShm_ElmAS_mwbmBMjhejXRMwsSTYfYqjSw8qLIaoOcuWjLl1eeABV33OMaWN98ZWTZXRiZciMSqFQznlQu3DY1XyCeV5ChqumssQ6JiggsCx5bpIPEwEzKju6tg2yrjE2GQ0bSm37nnulC8udbQCCxAYg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/DrzroHrkDyl0YlYTAFIuokyWXY4Ub_3KqqT-JP0_LAUs1-fORFHcWdJkd0lX3tTZppZiOOxll66Lt3Wna91QOrEwxnIp2AassR0XV4-3oxwNZG4XcJE1VccLw2eXL4Z85i4S2ARz2W9iTm8CtfwobuNPjKsSrEB3Ymvd_DbduJ0VvLLhtnFLo059XsoVC9KJKqIhrHZ2RFIEHd8F3hPmAkMRSKRhE7qPdsuNxC13idNVzAKUTSaqXzlF1IL7jFed_pOspF11RGsjkEV7WbiwaPPyLsvg7N6MvP_cggqGeagR63SVhPjhqsveqboK0YyEFwUN9EHT0Bkpeo-ylBZu5A.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 13 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n77%\n🎨\n Rangi: \nGold\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n550$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -983,7 +1009,7 @@
     "condition": "75%",
     "price": "600$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/OHemle2V7kBAWyCJyMaNP1wv7lot5JHp5v7bgw3rJQuLX5bhyPamoejkuO9nqrlOcJH5LNjU2j8keJwSzuh32Oj5Ks4bysL2VfFwPH5lddxZwtG53E95MO9gpl1Wbiaib6tkHoo4J_hZofI3ocNzULo_pPLEOOuCGo3R0VPVxBGDkZs_aqlAqbOe-iVeIXhDCZbJr49THTQ3DGEm5wdSllK1mw93e6eWK6XlxQtOe3FruE5Eav5VuZ--ohaBFnzau5oY88lvm3IZCITr1H1hhPQ0uAld5hVRSdFzn1apIzura2GIVjJXnLB7HEoO1gLWNyFoyCWbv9OUiHuEwrDQ2A.jpg",
+    "photo": "https://cdn4.telesco.pe/file/LC9C5Ki-9ULbvgGDmtwmkDOx9XsBY_LuHlzt0GLuKYuOI5dqtEz9tRmPy60Q6zymS2oPGORih9G4DtjXaikvW0caXj_LejVPmmDrUCI2zA9jW2xczfw-jNiw3sBis3y0RNuGLqtWeBp9owLqE_xmE36vxWU07I4do_hNHqF6Z042bakSOjn_pcORnCZucAqC2HozbpWG4vIkwViBuAnV2mjcoUnzKElA_fibfKnE0MEMiSctcqi5wg5ub-20NP29ESrzEmdZqJjVHS0GysNTK8gmEv3T3aJZ_J38o7Wil5coArwwu1bSq-LIkWUCGlCk17TqLIj4AEDm0ZDi9iGHbA.jpg",
     "local_photo": "images/290.jpg",
     "raw_text": "📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n75%\n🎨\n Rangi: \npurple\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n600$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1009,7 +1035,7 @@
     "condition": "78%",
     "price": "580$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/tN4AcjhTW0Fh_O-rJ-X52XME0xWt_-QbfDE2sCqmk06vo9EHVyX-Kaf5icylK4UcN3_2Vdc7W7FzVQWWLWG0_0Qn6hnQ7AiJerPC4M1V_7pUzbT4Dr-0eYkK6jmKvXfZs56J-tR6xFn6PWmjNt53DJ8S-SIISNAo5JOD-PmKyA1J2fbSiP_JICVbPhbpVonUzPJJqu5yhFkuVCQifCw_hEdsxVJUaCGeDsF_mLENQC8vvXPoTzbzKsJsd4pdvxwUsgZobSVUfkocadSU5eF2qDaWwBdLMZKEXaB6J-dx7b34eFm0nWCVixGWvTKF6_j6FZWDq4YGSegS6fEMOPdCOA.jpg",
+    "photo": "https://cdn4.telesco.pe/file/Vqzv0Rtv3fpzzDtpK3xBSRu99Oqs7cF7pViMXUVXrnv-zfjqQtju1qEQCZfJAJM8MXeXiIaaaquoQ4TRXj_aYSaHbu9iL-mmKXIS-Vm5ediTauAKKsSy6BmMZ9NruJJr1BfymOMJ5YszgvO6tS0mdp-mo4dOqgCnGhhZ07EnRxQX2_0AuO9WvJeFDKgXexv8Jg-HpbjSz71LUepWE-YRUrr5ZgT9Wr0XMUrglDbMAmwMY9gV5gQZNJY28T97ITFr8clUfu0GlYcRBcyKu36N1TSkgh-I0le8gmX5n5gOK9HytJUSDgYv4GHn_qdOuk5ksrs4d7sanJpfCiQmlM-Uqw.jpg",
     "local_photo": "images/288.jpg",
     "raw_text": "📱\n \niPhone 14 Pro Max\n💾\n Xotirasi: \n128 GB\n🔋\n Batareya holati: \n78%\n🎨\n Rangi: \npurple\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n580$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1022,7 +1048,7 @@
     "condition": "88%",
     "price": "800$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/sFwRN5DdZoDl1Zap5weaYxnEgMFn4Tosga_2Fqq8U8-HqMjftz63jueL-PXAeXrCplaHocfj2zpeu6nHfN6ns5B0gU5YjiUne65WyplYFwymzH5jBpG2uTHmTu-exnhk3EgxxwoPS-eIOu6TEIv22YsNbnAlcpyBxqZ66Cb4jTmXPdiRYQL8fWtRD3tdNkUrCn3J0y8ug17UFoNR0pg_aSzYPFcy3UmMYt3Bi_1aVNFWtdaaCjlcLu_NIsM_9em8DWyPyYE0Xs2_esNCuge90DfvkUEX8JVivlmbyOE7hj9Sr5hAVmiHvAyghNLzZAKnjHXW44jvb-2NEuQpHKMP4w.jpg",
+    "photo": "https://cdn4.telesco.pe/file/XsZdUJfhwZpCrgQ6chso6MeePI6QCQ6P1szsN5x56ikknOCFjZ3Gn4pESrBSNDzt8nimYBfWu338-JHQkThkcOZSlhVrr0SIShzUvW1RHzPsgE8jiwtW3fpo-Rhm80VUlS6cXq0wzVZoQHE-B0I9MQBav57CdmX1ktxdvotbELpeubl4buBohQ8PAN3x61HtIU93kBySxZ_ppjAyajonf9jXsatCrSbB1RgFLIVG20boHTQi0rBLSl9za5ogPGYGXTDzcGfal2e5ZtTbysKolsBjXVbhV-trF1kH5bMEw17fCUoMBQwdDANCTB2GRen3A3vbD_oC-6PYm2M3J50DaQ.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 15 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n88%\n🎨\n Rangi: \nQora\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n800$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1035,7 +1061,7 @@
     "condition": "90%",
     "price": "950$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/Fs8ozYsH9oGDdaz_HDg3cZZ3SQseTavF0lCrTEsuDMbhBdEP1_WG4PrNT8CxGUTn9BFUHrgWQm4ziJ05scP7pnfPMJyDikiwoVJd8cXhIZIoCVv-ahd8r-HBePjKeYuxOdYWG_z8HymS8zPAscIsdBNf_LTsBCvfpMBpBRrE0m0PQluCm1GmeBnWy8X5Yvi7HGuutPil33PHMiF8xZjZcTydp5qGxVmqe7GPucu5zqDIIB7u_H6x2ZYuzLcMhdd3d10kyXeKsSzXc4yPUQTt3WYEGL5oA6moFqruAOlz5M7Lv-WAtAOn1wGO_xD7Tbq9UVXK58kWYSVgoe0i9LBPXw.jpg",
+    "photo": "https://cdn4.telesco.pe/file/OReHp1mr922TL-4sQYvjiLtUpOUphKwp2I_P8Tkfx7EmNs0gmALVyXYzZ2sDJKUpudxYgEQJlX7BjL7TqVENDZIh9N9_bbb7wjFeWljA50McsRP-0IxRX0fU6iz6yO1wZVeoBKGN9ZUGoaCDX7oZgVr3CY5-Q79-v7oqHV6qMe0Qk6jr5nOPSUNBu0Q8R0FHyg-9lTHoZLvv1DYgmXNEVvywrlDkotTOVzQSxbKu_uXtsmWH3jA80PQDx26jGKI9tr7tkGkoJCZM5JGblUQsB9Cil3Q9qQKE1XHKbrNIjcngp-_hFmnQzADYtgcjcBHTgQALh8ONpkxJ8j-nEi-8uA.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n90%\n🎨\n Rangi: \ndezert\n📦\n Karobkasi: \nYo'q\n💰\n Sotuv narxi: \n950.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1048,7 +1074,7 @@
     "condition": "88%",
     "price": "900$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/KxcjFpErYZXI-0UJ0G-mo6AdE1_Iir-pRcVKwrbaIkguBIC7-l6nsJOLxEtfGy29CJL016HaK0jAr1cEiol4ogQLxPGrCav9aotBzXxSuPxBTyaBr8Eu8B2JG0DUXPrVmgptmW1Y2bQez3uYhOJo1sFK0r4GTKOYVf9pjAolQs-p74rutWhErMYrnA6nDUVH5veNX3kOmuTJWB8k_tsyvsrQTZKExU6LzVA6zjErgr_rW9Xn5DK80jzkFPxM3AKzmeiT8oS9De9tclC5yHT97SCGUeqEeg10Ir7gGY5OJJ3Xwru2NIoAH-W-AxmRFajC_PqBjnHLbEkzSYBGqMRE3A.jpg",
+    "photo": "https://cdn4.telesco.pe/file/ChW-ZkgrBhDWebyDDs-6EKM8xQ4JF_dzxBsRvCis33GGhmUqgKZkj72n27nkBblK1e4LsVsC6sYV5XFDkMkepXUZJC8KrvPDA8Eh2ch9Wu3ia64-imCWAre0X1rHXhw94zws468BYI5ac8qCF2w3EKFOi2RZZ3JClTIuHHTBlQ6Mgsmt2keawovzcIcPUPrdE55uK2bvyPxi0eXEkbuHp3egedUtv0TCmFLdSkoRTelPJ-eOaVUzouH_jhfMY15xmbtQ75zcaYS06RrhtZH0Co568WDOJWus6DCc4GPTDs47r1kBJsHUc9kSEH3wcT8tDiax17CA-4-m6vvihMN0nw.jpg",
     "local_photo": "images/285.jpg",
     "raw_text": "📱\n \niPhone 16 Pro Max\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n88%\n🎨\n Rangi: \ndezert\n📦\n Karobkasi: \nYo'q\n🔍\n IMEI: \n347867\n💰\n Sotuv narxi: \n900$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1061,7 +1087,7 @@
     "condition": "93%",
     "price": "860$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/TDHx-fAhY9kKSKh6NYrw7CsT39LExMYn6YJ_I8JB1x_2EPamcOn0ZlbDug-Nn5iIwci_1wJxnY-SfznYRB75OlPcVVo82oJG0dH5ISzZv0bTgV2KLQxNK6TMOpHvy1m6fiLFRnIKlTqEYiTc1i9BHCBrTZGq_EfB7lyaCeZmZ5tKNzcVR6DX7ndkHkIgM_MQs8JkoZqbo9KfH0cl-0DsJInUi1Gi994sGJmOFK4k8sp8TQzO74qbFkIIIXZ0asOYw3tBEn4FiwKRR2d1c8aAXyMERoy5B3EvhOIiDiHP8CodBmblVENnG6xeRMCs4vPdl25O9T5UnZSPN87NcDZ8ew.jpg",
+    "photo": "https://cdn4.telesco.pe/file/YCHTEUbyjzR9fn1FdZSaB7sE_K_V9acvbmimlCwc2hWKiyZfTzuhzuLbGtLujK6OFDuIK5ckwPXy7WOwq1JNFGKsJdIxMfXfxaN2zEJ4yOSvpQ_1VK68XgU6EH6GhXJ1IvruqiC1t7WrIzxNOyA5lsxtifOPlA86cA9zF0YTMjOTxmffpR3QE2IO_WSHZ6PUWQnN3xkrpSk1sw4_lWf2SRqCFzY8eU2R_c9QEsYR8RCAvo7e9-22A2Sqsig23NP6xl8RtRRWHZCd2wCE89unJEo4xRZhy-jDzxeNwLgR-uKZRYTFiZNyKAFNa3iOgwpVChTRWfbB2qO5EFNuv3djPw.jpg",
     "local_photo": "images/283.jpg",
     "raw_text": "📱\n \niPhone 17 Air\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n93%\n🎨\n Rangi: \nOq\n📦\n Karobkasi: \nHa\n🔍\n IMEI: \n171025\n💰\n Sotuv narxi: \n860$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1074,7 +1100,7 @@
     "condition": "91%",
     "price": "1300$",
     "is_sold": true,
-    "photo": "https://cdn4.telesco.pe/file/EzpRJV_2fBENzTDvzkOv0uPYphmA35v2qKResP86WaeuhrnhvBfBkR7tQHNY4BpVRKO81oIQaL_pgS6ZK5iGJfmdse48oq3rLLN__Yf_3wwNLu_aEQYc22M0FVUZi0PVY1RlD8ZKVY6mI40QfBH12VzG4PzBAoG8oRGBZJljqY_F2wcmL5M281drEFu0u9-FI3o7aeVHzxt0srAEh9_0W1up9DyENaV1_itGq9snbJdkERq-P3qej4qgGXe0EZzBb4M87zFqkNo-a-HL3bPGvhHTlNDz1uUBjI7tN_XyEnxHERYWx80sg0AydZ8eNxGo2ywdC2kpxE_ZZaGEY-dMBQ.jpg",
+    "photo": "https://cdn4.telesco.pe/file/lT3xmAL6hFx2MwcXzBrzIZgC4xGYJPh2AA07FHq_HKfLYmT7QaST_HNtVqfjrhxe9EqMDGUvF8Zh3vPNTJGYNRgYZa45d41j7hj1geU2IsywD-aEpApV_aqBxuu9NYi787_PlQQfxnTwjwrg2i6PKazlReZBE5J2XD6ZY8Idr9_eMpLcvHoOHag81-jI-NnT7y15VF1cBHlh0CvrdUB3r0VTRFtsyErMl-4z654vdvhcc7MG1H8zpit7s4lj-JzTz1Za_izivh6DA0lbC36nxGDeNRxnQB__UnrPng_LdZmqzp4-ov_R8-J1fhErpjiS9xUnGpLPLkAFAX7-VZUj8Q.jpg",
     "local_photo": "",
     "raw_text": "🔴\n \nSOTILDI \n❌\n━━━━━━━━━━━━━━━━━━\n📱\n \niPhone 17 Pro Max\n💾\n Xotirasi: \n1 TB\n🔋\n Batareya holati: \n91%\n🎨\n Rangi: \norench\n📦\n Karobkasi: \nHa\n💰\n Sotuv narxi: \n1300.00$\n📄\n Bosh to'lovsiz, mudatli to'lov bor \n✅\n📍\n Toshkent shahri: Malika bozor R84\nBuyurtma berish uchun\n👇🏻\n📞\n  +998 94 004 42 14\n📞\n  +998 33 241 24 24\nTelegramdan bog'lanish\n👇🏻\n💬\n \n@oymaoy_admin"
   },
@@ -1087,7 +1113,7 @@
     "condition": "93%",
     "price": "859$",
     "is_sold": false,
-    "photo": "https://cdn4.telesco.pe/file/CrBZ10k7CokT1XFw_AOC3PW8nADUudcC8-RIRRWkwd8magZapCiOIxz2cx8UEj2nYfFJYjgC6w3LUI_BYwEQs_-czOJtiQ4ICTNE1o19Vg15M8WcMKNoCCcP0uMPU94i7Bn8R8gP6I4M1TsWuOwrEyIE8988xUXQa2oGC8cHXXAfR-SkDPh9BOORtc4u71hWcz_eu4tlkpFg754UCsxnKvbu2FMDxYQy6GE6b6LJc3KpapnoEIAaWd3MtBZppiX8ytVHi5FcSAh3U9mYocJHfDWt3eOOyj-WxNAS5KQ-EBJDNk5aOcT02MZjOy8GN9bekMNnPePgNEUPqszUVf7jPg.jpg",
+    "photo": "https://cdn4.telesco.pe/file/J1r9T9QSeo-oYpVZok8OOUsit5zDVHqoVgyG4zWsOqQ1cImXb1xxKv8AHqFDqmmhALmfgz1w7SiYRx8yw45P6JfhKh5Gc9jmMwKVrbO9rlQnU_EmBjEsEwbe4Ai8nf0N0llPHTLoOTv8Mdz21mM9vIijwXWt4RMNhiJYHR_wG9tES5h4S8mq4ogUD4OjX1-V8juNp34PRMKBnxoKzo9bjU7Ct0ljFFXdUAUZTUAh_S967h3DhyOATHxJ5Hmfj6xZrXNxQzFGmPi3dRe8bM9BdE0iz0ki8uXL07-3QFvBdXlWCitES9657BDOs4ZO5RC8x6RPh9yf-2lDhb8auoADIw.jpg",
     "local_photo": "images/278.jpg",
     "raw_text": "📱\n \niPhone 17\n💾\n Xotirasi: \n256 GB\n🔋\n Batareya holati: \n93%\n🎨\n Rangi: \nLavanda\n📦\n Karobkasi: \nHa\n🔍\n IMEI: \n723457\n💰\n Sotuv narxi: \n859$"
   },
@@ -1571,18 +1597,5 @@
     "photo": "",
     "local_photo": "",
     "raw_text": "16мах \nИдеал\n✅\n 490764\n979\n💵\nMurojat uchun\n👨🏻‍💻\n:\n@oymaoy1\n \n(94)004-42-14"
-  },
-  {
-    "id": "201",
-    "model": "14мах",
-    "memory": "",
-    "battery": "",
-    "color": "",
-    "condition": "A'lo",
-    "price": "",
-    "is_sold": false,
-    "photo": "",
-    "local_photo": "",
-    "raw_text": "14мах \nИдеал\n✅\n 483689\n629\n💵\nMurojat uchun\n👨🏻‍💻\n:\n@oymaoy1\n \n(94)004-42-14"
   }
 ]
